@@ -1,0 +1,6033 @@
+# STIG to CWE and CWE to STIG mappings
+---
+
+stig_to_cwe:
+  SV-222387:
+    cwe_ids:
+      - id: CWE-799
+        default: true
+  SV-222388:
+    cwe_ids:
+      - id: CWE-539
+        default: true
+  SV-222389:
+    cwe_ids:
+      - id: CWE-613
+        default: true
+  SV-222390:
+    cwe_ids:
+      - id: CWE-613
+        default: true
+  SV-222391:
+    cwe_ids:
+      - id: CWE-613
+        default: true
+  SV-222392:
+    cwe_ids:
+      - id: CWE-613
+        default: true
+  SV-222393:
+    cwe_ids:
+      - id: CWE-922
+        default: true
+  SV-222394:
+    cwe_ids:
+      - id: CWE-214
+        default: true
+  SV-222395:
+    cwe_ids:
+      - id: CWE-648
+        default: true
+  SV-222396:
+    cwe_ids:
+      - id: CWE-522
+        default: true
+  SV-222397:
+    cwe_ids:
+      - id: CWE-319
+        default: true
+  SV-222398:
+    cwe_ids:
+      - id: CWE-924
+        default: true
+  SV-222399:
+    cwe_ids:
+      - id: CWE-294
+        default: true
+  SV-222400:
+    cwe_ids:
+      - id: CWE-294
+        default: true
+  SV-222401:
+    cwe_ids:
+      - id: CWE-287
+        default: true
+  SV-222402:
+    cwe_ids:
+      - id: CWE-326
+        default: true
+  SV-222403:
+    cwe_ids:
+      - id: CWE-287
+        default: true
+  SV-222404:
+    cwe_ids:
+      - id: CWE-287
+        default: true
+  SV-222405:
+    cwe_ids:
+      - id: CWE-287
+        default: true
+  SV-222406:
+    cwe_ids:
+      - id: CWE-319
+        default: true
+  SV-222407:
+    cwe_ids:
+      - id: CWE-286
+        default: true
+  SV-222408:
+    cwe_ids:
+      - id: CWE-248
+        default: true
+  SV-222409:
+    cwe_ids:
+      - id: CWE-248
+        default: true
+  SV-222410:
+    cwe_ids:
+      - id: CWE-284
+        default: true
+  SV-222411:
+    cwe_ids:
+      - id: CWE-248
+        default: true
+  SV-222412:
+    cwe_ids:
+      - id: CWE-248
+        default: true
+  SV-222413:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222414:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222415:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222416:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222417:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222418:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222419:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222420:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222421:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222422:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222423:
+    cwe_ids:
+      - id: CWE-200
+        default: true
+  SV-222424:
+    cwe_ids:
+      - id: CWE-200
+        default: true
+  SV-222425:
+    cwe_ids:
+      - id: CWE-284
+        default: true
+  SV-222426:
+    cwe_ids:
+      - id: CWE-285
+        default: true
+  SV-222427:
+    cwe_ids:
+      - id: CWE-200
+        default: true
+  SV-222428:
+    cwe_ids:
+      - id: CWE-200
+        default: true
+  SV-222429:
+    cwe_ids:
+      - id: CWE-671
+        default: true
+  SV-222430:
+    cwe_ids:
+      - id: CWE-250
+        default: true
+  SV-222431:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222432:
+    cwe_ids:
+      - id: CWE-307
+        default: true
+  SV-222433:
+    cwe_ids:
+      - id: CWE-645
+        default: true
+  SV-222434:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222435:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222436:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222437:
+    cwe_ids:
+      - id: CWE-223
+        default: true
+  SV-222438:
+    cwe_ids:
+      - id: CWE-353
+        default: true
+  SV-222439:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222441:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222442:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222443:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222444:
+    cwe_ids:
+      - id: CWE-532
+        default: true
+  SV-222445:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222446:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222447:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222448:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222449:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222450:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222451:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222452:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222453:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222454:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222455:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222456:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222457:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222458:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222459:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222460:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222461:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222462:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222463:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222464:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222465:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222466:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222467:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222468:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222469:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222470:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222471:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222472:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222473:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222474:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222475:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222476:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222477:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222478:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222479:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222480:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222481:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222482:
+    cwe_ids:
+      - id: CWE-400
+        default: true
+  SV-222483:
+    cwe_ids:
+      - id: CWE-400
+        default: true
+  SV-222484:
+    cwe_ids:
+      - id: CWE-400
+        default: true
+  SV-222485:
+    cwe_ids:
+      - id: CWE-400
+        default: true
+  SV-222486:
+    cwe_ids:
+      - id: CWE-636
+        default: true
+  SV-222487:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222488:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222489:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222490:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222491:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222492:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222493:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222494:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222495:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222496:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222497:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222498:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222499:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222500:
+    cwe_ids:
+      - id: CWE-532
+        default: true
+  SV-222501:
+    cwe_ids:
+      - id: CWE-532
+        default: true
+  SV-222502:
+    cwe_ids:
+      - id: CWE-532
+        default: true
+  SV-222503:
+    cwe_ids:
+      - id: CWE-532
+        default: true
+  SV-222504:
+    cwe_ids:
+      - id: CWE-532
+        default: true
+  SV-222505:
+    cwe_ids:
+      - id: CWE-532
+        default: true
+  SV-222506:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222507:
+    cwe_ids:
+      - id: CWE-353
+        default: true
+  SV-222508:
+    cwe_ids:
+      - id: CWE-353
+        default: true
+  SV-222509:
+    cwe_ids:
+      - id: CWE-354
+        default: true
+  SV-222510:
+    cwe_ids:
+      - id: CWE-284
+        default: true
+  SV-222511:
+    cwe_ids:
+      - id: CWE-15
+        default: true
+  SV-222512:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222513:
+    cwe_ids:
+      - id: CWE-354
+        default: true
+  SV-222514:
+    cwe_ids:
+      - id: CWE-284
+        default: true
+  SV-222515:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222516:
+    cwe_ids:
+      - id: CWE-272
+        default: true
+  SV-222517:
+    cwe_ids:
+      - id: CWE-183
+        default: true
+  SV-222518:
+    cwe_ids:
+      - id: CWE-272
+        default: true
+  SV-222519:
+    cwe_ids:
+      - id: CWE-272
+        default: true
+  SV-222520:
+    cwe_ids:
+      - id: CWE-284
+        default: true
+  SV-222521:
+    cwe_ids:
+      - id: CWE-284
+        default: true
+  SV-222522:
+    cwe_ids:
+      - id: CWE-284
+        default: true
+  SV-222523:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222524:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222525:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222526:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222527:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222528:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222529:
+    cwe_ids:
+      - id: CWE-284
+        default: true
+  SV-222530:
+    cwe_ids:
+      - id: CWE-294
+        default: true
+  SV-222531:
+    cwe_ids:
+      - id: CWE-294
+        default: true
+  SV-222532:
+    cwe_ids:
+      - id: CWE-301
+        default: true
+  SV-222533:
+    cwe_ids:
+      - id: CWE-301
+        default: true
+  SV-222534:
+    cwe_ids:
+      - id: CWE-301
+        default: true
+  SV-222535:
+    cwe_ids:
+      - id: CWE-307
+        default: true
+  SV-222536:
+    cwe_ids:
+      - id: CWE-521
+        default: true
+  SV-222537:
+    cwe_ids:
+      - id: CWE-521
+        default: true
+  SV-222538:
+    cwe_ids:
+      - id: CWE-521
+        default: true
+  SV-222539:
+    cwe_ids:
+      - id: CWE-521
+        default: true
+  SV-222540:
+    cwe_ids:
+      - id: CWE-521
+        default: true
+  SV-222541:
+    cwe_ids:
+      - id: CWE-521
+        default: true
+  SV-222542:
+    cwe_ids:
+      - id: CWE-256
+        default: true
+  SV-222543:
+    cwe_ids:
+      - id: CWE-319
+        default: true
+  SV-222544:
+    cwe_ids:
+      - id: CWE-521
+        default: true
+  SV-222545:
+    cwe_ids:
+      - id: CWE-262
+        default: true
+  SV-222546:
+    cwe_ids:
+      - id: CWE-521
+        default: true
+  SV-222547:
+    cwe_ids:
+      - id: CWE-521
+        default: true
+  SV-222548:
+    cwe_ids:
+      - id: CWE-640
+        default: true
+  SV-222549:
+    cwe_ids:
+      - id: CWE-613
+        default: true
+  SV-222550:
+    cwe_ids:
+      - id: CWE-296
+        default: true
+  SV-222551:
+    cwe_ids:
+      - id: CWE-320
+        default: true
+  SV-222552:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222553:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222554:
+    cwe_ids:
+      - id: CWE-522
+        default: true
+  SV-222555:
+    cwe_ids:
+      - id: CWE-327
+        default: true
+  SV-222556:
+    cwe_ids:
+      - id: CWE-287
+        default: true
+  SV-222557:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222558:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222559:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222560:
+    cwe_ids:
+      - id: CWE-308
+        default: true
+  SV-222561:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222562:
+    cwe_ids:
+      - id: CWE-311
+        default: true
+  SV-222563:
+    cwe_ids:
+      - id: CWE-311
+        default: true
+  SV-222564:
+    cwe_ids:
+      - id: CWE-613
+        default: true
+  SV-222565:
+    cwe_ids:
+      - id: CWE-287
+        default: true
+  SV-222566:
+    cwe_ids:
+      - id: CWE-613
+        default: true
+  SV-222567:
+    cwe_ids:
+      - id: CWE-362
+        default: true
+  SV-222568:
+    cwe_ids:
+      - id: CWE-613
+        default: true
+  SV-222570:
+    cwe_ids:
+      - id: CWE-327
+        default: true
+  SV-222571:
+    cwe_ids:
+      - id: CWE-327
+        default: true
+  SV-222572:
+    cwe_ids:
+      - id: CWE-327
+        default: true
+  SV-222573:
+    cwe_ids:
+      - id: CWE-338
+        default: true
+  SV-222574:
+    cwe_ids:
+      - id: CWE-653
+        default: true
+  SV-222575:
+    cwe_ids:
+      - id: CWE-1004
+        default: true
+  SV-222576:
+    cwe_ids:
+      - id: CWE-614
+        default: true
+  SV-222577:
+    cwe_ids:
+      - id: CWE-539
+        default: true
+  SV-222578:
+    cwe_ids:
+      - id: CWE-613
+        default: true
+  SV-222579:
+    cwe_ids:
+      - id: CWE-384
+        default: true
+  SV-222580:
+    cwe_ids:
+      - id: CWE-384
+        default: true
+  SV-222581:
+    cwe_ids:
+      - id: CWE-384
+        default: true
+  SV-222582:
+    cwe_ids:
+      - id: CWE-384
+        default: true
+  SV-222583:
+    cwe_ids:
+      - id: CWE-330
+        default: true
+  SV-222584:
+    cwe_ids:
+      - id: CWE-295
+        default: true
+  SV-222585:
+    cwe_ids:
+      - id: CWE-636
+        default: true
+  SV-222586:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222587:
+    cwe_ids:
+      - id: CWE-311
+        default: true
+  SV-222588:
+    cwe_ids:
+      - id: CWE-327
+        default: true
+  SV-222589:
+    cwe_ids:
+      - id: CWE-311
+        default: true
+  SV-222590:
+    cwe_ids:
+      - id: CWE-653
+        default: true
+  SV-222591:
+    cwe_ids:
+      - id: CWE-653
+        default: true
+  SV-222592:
+    cwe_ids:
+      - id: CWE-200
+        default: true
+  SV-222593:
+    cwe_ids:
+      - id: CWE-112
+        default: true
+  SV-222594:
+    cwe_ids:
+      - id: CWE-400
+        default: true
+  SV-222595:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222596:
+    cwe_ids:
+      - id: CWE-319
+        default: true
+  SV-222597:
+    cwe_ids:
+      - id: CWE-319
+        default: true
+  SV-222598:
+    cwe_ids:
+      - id: CWE-353
+        default: true
+  SV-222599:
+    cwe_ids:
+      - id: CWE-353
+        default: true
+  SV-222600:
+    cwe_ids:
+      - id: CWE-200
+        default: true
+  SV-222601:
+    cwe_ids:
+      - id: CWE-472
+        default: true
+  SV-222602:
+    cwe_ids:
+      - id: CWE-79
+        default: true
+  SV-222603:
+    cwe_ids:
+      - id: CWE-352
+        default: true
+  SV-222604:
+    cwe_ids:
+      - id: CWE-78
+        default: true
+  SV-222605:
+    cwe_ids:
+      - id: CWE-116
+        default: true
+  SV-222606:
+    cwe_ids:
+      - id: CWE-20
+        default: true
+  SV-222607:
+    cwe_ids:
+      - id: CWE-89
+        default: true
+  SV-222608:
+    cwe_ids:
+      - id: CWE-112
+        default: true
+  SV-222609:
+    cwe_ids:
+      - id: CWE-20
+        default: true
+  SV-222610:
+    cwe_ids:
+      - id: CWE-209
+        default: true
+  SV-222611:
+    cwe_ids:
+      - id: CWE-209
+        default: true
+  SV-222612:
+    cwe_ids:
+      - id: CWE-120
+        default: true
+  SV-222613:
+    cwe_ids:
+      - id: CWE-561
+        default: true
+  SV-222614:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222615:
+    cwe_ids:
+      - id: CWE-360
+        default: true
+  SV-222616:
+    cwe_ids:
+      - id: CWE-360
+        default: true
+  SV-222617:
+    cwe_ids:
+      - id: CWE-360
+        default: true
+  SV-222618:
+    cwe_ids:
+      - id: CWE-494
+        default: true
+  SV-222619:
+    cwe_ids:
+      - id: CWE-287
+        default: true
+  SV-222620:
+    cwe_ids:
+      - id: CWE-653
+        default: true
+  SV-222621:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222622:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222623:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222624:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222625:
+    cwe_ids:
+      - id: CWE-833
+        default: true
+  SV-222626:
+    cwe_ids:
+      - id: CWE-653
+        default: true
+  SV-222627:
+    cwe_ids:
+      - id: CWE-16
+        default: true
+  SV-222628:
+    cwe_ids:
+      - id: CWE-514
+        default: true
+  SV-222629:
+    cwe_ids:
+      - id: CWE-514
+        default: true
+  SV-222630:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222631:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222632:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222633:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222634:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222635:
+    cwe_ids:
+      - id: CWE-514
+        default: true
+  SV-222636:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222637:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222638:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222639:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222640:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222641:
+    cwe_ids:
+      - id: CWE-322
+        default: true
+  SV-222642:
+    cwe_ids:
+      - id: CWE-522
+        default: true
+  SV-222643:
+    cwe_ids:
+      - id: CWE-200
+        default: true
+  SV-222644:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222645:
+    cwe_ids:
+      - id: CWE-311
+        default: true
+  SV-222646:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222647:
+    cwe_ids:
+      - id: CWE-636
+        default: true
+  SV-222648:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222649:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222650:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222651:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222652:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222653:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222654:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222655:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222656:
+    cwe_ids:
+      - id: CWE-388
+        default: true
+  SV-222657:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222658:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222659:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222660:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222661:
+    cwe_ids:
+      - id: CWE-263
+        default: true
+  SV-222662:
+    cwe_ids:
+      - id: CWE-263
+        default: true
+  SV-222663:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222664:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222665:
+    cwe_ids:
+      - id: CWE-490
+        default: true
+  SV-222666:
+    cwe_ids:
+      - id: CWE-200
+        default: true
+  SV-222667:
+    cwe_ids:
+      - id: CWE-400
+        default: true
+  SV-222668:
+    cwe_ids:
+      - id: CWE-400
+        default: true
+  SV-222669:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222670:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-222671:
+    cwe_ids:
+      - id: CWE-653
+        default: true
+  SV-222672:
+    cwe_ids:
+      - id: CWE-778
+        default: true
+  SV-222673:
+    cwe_ids:
+      - id: CWE-710
+        default: true
+  SV-265634:
+    cwe_ids:
+      - id: CWE-326
+        default: true
+cwe_to_stig:
+  CWE-1001:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-1002:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1004:
+    stig_ids:
+      - id: SV-222575
+        default: true
+  CWE-1005:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1007:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-101:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-102:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1021:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-1022:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-1023:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-1024:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-1025:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-1027:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1028:
+    stig_ids:
+      - id: SV-222522
+        default: true
+  CWE-1029:
+    stig_ids:
+      - id: SV-222423
+        default: true
+  CWE-103:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-1030:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1031:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1032:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1033:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-1034:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-1035:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-1036:
+    stig_ids:
+      - id: SV-222474
+        default: true
+  CWE-1037:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1038:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1039:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-104:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-1041:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1042:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1043:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1044:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1045:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1046:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1047:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1048:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1049:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-105:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1050:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1051:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1052:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1053:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1054:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1055:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1056:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1057:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1058:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1059:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-106:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1060:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1061:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1062:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1063:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1064:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1065:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1066:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1067:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1068:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1069:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-107:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1070:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1071:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1072:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1073:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1074:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1075:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1076:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1077:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1078:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1079:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-108:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1080:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1082:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1083:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1084:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1085:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1086:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1087:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1088:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1089:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-109:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1090:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1091:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1092:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1093:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1094:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1095:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1096:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1097:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1098:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1099:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-11:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-110:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1100:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1101:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1102:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1103:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1104:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1105:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1106:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1107:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1108:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1109:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-111:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1110:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1111:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1112:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1113:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1114:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1115:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1116:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1117:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1118:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1119:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-112:
+    stig_ids:
+      - id: SV-222593
+        default: true
+  CWE-1120:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1121:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1122:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1123:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1124:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1125:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1126:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1127:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1128:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1129:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-113:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1130:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1131:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1132:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1133:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1134:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1135:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1136:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1137:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1138:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1139:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-114:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1140:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1141:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1142:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1143:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1144:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1145:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1146:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1147:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1148:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1149:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-115:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1150:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1151:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1152:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1153:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1154:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1155:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1156:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1157:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1158:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1159:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-116:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1160:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1161:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1162:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1163:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1164:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1165:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1166:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1167:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1168:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1169:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-117:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1170:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1171:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1172:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1173:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1174:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1175:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1176:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1177:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-118:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1187:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-1188:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-1189:
+    stig_ids:
+      - id: SV-222590
+        default: true
+  CWE-119:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1190:
+    stig_ids:
+      - id: SV-222590
+        default: true
+  CWE-1191:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1192:
+    stig_ids:
+      - id: SV-222475
+        default: true
+  CWE-1193:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-12:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-120:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1209:
+    stig_ids:
+      - id: SV-222519
+        default: true
+  CWE-121:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-122:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1220:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1221:
+    stig_ids:
+      - id: SV-222516
+        default: true
+  CWE-1222:
+    stig_ids:
+      - id: SV-222516
+        default: true
+  CWE-1223:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1224:
+    stig_ids:
+      - id: SV-222590
+        default: true
+  CWE-1229:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-123:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1230:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1231:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1232:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1233:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1234:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1235:
+    stig_ids:
+      - id: SV-222595
+        default: true
+  CWE-1236:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1239:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-124:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1240:
+    stig_ids:
+      - id: SV-222583
+        default: true
+  CWE-1241:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-1242:
+    stig_ids:
+      - id: SV-222519
+        default: true
+  CWE-1243:
+    stig_ids:
+      - id: SV-222643
+        default: true
+  CWE-1244:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1245:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-1246:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-1247:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-1248:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1249:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-125:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1250:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-1251:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-1252:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1253:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1254:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1255:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1256:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1257:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1258:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1259:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-126:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1260:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1261:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-1262:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1263:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1264:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1265:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1266:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-1267:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1268:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1269:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-127:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1270:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1271:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-1272:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1273:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1274:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1275:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1276:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1277:
+    stig_ids:
+      - id: SV-222614
+        default: true
+  CWE-1278:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1279:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-128:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1280:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1281:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-1282:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1283:
+    stig_ids:
+      - id: SV-222616
+        default: true
+  CWE-1284:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1285:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1286:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1287:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1288:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1289:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-129:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1290:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1291:
+    stig_ids:
+      - id: SV-222550
+        default: true
+  CWE-1292:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1293:
+    stig_ids:
+      - id: SV-222523
+        default: true
+  CWE-1294:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1295:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1296:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1297:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1298:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1299:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-13:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-130:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1300:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1301:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-1302:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1303:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-1304:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-131:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1310:
+    stig_ids:
+      - id: SV-222614
+        default: true
+  CWE-1311:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1312:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1313:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1314:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1315:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1316:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1317:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1318:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1319:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1320:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1321:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1322:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-1323:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1324:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-1325:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-1326:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1327:
+    stig_ids:
+      - id: SV-222518
+        default: true
+  CWE-1328:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1329:
+    stig_ids:
+      - id: SV-222614
+        default: true
+  CWE-133:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1330:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-1331:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-1332:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-1333:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-1334:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1335:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-1336:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1338:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-1339:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-134:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-1341:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1342:
+    stig_ids:
+      - id: SV-222643
+        default: true
+  CWE-135:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-1351:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-1357:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-1359:
+    stig_ids:
+      - id: SV-222628
+        default: true
+  CWE-136:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1360:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-1361:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-1362:
+    stig_ids:
+      - id: SV-222516
+        default: true
+  CWE-1363:
+    stig_ids:
+      - id: SV-222632
+        default: true
+  CWE-1364:
+    stig_ids:
+      - id: SV-222628
+        default: true
+  CWE-1365:
+    stig_ids:
+      - id: SV-222628
+        default: true
+  CWE-1367:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-1368:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-1369:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-137:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-1370:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-1371:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1372:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-1373:
+    stig_ids:
+      - id: SV-222522
+        default: true
+  CWE-1374:
+    stig_ids:
+      - id: SV-222516
+        default: true
+  CWE-1375:
+    stig_ids:
+      - id: SV-222516
+        default: true
+  CWE-1376:
+    stig_ids:
+      - id: SV-222516
+        default: true
+  CWE-1377:
+    stig_ids:
+      - id: SV-222516
+        default: true
+  CWE-1378:
+    stig_ids:
+      - id: SV-222673
+        default: true
+  CWE-1379:
+    stig_ids:
+      - id: SV-222673
+        default: true
+  CWE-138:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-1380:
+    stig_ids:
+      - id: SV-222632
+        default: true
+  CWE-1381:
+    stig_ids:
+      - id: SV-222632
+        default: true
+  CWE-1382:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-1383:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-1384:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-1385:
+    stig_ids:
+      - id: SV-222577
+        default: true
+  CWE-1386:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1388:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-1389:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-1390:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1391:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1392:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1393:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1394:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1395:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1396:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-1397:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-1398:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-1399:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-14:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-140:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-1401:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-1402:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-1403:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1404:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1405:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-1406:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-1407:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-1408:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-1409:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-141:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-1410:
+    stig_ids:
+      - id: SV-222427
+        default: true
+  CWE-1411:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-1412:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-1413:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1414:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-1415:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1416:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-1417:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-1418:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-142:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-143:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-144:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-145:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-146:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-147:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-148:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-149:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-15:
+    stig_ids:
+      - id: SV-222511
+        default: true
+  CWE-150:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-151:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-152:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-153:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-154:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-155:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-156:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-157:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-158:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-159:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-16:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-160:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-161:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-162:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-163:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-164:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-165:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-166:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-167:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-168:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-169:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-17:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-170:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-171:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-172:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-173:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-174:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-175:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-176:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-177:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-178:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-179:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-18:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-180:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-181:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-182:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-183:
+    stig_ids:
+      - id: SV-222517
+        default: true
+  CWE-184:
+    stig_ids:
+      - id: SV-222517
+        default: true
+  CWE-185:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-186:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-187:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-188:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-189:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-19:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-190:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-191:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-192:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-193:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-194:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-195:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-196:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-197:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-198:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-199:
+    stig_ids:
+      - id: SV-222643
+        default: true
+  CWE-2:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-20:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-200:
+    stig_ids:
+      - id: SV-222643
+        default: true
+  CWE-201:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-202:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-203:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-204:
+    stig_ids:
+      - id: SV-222610
+        default: true
+  CWE-205:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-206:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-207:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-208:
+    stig_ids:
+      - id: SV-222610
+        default: true
+  CWE-209:
+    stig_ids:
+      - id: SV-222610
+        default: true
+  CWE-21:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-210:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-211:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-212:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-213:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-214:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-215:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-216:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-219:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-22:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-220:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-221:
+    stig_ids:
+      - id: SV-222438
+        default: true
+  CWE-222:
+    stig_ids:
+      - id: SV-222478
+        default: true
+  CWE-223:
+    stig_ids:
+      - id: SV-222478
+        default: true
+  CWE-224:
+    stig_ids:
+      - id: SV-222478
+        default: true
+  CWE-226:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-227:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-228:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-229:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-23:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-230:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-231:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-232:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-233:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-234:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-235:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-236:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-237:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-238:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-239:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-24:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-240:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-241:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-242:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-243:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-244:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-245:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-246:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-248:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-25:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-250:
+    stig_ids:
+      - id: SV-222430
+        default: true
+  CWE-252:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-253:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-254:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-255:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-256:
+    stig_ids:
+      - id: SV-222542
+        default: true
+  CWE-257:
+    stig_ids:
+      - id: SV-222542
+        default: true
+  CWE-258:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-259:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-26:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-260:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-261:
+    stig_ids:
+      - id: SV-222543
+        default: true
+  CWE-262:
+    stig_ids:
+      - id: SV-222545
+        default: true
+  CWE-263:
+    stig_ids:
+      - id: SV-222545
+        default: true
+  CWE-264:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-265:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-266:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-267:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-268:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-269:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-27:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-270:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-271:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-272:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-273:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-274:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-275:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-276:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-277:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-278:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-279:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-28:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-280:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-281:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-282:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-283:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-284:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-285:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-286:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-287:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-288:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-289:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-29:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-290:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-291:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-293:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-294:
+    stig_ids:
+      - id: SV-222530
+        default: true
+  CWE-295:
+    stig_ids:
+      - id: SV-222522
+        default: true
+  CWE-296:
+    stig_ids:
+      - id: SV-222550
+        default: true
+  CWE-297:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-298:
+    stig_ids:
+      - id: SV-222553
+        default: true
+  CWE-299:
+    stig_ids:
+      - id: SV-222553
+        default: true
+  CWE-30:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-300:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-301:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-302:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-303:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-304:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-305:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-306:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-307:
+    stig_ids:
+      - id: SV-222432
+        default: true
+  CWE-308:
+    stig_ids:
+      - id: SV-222526
+        default: true
+  CWE-309:
+    stig_ids:
+      - id: SV-222523
+        default: true
+  CWE-31:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-310:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-311:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-312:
+    stig_ids:
+      - id: SV-222587
+        default: true
+  CWE-313:
+    stig_ids:
+      - id: SV-222587
+        default: true
+  CWE-314:
+    stig_ids:
+      - id: SV-222542
+        default: true
+  CWE-315:
+    stig_ids:
+      - id: SV-222587
+        default: true
+  CWE-316:
+    stig_ids:
+      - id: SV-222542
+        default: true
+  CWE-317:
+    stig_ids:
+      - id: SV-222542
+        default: true
+  CWE-318:
+    stig_ids:
+      - id: SV-222542
+        default: true
+  CWE-319:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-32:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-320:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-321:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-322:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-323:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-324:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-325:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-326:
+    stig_ids:
+      - id: SV-222583
+        default: true
+  CWE-327:
+    stig_ids:
+      - id: SV-222583
+        default: true
+  CWE-328:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-329:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-33:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-330:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-331:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-332:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-333:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-334:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-335:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-336:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-337:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-338:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-339:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-34:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-340:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-341:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-342:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-343:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-344:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-345:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-346:
+    stig_ids:
+      - id: SV-222577
+        default: true
+  CWE-347:
+    stig_ids:
+      - id: SV-222583
+        default: true
+  CWE-348:
+    stig_ids:
+      - id: SV-222522
+        default: true
+  CWE-349:
+    stig_ids:
+      - id: SV-222522
+        default: true
+  CWE-35:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-350:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-351:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-352:
+    stig_ids:
+      - id: SV-222603
+        default: true
+  CWE-353:
+    stig_ids:
+      - id: SV-222438
+        default: true
+  CWE-354:
+    stig_ids:
+      - id: SV-222583
+        default: true
+  CWE-356:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-357:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-358:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-359:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-36:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-360:
+    stig_ids:
+      - id: SV-222615
+        default: true
+  CWE-361:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-362:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-363:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-364:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-365:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-366:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-367:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-368:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-369:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-37:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-370:
+    stig_ids:
+      - id: SV-222553
+        default: true
+  CWE-371:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-372:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-374:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-375:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-377:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-378:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-379:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-38:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-382:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-383:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-384:
+    stig_ids:
+      - id: SV-222579
+        default: true
+  CWE-385:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-386:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-387:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-388:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-389:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-39:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-390:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-391:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-392:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-393:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-394:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-395:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-396:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-397:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-398:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-399:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-40:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-400:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-401:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-402:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-403:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-404:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-405:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-406:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-407:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-408:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-409:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-41:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-410:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-411:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-412:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-413:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-414:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-415:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-416:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-417:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-418:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-419:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-42:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-420:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-421:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-422:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-424:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-425:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-426:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-427:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-428:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-429:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-43:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-430:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-431:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-432:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-433:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-434:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-435:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-436:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-437:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-439:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-44:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-440:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-441:
+    stig_ids:
+      - id: SV-222577
+        default: true
+  CWE-442:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-444:
+    stig_ids:
+      - id: SV-222427
+        default: true
+  CWE-446:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-447:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-448:
+    stig_ids:
+      - id: SV-222658
+        default: true
+  CWE-449:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-45:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-450:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-451:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-452:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-453:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-454:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-455:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-456:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-457:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-459:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-46:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-460:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-461:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-462:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-463:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-464:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-465:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-466:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-467:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-468:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-469:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-47:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-470:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-471:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-472:
+    stig_ids:
+      - id: SV-222601
+        default: true
+  CWE-473:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-474:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-475:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-476:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-477:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-478:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-479:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-48:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-480:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-481:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-482:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-483:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-484:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-485:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-486:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-487:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-488:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-489:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-49:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-490:
+    stig_ids:
+      - id: SV-222665
+        default: true
+  CWE-491:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-492:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-493:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-494:
+    stig_ids:
+      - id: SV-222665
+        default: true
+  CWE-495:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-496:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-497:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-498:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-499:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-5:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-50:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-500:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-501:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-502:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-505:
+    stig_ids:
+      - id: SV-222646
+        default: true
+  CWE-506:
+    stig_ids:
+      - id: SV-222646
+        default: true
+  CWE-507:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-508:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-509:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-51:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-510:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-511:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-512:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-514:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-515:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-52:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-520:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-521:
+    stig_ids:
+      - id: SV-222537
+        default: true
+  CWE-522:
+    stig_ids:
+      - id: SV-222396
+        default: true
+  CWE-523:
+    stig_ids:
+      - id: SV-222543
+        default: true
+  CWE-524:
+    stig_ids:
+      - id: SV-222587
+        default: true
+  CWE-525:
+    stig_ids:
+      - id: SV-222587
+        default: true
+  CWE-526:
+    stig_ids:
+      - id: SV-222587
+        default: true
+  CWE-527:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-528:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-529:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-53:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-530:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-531:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-532:
+    stig_ids:
+      - id: SV-222444
+        default: true
+  CWE-533:
+    stig_ids:
+      - id: SV-222444
+        default: true
+  CWE-534:
+    stig_ids:
+      - id: SV-222444
+        default: true
+  CWE-535:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-536:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-537:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-538:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-539:
+    stig_ids:
+      - id: SV-222388
+        default: true
+  CWE-54:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-540:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-541:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-542:
+    stig_ids:
+      - id: SV-222444
+        default: true
+  CWE-543:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-544:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-545:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-546:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-547:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-548:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-549:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-55:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-550:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-551:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-552:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-553:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-554:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-555:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-556:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-557:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-558:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-56:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-560:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-561:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-562:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-563:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-564:
+    stig_ids:
+      - id: SV-222607
+        default: true
+  CWE-565:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-566:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-567:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-568:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-569:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-57:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-570:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-571:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-572:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-573:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-574:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-575:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-576:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-577:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-578:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-579:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-58:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-580:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-581:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-582:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-583:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-584:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-585:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-586:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-587:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-588:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-589:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-59:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-590:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-591:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-592:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-593:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-594:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-595:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-596:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-597:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-598:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-599:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-6:
+    stig_ids:
+      - id: SV-222577
+        default: true
+  CWE-600:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-601:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-602:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-603:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-605:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-606:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-607:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-608:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-609:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-61:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-610:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-611:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-612:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-613:
+    stig_ids:
+      - id: SV-222578
+        default: true
+  CWE-614:
+    stig_ids:
+      - id: SV-222576
+        default: true
+  CWE-615:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-616:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-617:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-618:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-619:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-62:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-620:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-621:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-622:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-623:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-624:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-625:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-626:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-627:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-628:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-632:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-633:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-634:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-636:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-637:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-638:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-639:
+    stig_ids:
+      - id: SV-222601
+        default: true
+  CWE-64:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-640:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-641:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-642:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-643:
+    stig_ids:
+      - id: SV-222608
+        default: true
+  CWE-644:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-645:
+    stig_ids:
+      - id: SV-222433
+        default: true
+  CWE-646:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-647:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-648:
+    stig_ids:
+      - id: SV-222395
+        default: true
+  CWE-649:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-65:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-650:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-651:
+    stig_ids:
+      - id: SV-222522
+        default: true
+  CWE-652:
+    stig_ids:
+      - id: SV-222608
+        default: true
+  CWE-653:
+    stig_ids:
+      - id: SV-222620
+        default: true
+  CWE-654:
+    stig_ids:
+      - id: SV-222523
+        default: true
+  CWE-655:
+    stig_ids:
+      - id: SV-222522
+        default: true
+  CWE-656:
+    stig_ids:
+      - id: SV-222522
+        default: true
+  CWE-657:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-66:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-662:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-663:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-664:
+    stig_ids:
+      - id: SV-222592
+        default: true
+  CWE-665:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-666:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-667:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-668:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-669:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-67:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-670:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-671:
+    stig_ids:
+      - id: SV-222429
+        default: true
+  CWE-672:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-673:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-674:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-675:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-676:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-680:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-681:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-682:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-683:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-684:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-685:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-686:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-687:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-688:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-689:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-69:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-690:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-691:
+    stig_ids:
+      - id: SV-222427
+        default: true
+  CWE-692:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-693:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-694:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-695:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-696:
+    stig_ids:
+      - id: SV-222585
+        default: true
+  CWE-697:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-698:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-7:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-703:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-704:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-705:
+    stig_ids:
+      - id: SV-222427
+        default: true
+  CWE-706:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-707:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-708:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-71:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-710:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-712:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-713:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-714:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-715:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-716:
+    stig_ids:
+      - id: SV-222603
+        default: true
+  CWE-717:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-718:
+    stig_ids:
+      - id: SV-222388
+        default: true
+  CWE-719:
+    stig_ids:
+      - id: SV-222542
+        default: true
+  CWE-72:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-720:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-721:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-722:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-723:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-724:
+    stig_ids:
+      - id: SV-222388
+        default: true
+  CWE-725:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-726:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-727:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-728:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-729:
+    stig_ids:
+      - id: SV-222587
+        default: true
+  CWE-73:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-730:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-731:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-732:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-733:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-737:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-738:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-739:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-74:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-740:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-741:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-742:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-743:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-744:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-745:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-746:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-747:
+    stig_ids:
+      - id: SV-222515
+        default: true
+  CWE-748:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-749:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-75:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-751:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-752:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-753:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-754:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-755:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-756:
+    stig_ids:
+      - id: SV-222656
+        default: true
+  CWE-757:
+    stig_ids:
+      - id: SV-222583
+        default: true
+  CWE-758:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-759:
+    stig_ids:
+      - id: SV-222542
+        default: true
+  CWE-76:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-760:
+    stig_ids:
+      - id: SV-222542
+        default: true
+  CWE-761:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-762:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-763:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-764:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-765:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-766:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-767:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-768:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-769:
+    stig_ids:
+      - id: SV-222668
+        default: true
+  CWE-77:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-770:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-771:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-772:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-773:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-774:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-775:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-776:
+    stig_ids:
+      - id: SV-222608
+        default: true
+  CWE-777:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-778:
+    stig_ids:
+      - id: SV-222474
+        default: true
+  CWE-779:
+    stig_ids:
+      - id: SV-222474
+        default: true
+  CWE-78:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-780:
+    stig_ids:
+      - id: SV-222583
+        default: true
+  CWE-781:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-782:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-783:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-784:
+    stig_ids:
+      - id: SV-222388
+        default: true
+  CWE-785:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-786:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-787:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-788:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-789:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-79:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-790:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-791:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-792:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-793:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-794:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-795:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-796:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-797:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-798:
+    stig_ids:
+      - id: SV-222642
+        default: true
+  CWE-799:
+    stig_ids:
+      - id: SV-222387
+        default: true
+  CWE-8:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-80:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-801:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-802:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-803:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-804:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-805:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-806:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-807:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-808:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-81:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-810:
+    stig_ids:
+      - id: SV-222607
+        default: true
+  CWE-811:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-812:
+    stig_ids:
+      - id: SV-222388
+        default: true
+  CWE-813:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-814:
+    stig_ids:
+      - id: SV-222603
+        default: true
+  CWE-815:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-817:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-819:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-82:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-820:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-821:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-822:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-823:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-824:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-825:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-826:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-827:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-828:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-829:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-83:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-830:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-831:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-832:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-833:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-834:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-835:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-836:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-837:
+    stig_ids:
+      - id: SV-222387
+        default: true
+  CWE-838:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-839:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-84:
+    stig_ids:
+      - id: SV-222601
+        default: true
+  CWE-840:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-841:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-842:
+    stig_ids:
+      - id: SV-222429
+        default: true
+  CWE-843:
+    stig_ids:
+      - id: SV-222612
+        default: true
+  CWE-845:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-846:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-847:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-848:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-849:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-85:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-850:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-851:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-852:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-853:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-855:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-857:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-858:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-859:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-86:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-861:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-862:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-863:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-864:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-865:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-866:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-867:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-87:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-871:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-872:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-873:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-874:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-875:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-876:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-877:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-878:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-879:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-88:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-880:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-881:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-882:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-883:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-89:
+    stig_ids:
+      - id: SV-222607
+        default: true
+  CWE-9:
+    stig_ids:
+      - id: SV-222394
+        default: true
+  CWE-90:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-901:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-905:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-908:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-909:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-91:
+    stig_ids:
+      - id: SV-222608
+        default: true
+  CWE-910:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-911:
+    stig_ids:
+      - id: SV-222567
+        default: true
+  CWE-912:
+    stig_ids:
+      - id: SV-222653
+        default: true
+  CWE-913:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-914:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-915:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-916:
+    stig_ids:
+      - id: SV-222570
+        default: true
+  CWE-917:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-918:
+    stig_ids:
+      - id: SV-222426
+        default: true
+  CWE-920:
+    stig_ids:
+      - id: SV-222594
+        default: true
+  CWE-921:
+    stig_ids:
+      - id: SV-222590
+        default: true
+  CWE-922:
+    stig_ids:
+      - id: SV-222587
+        default: true
+  CWE-923:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-924:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-925:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-926:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-927:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-929:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-93:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-930:
+    stig_ids:
+      - id: SV-222388
+        default: true
+  CWE-931:
+    stig_ids:
+      - id: SV-222602
+        default: true
+  CWE-932:
+    stig_ids:
+      - id: SV-222393
+        default: true
+  CWE-934:
+    stig_ids:
+      - id: SV-222444
+        default: true
+  CWE-935:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-936:
+    stig_ids:
+      - id: SV-222603
+        default: true
+  CWE-938:
+    stig_ids:
+      - id: SV-222609
+        default: true
+  CWE-939:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-94:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-940:
+    stig_ids:
+      - id: SV-222596
+        default: true
+  CWE-941:
+    stig_ids:
+      - id: SV-222427
+        default: true
+  CWE-942:
+    stig_ids:
+      - id: SV-222517
+        default: true
+  CWE-943:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-944:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-945:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-947:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-949:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-95:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-950:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-951:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-953:
+    stig_ids:
+      - id: SV-222425
+        default: true
+  CWE-956:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-957:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-958:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-959:
+    stig_ids:
+      - id: SV-222583
+        default: true
+  CWE-96:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-961:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-962:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-963:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-966:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-969:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-97:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-970:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-971:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-973:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-974:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-975:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-977:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-978:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-98:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-980:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-981:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-982:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-983:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-984:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-985:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-986:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-988:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-989:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-99:
+    stig_ids:
+      - id: SV-222604
+        default: true
+  CWE-990:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-991:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-992:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-993:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-994:
+    stig_ids:
+      - id: SV-222606
+        default: true
+  CWE-998:
+    stig_ids:
+      - id: SV-222648
+        default: true
