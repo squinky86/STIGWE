@@ -4041,16 +4041,20 @@ cwe_to_stig:
         default: true
   CWE-456:
     stig_ids:
-      - id: SV-222426
+      - id: SV-222648
         default: true
   CWE-457:
     stig_ids:
-      - id: SV-222426
+      - id: SV-222648
         default: true
   CWE-459:
     stig_ids:
-      - id: SV-222426
+      - id: SV-222592
         default: true
+      - id: SV-222585
+        default: false
+      - id: SV-222388
+        default: false
   CWE-46:
     stig_ids:
       - id: SV-222426
