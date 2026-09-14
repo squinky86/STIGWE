@@ -1,0 +1,3577 @@
+# ASD STIG to GAPP SRG and GAPP SRG to ASD STIG mappings
+# ASD V6R4 (benchmark 2025-10-01) <-> GAPP V1R0.1 FIRST DRAFT (benchmark 2026-08-05).
+# Analyst-proposed crosswalk, including weak connections, prepared for STIGWE. This is not an
+# official DISA crosswalk or a declaration that the draft supersedes ASD.
+# Sources: U_ASD_V6R4_STIG.zip and U_GAPP_V1R0-1_IDraftSRG.zip.
+
+asd_to_gapp:
+  # APSC-DV-000010: The application must provide a capability to limit the number of logon sessions
+  # per user.
+  SV-222387:
+    gapp_ids:
+      # GAPP-00-000550 [revised]: The application must limit the number of concurrent sessions to a
+      # maximum number of three for all accounts and/or account types.
+      - id: SV-288189
+        default: true
+
+  # APSC-DV-000070: The application must automatically terminate the non-privileged user session and
+  # log off non-privileged users after a 15 minute idle time period has elapsed.
+  SV-222389:
+    gapp_ids:
+      # GAPP-00-000560 [revised]: The application must terminate all network connections associated
+      # with a communications session at the end of the session, or no more than 15 minutes of
+      # inactivity.
+      - id: SV-288190
+        default: true
+
+  # APSC-DV-000080: The application must automatically terminate the admin user session and log off
+  # admin users after a 10 minute idle time period is exceeded.
+  SV-222390:
+    gapp_ids:
+      # GAPP-00-000560 [revised]: The application must terminate all network connections associated
+      # with a communications session at the end of the session, or no more than 15 minutes of
+      # inactivity.
+      - id: SV-288190
+        default: true
+
+  # APSC-DV-000090: Applications requiring user access authentication must provide a logoff
+  # capability for user initiated communication session.
+  SV-222391:
+    gapp_ids:
+      # GAPP-00-000600 [revised]: Applications requiring user access authentication must provide a
+      # logout function for user-initiated communication sessions.
+      - id: SV-288194
+        default: true
+
+  # APSC-DV-000100: The application must display an explicit logoff message to users indicating the
+  # reliable termination of authenticated communications sessions.
+  SV-222392:
+    gapp_ids:
+      # GAPP-00-000610 [revised]: The application must display an explicit logout message to users
+      # indicating the reliable termination of authenticated communications sessions.
+      - id: SV-288195
+        default: true
+
+  # APSC-DV-000110: The application must associate organization-defined types of security attributes
+  # having organization-defined security attribute values with information in storage.
+  SV-222393:
+    gapp_ids:
+      # GAPP-00-001340 [related_only]: The application must dynamically associate security
+      # attributes with organization-defined objects in accordance with organization-defined
+      # security policies as information is created and combined.
+      - id: SV-288268
+        default: true
+      # GAPP-00-001300 [related_only]: The application must dynamically associate security
+      # attributes with organization-defined subjects in accordance with organization-defined
+      # security policies as information is created and combined.
+      - id: SV-288264
+        default: false
+
+  # APSC-DV-000120: The application must associate organization-defined types of security attributes
+  # having organization-defined security attribute values with information in process.
+  SV-222394:
+    gapp_ids:
+      # GAPP-00-001340 [related_only]: The application must dynamically associate security
+      # attributes with organization-defined objects in accordance with organization-defined
+      # security policies as information is created and combined.
+      - id: SV-288268
+        default: true
+      # GAPP-00-001300 [related_only]: The application must dynamically associate security
+      # attributes with organization-defined subjects in accordance with organization-defined
+      # security policies as information is created and combined.
+      - id: SV-288264
+        default: false
+
+  # APSC-DV-000130: The application must associate organization-defined types of security attributes
+  # having organization-defined security attribute values with information in transmission.
+  SV-222395:
+    gapp_ids:
+      # GAPP-00-001330 [revised]: The application must associate organization-defined security
+      # attributes with information exchanged between information systems.
+      - id: SV-288267
+        default: true
+      # GAPP-00-001360 [revised]: The application must implement organization-defined mechanisms or
+      # techniques to bind security attributes to transmitted information.
+      - id: SV-288270
+        default: false
+
+  # APSC-DV-000160: The application must implement DoD-approved encryption to protect the
+  # confidentiality of remote access sessions.
+  SV-222396:
+    gapp_ids:
+      # GAPP-00-001190 [revised]: The application must use TLS 1.2 or greater to protect the
+      # confidentiality and integrity of all remote access sessions.
+      - id: SV-288253
+        default: true
+      # GAPP-00-001160 [revised]: The application must use FIPS-validated cryptographic algorithms
+      # defined in CNSSP 15 Annex B to protect the integrity and confidentiality of remote access
+      # sessions.
+      - id: SV-288250
+        default: false
+      # GAPP-00-001220 [related_only]: The application must prohibit client negotiation to TLS 1.1,
+      # TLS 1.0, SSL 2.0, or SSL 3.0.
+      - id: SV-288256
+        default: false
+
+  # APSC-DV-000170: The application must implement cryptographic mechanisms to protect the integrity
+  # of remote access sessions.
+  SV-222397:
+    gapp_ids:
+      # GAPP-00-001160 [revised]: The application must use FIPS-validated cryptographic algorithms
+      # defined in CNSSP 15 Annex B to protect the integrity and confidentiality of remote access
+      # sessions.
+      - id: SV-288250
+        default: true
+      # GAPP-00-001190 [revised]: The application must use TLS 1.2 or greater to protect the
+      # confidentiality and integrity of all remote access sessions.
+      - id: SV-288253
+        default: false
+      # GAPP-00-001220 [related_only]: The application must prohibit client negotiation to TLS 1.1,
+      # TLS 1.0, SSL 2.0, or SSL 3.0.
+      - id: SV-288256
+        default: false
+
+  # APSC-DV-000200: Validity periods must be verified on all application messages using WS-Security
+  # or SAML assertions.
+  SV-222400:
+    gapp_ids:
+      # GAPP-00-000180 [revised]: The application must time-restrict assertions in accordance with
+      # organization-defined identification and authentication policy.
+      - id: SV-288152
+        default: true
+
+  # APSC-DV-000210: The application must ensure each unique asserting party provides unique
+  # assertion ID references for each SAML assertion.
+  SV-222401:
+    gapp_ids:
+      # GAPP-00-000140 [related_only]: The application must generate assertions in accordance with
+      # organization-defined identification and authentication policy.
+      - id: SV-288148
+        default: true
+      # GAPP-00-000150 [related_only]: The application must issue assertions in accordance with
+      # organization-defined identification and authentication policy.
+      - id: SV-288149
+        default: false
+
+  # APSC-DV-000220: The application must ensure encrypted assertions, or equivalent confidentiality
+  # protections are used when assertion data is passed through an intermediary, and confidentiality
+  # of the assertion data is required when passing through the intermediary.
+  SV-222402:
+    gapp_ids:
+      # GAPP-00-000150 [related_only]: The application must issue assertions in accordance with
+      # organization-defined identification and authentication policy.
+      - id: SV-288149
+        default: true
+
+  # APSC-DV-000230: The application must use the NotOnOrAfter condition when using the
+  # SubjectConfirmation element in a SAML assertion.
+  SV-222403:
+    gapp_ids:
+      # GAPP-00-000180 [revised]: The application must time-restrict assertions in accordance with
+      # organization-defined identification and authentication policy.
+      - id: SV-288152
+        default: true
+
+  # APSC-DV-000240: The application must use both the NotBefore and NotOnOrAfter elements or
+  # OneTimeUse element when using the Conditions element in a SAML assertion.
+  SV-222404:
+    gapp_ids:
+      # GAPP-00-000180 [revised]: The application must time-restrict assertions in accordance with
+      # organization-defined identification and authentication policy.
+      - id: SV-288152
+        default: true
+
+  # APSC-DV-000250: The application must ensure if a OneTimeUse element is used in an assertion,
+  # there is only one of the same used in the Conditions element portion of an assertion.
+  SV-222405:
+    gapp_ids:
+      # GAPP-00-000140 [related_only]: The application must generate assertions in accordance with
+      # organization-defined identification and authentication policy.
+      - id: SV-288148
+        default: true
+
+  # APSC-DV-000280: The application must provide automated mechanisms for supporting account
+  # management functions.
+  SV-222407:
+    gapp_ids:
+      # GAPP-00-000110 [related_only]: The application must employ identity providers and
+      # authorization servers to manage user, device, and nonperson entity (NPE) identities,
+      # attributes, and access rights supporting authentication and authorization decisions in
+      # accordance with organization-defined identification and authentication policy using
+      # organization-defined mechanisms.
+      - id: SV-288145
+        default: true
+
+  # APSC-DV-000290: Shared/group account credentials must be terminated when members leave the
+  # group.
+  SV-222408:
+    gapp_ids:
+      # GAPP-00-000390 [revised]: The application must terminate shared/group account credentials
+      # when members leave the group.
+      - id: SV-288173
+        default: true
+
+  # APSC-DV-000300: The application must automatically remove or disable temporary user accounts 72
+  # hours after account creation.
+  SV-222409:
+    gapp_ids:
+      # GAPP-00-000260 [revised]: The application must automatically remove or disable temporary
+      # user accounts after 72 hours.
+      - id: SV-288160
+        default: true
+      # GAPP-00-000380 [revised]: The application must automatically disable temporary and emergency
+      # accounts after 72 hours.
+      - id: SV-288172
+        default: false
+
+  # APSC-DV-000310: The application must have a process, feature or function that prevents removal
+  # or disabling of emergency accounts.
+  SV-222410:
+    gapp_ids:
+      # GAPP-00-000380 [conflicting]: The application must automatically disable temporary and
+      # emergency accounts after 72 hours.
+      # See the GAPP-00-000380 precedence note in gapp_to_asd; mapping does not reconcile both
+      # literal checks.
+      - id: SV-288172
+        default: true
+      # GAPP-00-000030 [related_only]: Local accounts must be removed after multifactor
+      # authentication (MFA) is configured. It is permissible for an emergency ("break glass") or
+      # service account to remain if absolutely required by the application. In this case, the
+      # associated complexity requirements apply.
+      - id: SV-288137
+        default: false
+
+  # APSC-DV-000320: The application must automatically disable accounts after a 35 day period of
+  # account inactivity.
+  SV-222411:
+    gapp_ids:
+      # GAPP-00-000270 [same_normalized_title]: The application must automatically disable accounts
+      # after a 35-day period of account inactivity.
+      - id: SV-288161
+        default: true
+
+  # APSC-DV-000330: Unnecessary application accounts must be disabled, or deleted.
+  SV-222412:
+    gapp_ids:
+      # GAPP-00-000410 [related_only]: The application must disable accounts when the accounts have
+      # expired.
+      - id: SV-288175
+        default: true
+      # GAPP-00-000420 [related_only]: The application must disable accounts when the accounts are
+      # no longer associated to a user.
+      - id: SV-288176
+        default: false
+      # GAPP-00-000430 [related_only]: The application must disable accounts when the accounts are
+      # in violation of organizational policy.
+      - id: SV-288177
+        default: false
+      # GAPP-00-000030 [related_only]: Local accounts must be removed after multifactor
+      # authentication (MFA) is configured. It is permissible for an emergency ("break glass") or
+      # service account to remain if absolutely required by the application. In this case, the
+      # associated complexity requirements apply.
+      - id: SV-288137
+        default: false
+
+  # APSC-DV-000340: The application must automatically audit account creation.
+  SV-222413:
+    gapp_ids:
+      # GAPP-00-000630 [same_normalized_title]: The application must automatically audit account
+      # creation.
+      - id: SV-288197
+        default: true
+
+  # APSC-DV-000350: The application must automatically audit account modification.
+  SV-222414:
+    gapp_ids:
+      # GAPP-00-000640 [revised]: The application must automatically audit account modifications to
+      # include disabling/removal actions and attempts to access privileges.
+      - id: SV-288198
+        default: true
+
+  # APSC-DV-000360: The application must automatically audit account disabling actions.
+  SV-222415:
+    gapp_ids:
+      # GAPP-00-000640 [revised]: The application must automatically audit account modifications to
+      # include disabling/removal actions and attempts to access privileges.
+      - id: SV-288198
+        default: true
+
+  # APSC-DV-000370: The application must automatically audit account removal actions.
+  SV-222416:
+    gapp_ids:
+      # GAPP-00-000640 [revised]: The application must automatically audit account modifications to
+      # include disabling/removal actions and attempts to access privileges.
+      - id: SV-288198
+        default: true
+
+  # APSC-DV-000380: The application must notify system administrators (SAs) and information system
+  # security officers (ISSOs) when accounts are created.
+  SV-222417:
+    gapp_ids:
+      # GAPP-00-000680 [revised]: The application must notify system administrators (SAs) and the
+      # information system security officer (ISSO) when accounts are created.
+      - id: SV-288202
+        default: true
+
+  # APSC-DV-000390: The application must notify system administrators (SAs) and information system
+  # security officers (ISSOs) when accounts are modified.
+  SV-222418:
+    gapp_ids:
+      # GAPP-00-000690 [revised]: The application must notify system administrators (SAs) and the
+      # information system security officer (ISSO) when accounts are modified to include disabling
+      # and removal actions.
+      - id: SV-288203
+        default: true
+
+  # APSC-DV-000400: The application must notify system administrators (SAs) and information system
+  # security officers (ISSOs) of account disabling actions.
+  SV-222419:
+    gapp_ids:
+      # GAPP-00-000690 [revised]: The application must notify system administrators (SAs) and the
+      # information system security officer (ISSO) when accounts are modified to include disabling
+      # and removal actions.
+      - id: SV-288203
+        default: true
+
+  # APSC-DV-000410: The application must notify system administrators (SAs) and information system
+  # security officers (ISSOs) of account removal actions.
+  SV-222420:
+    gapp_ids:
+      # GAPP-00-000690 [revised]: The application must notify system administrators (SAs) and the
+      # information system security officer (ISSO) when accounts are modified to include disabling
+      # and removal actions.
+      - id: SV-288203
+        default: true
+
+  # APSC-DV-000420: The application must automatically audit account enabling actions.
+  SV-222421:
+    gapp_ids:
+      # GAPP-00-000810 [same_normalized_title]: The application must automatically audit account
+      # enabling actions.
+      - id: SV-288215
+        default: true
+
+  # APSC-DV-000460: The application must enforce approved authorizations for logical access to
+  # information and system resources in accordance with applicable access control policies.
+  SV-222425:
+    gapp_ids:
+      # GAPP-00-001280 [related_only]: The application must enforce a role-based access control
+      # (RBAC) policy over defined subjects and objects.
+      - id: SV-288262
+        default: true
+      # GAPP-00-001180 [related_only]: The application must control remote access methods.
+      - id: SV-288252
+        default: false
+      # GAPP-00-001390 [related_only]: The application must enforce attribute-based access control
+      # policy over defined subjects and objects based upon organization-defined attributes to
+      # assume access permissions.
+      - id: SV-288273
+        default: false
+      # GAPP-00-001030 [related_only]: Applications performing maintenance functions must restrict
+      # use of these functions to authorized personnel only.
+      - id: SV-288237
+        default: false
+
+  # APSC-DV-000470: The application must enforce organization-defined discretionary access control
+  # policies over defined subjects and objects.
+  SV-222426:
+    gapp_ids:
+      # GAPP-00-001280 [related_only]: The application must enforce a role-based access control
+      # (RBAC) policy over defined subjects and objects.
+      - id: SV-288262
+        default: true
+      # GAPP-00-001390 [related_only]: The application must enforce attribute-based access control
+      # policy over defined subjects and objects based upon organization-defined attributes to
+      # assume access permissions.
+      - id: SV-288273
+        default: false
+
+  # APSC-DV-000480: The application must enforce approved authorizations for controlling the flow of
+  # information within the system based on organization-defined information flow control policies.
+  SV-222427:
+    gapp_ids:
+      # GAPP-00-001310 [same_normalized_title]: The application must enforce approved authorizations
+      # for controlling the flow of information within the system based on organization-defined
+      # information flow control policies.
+      - id: SV-288265
+        default: true
+
+  # APSC-DV-000490: The application must enforce approved authorizations for controlling the flow of
+  # information between interconnected systems based on organization-defined information flow
+  # control policies.
+  SV-222428:
+    gapp_ids:
+      # GAPP-00-001320 [same_normalized_title]: The application must enforce approved authorizations
+      # for controlling the flow of information between interconnected systems based on
+      # organization-defined information flow control policies.
+      - id: SV-288266
+        default: true
+
+  # APSC-DV-000530: The application must enforce the limit of three consecutive invalid logon
+  # attempts by a user during a 15 minute time period.
+  SV-222432:
+    gapp_ids:
+      # GAPP-00-000280 [same_normalized_title]: The application must enforce the limit of three
+      # consecutive invalid logon attempts by a user during a 15-minute time period.
+      - id: SV-288162
+        default: true
+      # GAPP-00-000400 [revised]: The application must automatically lock the account until the
+      # locked account is released by an administrator when three unsuccessful login attempts in 15
+      # minutes are exceeded.
+      - id: SV-288174
+        default: false
+
+  # APSC-DV-000540: The application administrator must follow an approved process to unlock locked
+  # user accounts.
+  SV-222433:
+    gapp_ids:
+      # GAPP-00-000400 [revised]: The application must automatically lock the account until the
+      # locked account is released by an administrator when three unsuccessful login attempts in 15
+      # minutes are exceeded.
+      - id: SV-288174
+        default: true
+
+  # APSC-DV-000560: The application must retain the Standard Mandatory DoD Notice and Consent Banner
+  # on the screen until users acknowledge the usage conditions and take explicit actions to log on
+  # for further access.
+  SV-222435:
+    gapp_ids:
+      # GAPP-00-001080 [revised]: The application must retain the Standard Mandatory DoW Notice and
+      # Consent Banner on the screen until users acknowledge the usage conditions and take explicit
+      # actions to log on for further access.
+      - id: SV-288242
+        default: true
+
+  # APSC-DV-000570: The publicly accessible application must display the Standard Mandatory DoD
+  # Notice and Consent Banner before granting access to the application.
+  SV-222436:
+    gapp_ids:
+      # GAPP-00-001090 [revised]: The publicly accessible application must display the Standard
+      # Mandatory DoW Notice and Consent Banner before granting access to the application.
+      - id: SV-288243
+        default: true
+
+  # APSC-DV-000690: The application must provide audit record generation capability for connecting
+  # system IP addresses.
+  SV-222448:
+    gapp_ids:
+      # GAPP-00-000740 [revised]: The application must produce audit records containing information
+      # to establish source and destination addresses.
+      - id: SV-288208
+        default: true
+
+  # APSC-DV-000720: The application must generate audit records when successful/unsuccessful
+  # attempts to access security objects occur.
+  SV-222451:
+    gapp_ids:
+      # GAPP-00-000830 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to access security objects occur.
+      - id: SV-288217
+        default: true
+
+  # APSC-DV-000730: The application must generate audit records when successful/unsuccessful
+  # attempts to access security levels occur.
+  SV-222452:
+    gapp_ids:
+      # GAPP-00-000840 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to access security levels occur.
+      - id: SV-288218
+        default: true
+
+  # APSC-DV-000740: The application must generate audit records when successful/unsuccessful
+  # attempts to access categories of information (e.g., classification levels) occur.
+  SV-222453:
+    gapp_ids:
+      # GAPP-00-000850 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to access categories of information (e.g., classification
+      # levels) occur.
+      - id: SV-288219
+        default: true
+
+  # APSC-DV-000750: The application must generate audit records when successful/unsuccessful
+  # attempts to modify privileges occur.
+  SV-222454:
+    gapp_ids:
+      # GAPP-00-000860 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to modify privileges occur.
+      - id: SV-288220
+        default: true
+
+  # APSC-DV-000760: The application must generate audit records when successful/unsuccessful
+  # attempts to modify security objects occur.
+  SV-222455:
+    gapp_ids:
+      # GAPP-00-000870 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to modify security objects occur.
+      - id: SV-288221
+        default: true
+
+  # APSC-DV-000770: The application must generate audit records when successful/unsuccessful
+  # attempts to modify security levels occur.
+  SV-222456:
+    gapp_ids:
+      # GAPP-00-000880 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to modify security levels occur.
+      - id: SV-288222
+        default: true
+
+  # APSC-DV-000780: The application must generate audit records when successful/unsuccessful
+  # attempts to modify categories of information (e.g., classification levels) occur.
+  SV-222457:
+    gapp_ids:
+      # GAPP-00-000890 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to modify categories of information (e.g., classification
+      # levels) occur.
+      - id: SV-288223
+        default: true
+
+  # APSC-DV-000790: The application must generate audit records when successful/unsuccessful
+  # attempts to delete privileges occur.
+  SV-222458:
+    gapp_ids:
+      # GAPP-00-000900 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to delete privileges occur.
+      - id: SV-288224
+        default: true
+
+  # APSC-DV-000800: The application must generate audit records when successful/unsuccessful
+  # attempts to delete security levels occur.
+  SV-222459:
+    gapp_ids:
+      # GAPP-00-000910 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to delete security levels occur.
+      - id: SV-288225
+        default: true
+
+  # APSC-DV-000810: The application must generate audit records when successful/unsuccessful
+  # attempts to delete application database security objects occur.
+  SV-222460:
+    gapp_ids:
+      # GAPP-00-000920 [revised]: The application must generate audit records when
+      # successful/unsuccessful attempts to delete security objects occur.
+      - id: SV-288226
+        default: true
+
+  # APSC-DV-000820: The application must generate audit records when successful/unsuccessful
+  # attempts to delete categories of information (e.g., classification levels) occur.
+  SV-222461:
+    gapp_ids:
+      # GAPP-00-000930 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to delete categories of information (e.g., classification
+      # levels) occur.
+      - id: SV-288227
+        default: true
+
+  # APSC-DV-000830: The application must generate audit records when successful/unsuccessful logon
+  # attempts occur.
+  SV-222462:
+    gapp_ids:
+      # GAPP-00-000940 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful logon attempts occur.
+      - id: SV-288228
+        default: true
+
+  # APSC-DV-000840: The application must generate audit records for privileged activities or other
+  # system-level access.
+  SV-222463:
+    gapp_ids:
+      # GAPP-00-000950 [same_normalized_title]: The application must generate audit records for
+      # privileged activities or other system-level access.
+      - id: SV-288229
+        default: true
+
+  # APSC-DV-000850: The application must generate audit records showing starting and ending time for
+  # user access to the system.
+  SV-222464:
+    gapp_ids:
+      # GAPP-00-000960 [same_normalized_title]: The application must generate audit records showing
+      # starting and ending time for user access to the system.
+      - id: SV-288230
+        default: true
+
+  # APSC-DV-000860: The application must generate audit records when successful/unsuccessful
+  # accesses to objects occur.
+  SV-222465:
+    gapp_ids:
+      # GAPP-00-000980 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful accesses to objects occur.
+      - id: SV-288232
+        default: true
+
+  # APSC-DV-000870: The application must generate audit records for all direct access to the
+  # information system.
+  SV-222466:
+    gapp_ids:
+      # GAPP-00-000990 [same_normalized_title]: The application must generate audit records for all
+      # direct access to the information system.
+      - id: SV-288233
+        default: true
+
+  # APSC-DV-000880: The application must generate audit records for all account creations,
+  # modifications, disabling, and termination events.
+  SV-222467:
+    gapp_ids:
+      # GAPP-00-001000 [same_normalized_title]: The application must generate audit records for all
+      # account creations, modifications, disabling, and termination events.
+      - id: SV-288234
+        default: true
+
+  # APSC-DV-000910: The application must initiate session auditing upon startup.
+  SV-222468:
+    gapp_ids:
+      # GAPP-00-000710 [same_normalized_title]: The application must initiate session auditing upon
+      # startup.
+      - id: SV-288205
+        default: true
+
+  # APSC-DV-000940: The application must log application shutdown events.
+  SV-222469:
+    gapp_ids:
+      # GAPP-00-001010 [related_only]: The application must generate audit records for all load,
+      # unload, and restart events, and also for all program initiations.
+      - id: SV-288235
+        default: true
+
+  # APSC-DV-000950: The application must log destination IP addresses.
+  SV-222470:
+    gapp_ids:
+      # GAPP-00-000740 [revised]: The application must produce audit records containing information
+      # to establish source and destination addresses.
+      - id: SV-288208
+        default: true
+
+  # APSC-DV-000980: The application must produce audit records containing information to establish
+  # when (date and time) the events occurred.
+  SV-222473:
+    gapp_ids:
+      # GAPP-00-000730 [same_normalized_title]: The application must produce audit records
+      # containing information to establish when (date and time) the events occurred.
+      - id: SV-288207
+        default: true
+
+  # APSC-DV-000990: The application must produce audit records containing enough information to
+  # establish which component, feature or function of the application triggered the audit event.
+  SV-222474:
+    gapp_ids:
+      # GAPP-00-000720 [related_only]: The application must produce audit records containing
+      # descriptions of the audit events.
+      - id: SV-288206
+        default: true
+
+  # APSC-DV-001010: The application must produce audit records that contain information to establish
+  # the outcome of the events.
+  SV-222476:
+    gapp_ids:
+      # GAPP-00-000750 [revised]: The application must produce audit records that contain
+      # information to establish success indicators, fail indicators, and enforcement actions.
+      - id: SV-288209
+        default: true
+
+  # APSC-DV-001020: The application must generate audit records containing information that
+  # establishes the identity of any individual or process associated with the event.
+  SV-222477:
+    gapp_ids:
+      # GAPP-00-000760 [same_normalized_title]: The application must generate audit records
+      # containing information that establishes the identity of any individual or process associated
+      # with the event.
+      - id: SV-288210
+        default: true
+
+  # APSC-DV-001050: The application must provide centralized management and configuration of the
+  # content to be captured in audit records generated by all application components.
+  SV-222480:
+    gapp_ids:
+      # GAPP-00-000700 [related_only]: The application must allow only the information system
+      # security manager (ISSM), or individuals or roles appointed by the ISSM, to select which
+      # auditable events are to be audited.
+      - id: SV-288204
+        default: true
+
+  # APSC-DV-001070: The application must off-load audit records onto a different system or media
+  # than the system being audited.
+  SV-222481:
+    gapp_ids:
+      # GAPP-00-001100 [revised]: The application must off-load audit records onto a central logging
+      # system at least every seven days.
+      - id: SV-288244
+        default: true
+
+  # APSC-DV-001080: The application must be configured to write application logs to a centralized
+  # log repository.
+  SV-222482:
+    gapp_ids:
+      # GAPP-00-001100 [revised]: The application must off-load audit records onto a central logging
+      # system at least every seven days.
+      - id: SV-288244
+        default: true
+
+  # APSC-DV-001110: The application must alert the ISSO and SA (at a minimum) in the event of an
+  # audit processing failure.
+  SV-222485:
+    gapp_ids:
+      # GAPP-00-000660 [revised]: In the event of an audit processing failure, the application must
+      # alert the information system security officer (ISSO), information system security manager
+      # (ISSM) at a minimum (if assigned) and/or security personnel as appropriate.
+      - id: SV-288200
+        default: true
+
+  # APSC-DV-001250: The applications must use internal system clocks to generate time stamps for
+  # audit records.
+  SV-222497:
+    gapp_ids:
+      # GAPP-00-001600 [revised]: The application must use the system clock.
+      - id: SV-288294
+        default: true
+
+  # APSC-DV-001270: The application must record time stamps for audit records that meet a
+  # granularity of one second for a minimum degree of precision.
+  SV-222499:
+    gapp_ids:
+      # GAPP-00-000820 [same_normalized_title]: The application must record time stamps for audit
+      # records that meet a granularity of one second for a minimum degree of precision.
+      - id: SV-288216
+        default: true
+
+  # APSC-DV-001280: The application must protect audit information from any type of unauthorized
+  # read access.
+  SV-222500:
+    gapp_ids:
+      # GAPP-00-000770 [same_normalized_title]: The application must protect audit information from
+      # any type of unauthorized read access.
+      - id: SV-288211
+        default: true
+
+  # APSC-DV-001290: The application must protect audit information from unauthorized modification.
+  SV-222501:
+    gapp_ids:
+      # GAPP-00-000780 [same_normalized_title]: The application must protect audit information from
+      # unauthorized modification.
+      - id: SV-288212
+        default: true
+
+  # APSC-DV-001300: The application must protect audit information from unauthorized deletion.
+  SV-222502:
+    gapp_ids:
+      # GAPP-00-000790 [same_normalized_title]: The application must protect audit information from
+      # unauthorized deletion.
+      - id: SV-288213
+        default: true
+
+  # APSC-DV-001310: The application must protect audit tools from unauthorized access.
+  SV-222503:
+    gapp_ids:
+      # GAPP-00-000800 [same_normalized_title]: The application must protect audit tools from
+      # unauthorized access.
+      - id: SV-288214
+        default: true
+
+  # APSC-DV-001340: The application must back up audit records at least every seven days onto a
+  # different system or system component than the system or component being audited.
+  SV-222506:
+    gapp_ids:
+      # GAPP-00-001100 [revised]: The application must off-load audit records onto a central logging
+      # system at least every seven days.
+      - id: SV-288244
+        default: true
+
+  # APSC-DV-001410: The application must enforce access restrictions associated with changes to
+  # application configuration.
+  SV-222511:
+    gapp_ids:
+      # GAPP-00-001020 [related_only]: When baseline configurations are changed in an unauthorized
+      # manner the application must alert the information system security officer (ISSO)/information
+      # system security manager (ISSM), and rollback the unauthorized change.
+      - id: SV-288236
+        default: true
+
+  # APSC-DV-001420: The application must audit who makes configuration changes to the application.
+  SV-222512:
+    gapp_ids:
+      # GAPP-00-001020 [related_only]: When baseline configurations are changed in an unauthorized
+      # manner the application must alert the information system security officer (ISSO)/information
+      # system security manager (ISSM), and rollback the unauthorized change.
+      - id: SV-288236
+        default: true
+
+  # APSC-DV-001430: The application must have the capability to prevent the installation of patches,
+  # service packs, or application components without verification the software component has been
+  # digitally signed using a certificate that is recognized and approved by the organization.
+  SV-222513:
+    gapp_ids:
+      # GAPP-00-001570 [revised]: The application must implement cryptographic mechanisms to
+      # authenticate organization-defined software or firmware components prior to installation.
+      - id: SV-288291
+        default: true
+      # GAPP-00-001540 [revised]: The application must prevent the installation of patches, service
+      # packs, or application components without verification the software component has been
+      # digitally signed using a certificate recognized and approved by the organization.
+      - id: SV-288288
+        default: false
+
+  # APSC-DV-001500: The application must be configured to disable non-essential capabilities.
+  SV-222518:
+    gapp_ids:
+      # GAPP-00-001620 [revised]: The application must be configured to disable nonessential
+      # functions.
+      - id: SV-288296
+        default: true
+
+  # APSC-DV-001510: The application must be configured to use only functions, ports, and protocols
+  # permitted to it in the PPSM CAL.
+  SV-222519:
+    gapp_ids:
+      # GAPP-00-001580 [revised]: The application must disable organization-defined functions,
+      # ports, protocols, and services (within the application) deemed unnecessary and/or nonsecure.
+      - id: SV-288292
+        default: true
+      # GAPP-00-001590 [related_only]: The application must prohibit or restrict the use of
+      # protocols that transmit unencrypted authentication information or use flawed cryptographic
+      # algorithms for transmission.
+      - id: SV-288293
+        default: false
+
+  # APSC-DV-001520: The application must require users to reauthenticate when organization-defined
+  # circumstances or situations require reauthentication.
+  SV-222520:
+    gapp_ids:
+      # GAPP-00-000620 [same_normalized_title]: The application must require users to reauthenticate
+      # when organization-defined circumstances or situations require reauthentication.
+      - id: SV-288196
+        default: true
+
+  # APSC-DV-001540: The application must uniquely identify and authenticate organizational users (or
+  # processes acting on behalf of organizational users).
+  SV-222522:
+    gapp_ids:
+      # GAPP-00-000010 [revised]: The application must use an approved DoW Enterprise Identity,
+      # Credential, and Access Management (E-ICAM) solution to uniquely identify and authenticate
+      # organizational users (or processes acting on behalf of organizational users).
+      - id: SV-288135
+        default: true
+      # GAPP-00-000110 [related_only]: The application must employ identity providers and
+      # authorization servers to manage user, device, and nonperson entity (NPE) identities,
+      # attributes, and access rights supporting authentication and authorization decisions in
+      # accordance with organization-defined identification and authentication policy using
+      # organization-defined mechanisms.
+      - id: SV-288145
+        default: false
+
+  # APSC-DV-001550: The application must use multifactor (Alt. Token) authentication for network
+  # access to privileged accounts.
+  SV-222523:
+    gapp_ids:
+      # GAPP-00-000020 [revised]: The application must use multifactor authentication (MFA).
+      - id: SV-288136
+        default: true
+
+  # APSC-DV-001580: The application must use multifactor (e.g., CAC, Alt. Token) authentication for
+  # network access to non-privileged accounts.
+  SV-222526:
+    gapp_ids:
+      # GAPP-00-000020 [revised]: The application must use multifactor authentication (MFA).
+      - id: SV-288136
+        default: true
+
+  # APSC-DV-001590: The application must use multifactor (Alt. Token) authentication for local
+  # access to privileged accounts.
+  SV-222527:
+    gapp_ids:
+      # GAPP-00-000020 [revised]: The application must use multifactor authentication (MFA).
+      - id: SV-288136
+        default: true
+
+  # APSC-DV-001600: The application must use multifactor (e.g., CAC, Alt. Token) authentication for
+  # local access to nonprivileged accounts.
+  SV-222528:
+    gapp_ids:
+      # GAPP-00-000020 [revised]: The application must use multifactor authentication (MFA).
+      - id: SV-288136
+        default: true
+
+  # APSC-DV-001620: The application must implement replay-resistant authentication mechanisms for
+  # network access to privileged accounts.
+  SV-222530:
+    gapp_ids:
+      # GAPP-00-000040 [revised]: The application must use a SHA 2-384 or higher hash function to
+      # provide replay-resistant authentication mechanisms for network access to all accounts.
+      - id: SV-288138
+        default: true
+
+  # APSC-DV-001630: The application must implement replay-resistant authentication mechanisms for
+  # network access to nonprivileged accounts.
+  SV-222531:
+    gapp_ids:
+      # GAPP-00-000040 [revised]: The application must use a SHA 2-384 or higher hash function to
+      # provide replay-resistant authentication mechanisms for network access to all accounts.
+      - id: SV-288138
+        default: true
+
+  # APSC-DV-001650: The application must authenticate all network connected endpoint devices before
+  # establishing any connection.
+  SV-222533:
+    gapp_ids:
+      # GAPP-00-001350 [related_only]: The application must uniquely identify and authenticate
+      # source points by organization, system, application, and/or individual for information
+      # transfer.
+      - id: SV-288269
+        default: true
+
+  # APSC-DV-001660: Service-Oriented Applications handling non-releasable data must authenticate
+  # endpoint devices via mutual SSL/TLS.
+  SV-222534:
+    gapp_ids:
+      # GAPP-00-001350 [related_only]: The application must uniquely identify and authenticate
+      # source points by organization, system, application, and/or individual for information
+      # transfer.
+      - id: SV-288269
+        default: true
+
+  # APSC-DV-001670: The application must disable device identifiers after 35 days of inactivity
+  # unless a cryptographic certificate is used for authentication.
+  SV-222535:
+    gapp_ids:
+      # GAPP-00-000050 [revised]: The application must disable identifiers (individuals, groups,
+      # roles, and devices) after 35 days of inactivity.
+      - id: SV-288139
+        default: true
+
+  # APSC-DV-001680: The application must enforce a minimum 15-character password length.
+  SV-222536:
+    gapp_ids:
+      # GAPP-00-000290 [same_normalized_title]: The application must enforce a minimum 15-character
+      # password length.
+      - id: SV-288163
+        default: true
+      # GAPP-00-000540 [related_only]: The application must, for password-based authentication,
+      # enforce organization-defined composition and complexity rules.
+      - id: SV-288188
+        default: false
+
+  # APSC-DV-001690: The application must enforce password complexity by requiring that at least one
+  # uppercase character be used.
+  SV-222537:
+    gapp_ids:
+      # GAPP-00-000300 [same_normalized_title]: The application must enforce password complexity by
+      # requiring that at least one uppercase character be used.
+      - id: SV-288164
+        default: true
+      # GAPP-00-000540 [related_only]: The application must, for password-based authentication,
+      # enforce organization-defined composition and complexity rules.
+      - id: SV-288188
+        default: false
+
+  # APSC-DV-001700: The application must enforce password complexity by requiring that at least one
+  # lowercase character be used.
+  SV-222538:
+    gapp_ids:
+      # GAPP-00-000310 [same_normalized_title]: The application must enforce password complexity by
+      # requiring that at least one lowercase character be used.
+      - id: SV-288165
+        default: true
+      # GAPP-00-000540 [related_only]: The application must, for password-based authentication,
+      # enforce organization-defined composition and complexity rules.
+      - id: SV-288188
+        default: false
+
+  # APSC-DV-001710: The application must enforce password complexity by requiring that at least one
+  # numeric character be used.
+  SV-222539:
+    gapp_ids:
+      # GAPP-00-000320 [same_normalized_title]: The application must enforce password complexity by
+      # requiring that at least one numeric character be used.
+      - id: SV-288166
+        default: true
+      # GAPP-00-000540 [related_only]: The application must, for password-based authentication,
+      # enforce organization-defined composition and complexity rules.
+      - id: SV-288188
+        default: false
+
+  # APSC-DV-001720: The application must enforce password complexity by requiring that at least one
+  # special character be used.
+  SV-222540:
+    gapp_ids:
+      # GAPP-00-000330 [same_normalized_title]: The application must enforce password complexity by
+      # requiring that at least one special character be used.
+      - id: SV-288167
+        default: true
+      # GAPP-00-000540 [related_only]: The application must, for password-based authentication,
+      # enforce organization-defined composition and complexity rules.
+      - id: SV-288188
+        default: false
+
+  # APSC-DV-001730: The application must require the change of at least eight of the total number of
+  # characters when passwords are changed.
+  SV-222541:
+    gapp_ids:
+      # GAPP-00-000340 [revised]: The application must require the change of at least 50 percent of
+      # the characters when passwords are changed.
+      - id: SV-288168
+        default: true
+
+  # APSC-DV-001740: The application must only store cryptographic representations of passwords.
+  SV-222542:
+    gapp_ids:
+      # GAPP-00-000450 [revised]: For accounts using password authentication, the application must
+      # store only cryptographic representations of passwords.
+      - id: SV-288179
+        default: true
+      # GAPP-00-000500 [revised]: The application must, for password-based authentication, store
+      # passwords using an approved salted key derivation function, preferably using a keyed hash.
+      - id: SV-288184
+        default: false
+
+  # APSC-DV-001750: The application must transmit only cryptographically-protected passwords.
+  SV-222543:
+    gapp_ids:
+      # GAPP-00-000440 [revised]: For accounts using password authentication, the application must
+      # use FIPS-validated cryptographic algorithms defined in CNSSP 15 Annex B to protect the
+      # integrity and confidentiality of the password authentication process.
+      - id: SV-288178
+        default: true
+      # GAPP-00-001590 [related_only]: The application must prohibit or restrict the use of
+      # protocols that transmit unencrypted authentication information or use flawed cryptographic
+      # algorithms for transmission.
+      - id: SV-288293
+        default: false
+
+  # APSC-DV-001760: The application must enforce 24 hours/1 day as the minimum password lifetime.
+  SV-222544:
+    gapp_ids:
+      # GAPP-00-000350 [revised]: The application must enforce 24 hours/one day as the minimum
+      # password lifetime.
+      - id: SV-288169
+        default: true
+
+  # APSC-DV-001770: The application must enforce a 60-day maximum password lifetime restriction.
+  SV-222545:
+    gapp_ids:
+      # GAPP-00-000360 [same_normalized_title]: The application must enforce a 60-day maximum
+      # password lifetime restriction.
+      - id: SV-288170
+        default: true
+
+  # APSC-DV-001790: The application must allow the use of a temporary password for system logons
+  # with an immediate change to a permanent password.
+  SV-222547:
+    gapp_ids:
+      # GAPP-00-000510 [related_only]: The application must, for password-based authentication,
+      # require immediate selection of a new password upon account recovery.
+      - id: SV-288185
+        default: true
+
+  # APSC-DV-001810: The application, when utilizing PKI-based authentication, must validate
+  # certificates by constructing a certification path (which includes status information) to an
+  # accepted trust anchor.
+  SV-222550:
+    gapp_ids:
+      # GAPP-00-000060 [revised]: When using Public Key Infrastructure (PKI)-based authentication
+      # for user access, the application must validate certificates by constructing a certification
+      # path (which includes status information) to an accepted trust anchor.
+      - id: SV-288140
+        default: true
+      # GAPP-00-001240 [related_only]: The application must validate certificates used for Transport
+      # Layer Security (TLS) functions by performing RFC 5280-compliant certification path
+      # validation.
+      - id: SV-288258
+        default: false
+      # GAPP-00-001270 [related_only]: The application must include only approved trust anchors in
+      # trust stores or certificate stores managed by the organization.
+      - id: SV-288261
+        default: false
+
+  # APSC-DV-001820: The application, when using PKI-based authentication, must enforce authorized
+  # access to the corresponding private key.
+  SV-222551:
+    gapp_ids:
+      # GAPP-00-000070 [same_normalized_title]: The application, when using PKI-based
+      # authentication, must enforce authorized access to the corresponding private key.
+      - id: SV-288141
+        default: true
+      # GAPP-00-000120 [related_only]: The application must generate, manage, and protect from
+      # disclosure and misuse the cryptographic keys that protect access tokens.
+      - id: SV-288146
+        default: false
+      # GAPP-00-000130 [related_only]: The application must protect the private keys used to sign
+      # assertions and tokens commensurate with the impact of the system and information resources
+      # that can be accessed.
+      - id: SV-288147
+        default: false
+
+  # APSC-DV-001830: The application must map the authenticated identity to the individual user or
+  # group account for PKI-based authentication.
+  SV-222552:
+    gapp_ids:
+      # GAPP-00-000080 [revised]: The application must map the authenticated identity to the
+      # individual user or group account for Public Key Infrastructure (PKI)-based authentication.
+      - id: SV-288142
+        default: true
+
+  # APSC-DV-001840: The application, for PKI-based authentication, must implement a local cache of
+  # revocation data to support path discovery and validation in case of the inability to access
+  # revocation information via the network.
+  SV-222553:
+    gapp_ids:
+      # GAPP-00-001250 [same_normalized_title]: The application, for PKI-based authentication, must
+      # implement a local cache of revocation data to support path discovery and validation in case
+      # of the inability to access revocation information via the network.
+      - id: SV-288259
+        default: true
+      # GAPP-00-001260 [revised]: The application must, for public key-based authentication,
+      # implement a local cache of revocation data to support path discovery and validation.
+      - id: SV-288260
+        default: false
+
+  # APSC-DV-001850: The application must not display passwords/PINs as clear text.
+  SV-222554:
+    gapp_ids:
+      # GAPP-00-000370 [revised]: The application must obscure feedback of authentication
+      # information during the authentication process to protect the information from possible
+      # exploitation/use by unauthorized individuals.
+      - id: SV-288171
+        default: true
+
+  # APSC-DV-001860: The application must use mechanisms meeting the requirements of applicable
+  # federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for
+  # authentication to a cryptographic module.
+  SV-222555:
+    gapp_ids:
+      # GAPP-00-001230 [revised]: The application must use FIPS-validated cryptographic algorithms
+      # defined in CNSSP 15 Annex B for authentication to a cryptographic module.
+      - id: SV-288257
+        default: true
+
+  # APSC-DV-001900: The application must accept Federal Identity, Credential, and Access Management
+  # (FICAM)-approved third-party credentials.
+  SV-222559:
+    gapp_ids:
+      # GAPP-00-000110 [related_only]: The application must employ identity providers and
+      # authorization servers to manage user, device, and nonperson entity (NPE) identities,
+      # attributes, and access rights supporting authentication and authorization decisions in
+      # accordance with organization-defined identification and authentication policy using
+      # organization-defined mechanisms.
+      - id: SV-288145
+        default: true
+
+  # APSC-DV-001910: The application must conform to Federal Identity, Credential, and Access
+  # Management (FICAM)-issued profiles.
+  SV-222560:
+    gapp_ids:
+      # GAPP-00-000110 [related_only]: The application must employ identity providers and
+      # authorization servers to manage user, device, and nonperson entity (NPE) identities,
+      # attributes, and access rights supporting authentication and authorization decisions in
+      # accordance with organization-defined identification and authentication policy using
+      # organization-defined mechanisms.
+      - id: SV-288145
+        default: true
+
+  # APSC-DV-001930: Applications used for non-local maintenance sessions must audit non-local
+  # maintenance and diagnostic sessions for organization-defined auditable events.
+  SV-222561:
+    gapp_ids:
+      # GAPP-00-001040 [revised]: Applications used for nonlocal maintenance sessions must audit
+      # organization-defined audit events for nonlocal maintenance and diagnostic sessions.
+      - id: SV-288238
+        default: true
+
+  # APSC-DV-001940: Applications used for non-local maintenance sessions must implement
+  # cryptographic mechanisms to protect the integrity of non-local maintenance and diagnostic
+  # communications.
+  SV-222562:
+    gapp_ids:
+      # GAPP-00-001210 [revised]: The application must use FIPS-validated cryptographic algorithms
+      # defined in CNSA 2.0 to protect the integrity and confidentiality of nonlocal maintenance and
+      # diagnostic communications.
+      - id: SV-288255
+        default: true
+      # GAPP-00-001060 [revised]: Applications used for nonlocal maintenance sessions must use
+      # FIPS-validated keyed-hash message authentication code (HMAC) to protect the integrity of
+      # nonlocal maintenance and diagnostic communications.
+      - id: SV-288240
+        default: false
+
+  # APSC-DV-001950: Applications used for non-local maintenance sessions must implement
+  # cryptographic mechanisms to protect the confidentiality of non-local maintenance and diagnostic
+  # communications.
+  SV-222563:
+    gapp_ids:
+      # GAPP-00-001210 [revised]: The application must use FIPS-validated cryptographic algorithms
+      # defined in CNSA 2.0 to protect the integrity and confidentiality of nonlocal maintenance and
+      # diagnostic communications.
+      - id: SV-288255
+        default: true
+
+  # APSC-DV-001960: Applications used for non-local maintenance sessions must verify remote
+  # disconnection at the termination of non-local maintenance and diagnostic sessions.
+  SV-222564:
+    gapp_ids:
+      # GAPP-00-001070 [same_normalized_title]: Applications used for nonlocal maintenance sessions
+      # must verify remote disconnection at the termination of nonlocal maintenance and diagnostic
+      # sessions.
+      - id: SV-288241
+        default: true
+
+  # APSC-DV-001970: The application must employ strong authenticators in the establishment of
+  # non-local maintenance and diagnostic sessions.
+  SV-222565:
+    gapp_ids:
+      # GAPP-00-001030 [related_only]: Applications performing maintenance functions must restrict
+      # use of these functions to authorized personnel only.
+      - id: SV-288237
+        default: true
+
+  # APSC-DV-002000: The application must terminate all network connections associated with a
+  # communications session at the end of the session.
+  SV-222568:
+    gapp_ids:
+      # GAPP-00-000560 [revised]: The application must terminate all network connections associated
+      # with a communications session at the end of the session, or no more than 15 minutes of
+      # inactivity.
+      - id: SV-288190
+        default: true
+
+  # APSC-DV-002020: The application must utilize FIPS-validated cryptographic modules when signing
+  # application components.
+  SV-222570:
+    gapp_ids:
+      # GAPP-00-001140 [revised]: The application must use a FIPS-validated cryptographic module to
+      # provision digital signatures.
+      - id: SV-288248
+        default: true
+      # GAPP-00-001130 [related_only]: The application must use FIPS-validated SHA-2 or higher hash
+      # function for digital signature generation and verification.
+      - id: SV-288247
+        default: false
+
+  # APSC-DV-002030: The application must utilize FIPS-validated cryptographic modules when
+  # generating cryptographic hashes.
+  SV-222571:
+    gapp_ids:
+      # GAPP-00-001110 [revised]: The application must use FIPS-validated cryptographic algorithms
+      # defined in CNSSP 15 Annex B to generate cryptographic hashes.
+      - id: SV-288245
+        default: true
+
+  # APSC-DV-002040: The application must utilize FIPS-validated cryptographic modules when
+  # protecting unclassified information that requires cryptographic protection.
+  SV-222572:
+    gapp_ids:
+      # GAPP-00-001120 [revised]: The application must use Commercial National Security Algorithm
+      # Suite 2.0 (CNSA 2.0) cryptographic algorithms.
+      - id: SV-288246
+        default: true
+
+  # APSC-DV-002150: The application user interface must be either physically or logically separated
+  # from data storage and management interfaces.
+  SV-222574:
+    gapp_ids:
+      # GAPP-00-001290 [revised]: The application must separate user functionality (including user
+      # interface services) from information system management functionality.
+      - id: SV-288263
+        default: true
+
+  # APSC-DV-002240: The application must destroy the session ID value and/or cookie on logoff or
+  # browser close.
+  SV-222578:
+    gapp_ids:
+      # GAPP-00-000570 [revised]: The application must invalidate session identifiers upon user
+      # logout or other session termination.
+      - id: SV-288191
+        default: true
+
+  # APSC-DV-002250: Applications must use system-generated session identifiers that protect against
+  # session fixation.
+  SV-222579:
+    gapp_ids:
+      # GAPP-00-000580 [revised]: Applications must recognize only system-generated session
+      # identifiers (IDs).
+      - id: SV-288192
+        default: true
+
+  # APSC-DV-002290: The application must generate a unique session identifier using a FIPS
+  # 140-2/140-3 approved random number generator.
+  SV-222583:
+    gapp_ids:
+      # GAPP-00-000590 [revised]: The application must generate unique session identifiers using a
+      # FIPS-validated Random Number Generator (RNG) based on the Deterministic Random Bit
+      # Generators (DRBG) algorithm.
+      - id: SV-288193
+        default: true
+
+  # APSC-DV-002300: The application must only allow the use of DoD-approved certificate authorities
+  # for verification of the establishment of protected sessions.
+  SV-222584:
+    gapp_ids:
+      # GAPP-00-000100 [revised]: The application must only allow the use of DoW-approved (or other
+      # authorizing official [AO]-approved) Public Key Infrastructure (PKI)-established certificate
+      # authorities (CAs) for verification of the establishment of protected sessions.
+      - id: SV-288144
+        default: true
+      # GAPP-00-001270 [related_only]: The application must include only approved trust anchors in
+      # trust stores or certificate stores managed by the organization.
+      - id: SV-288261
+        default: false
+
+  # APSC-DV-002340: The application must implement approved cryptographic mechanisms to prevent
+  # unauthorized modification of organization-defined information at rest on organization-defined
+  # information system components.
+  SV-222588:
+    gapp_ids:
+      # GAPP-00-001150 [revised]: The application must implement cryptographic mechanisms to prevent
+      # unauthorized modification of information at rest.
+      - id: SV-288249
+        default: true
+
+  # APSC-DV-002440: The application must protect the confidentiality and integrity of transmitted
+  # information.
+  SV-222596:
+    gapp_ids:
+      # GAPP-00-001200 [revised]: The application must use FIPS-validated cryptographic algorithms
+      # defined in Commercial National Security Algorithm Suite 2.0 (CNSA 2.0) to protect the
+      # confidentiality and integrity of transmitted information.
+      - id: SV-288254
+        default: true
+
+  # APSC-DV-002450: The application must implement cryptographic mechanisms to prevent unauthorized
+  # disclosure of information and/or detect changes to information during transmission unless
+  # otherwise protected by alternative physical safeguards, such as, at a minimum, a Protected
+  # Distribution System (PDS).
+  SV-222597:
+    gapp_ids:
+      # GAPP-00-001200 [revised]: The application must use FIPS-validated cryptographic algorithms
+      # defined in Commercial National Security Algorithm Suite 2.0 (CNSA 2.0) to protect the
+      # confidentiality and integrity of transmitted information.
+      - id: SV-288254
+        default: true
+
+  # APSC-DV-002570: The application must generate error messages that provide information necessary
+  # for corrective actions without revealing information that could be exploited by adversaries.
+  SV-222610:
+    gapp_ids:
+      # GAPP-00-000670 [revised]: The application must generate error messages that only provide the
+      # information necessary for corrective actions without revealing information that could be
+      # exploited.
+      - id: SV-288201
+        default: true
+
+  # APSC-DV-002580: The application must reveal error messages only to the ISSO, ISSM, or SA.
+  SV-222611:
+    gapp_ids:
+      # GAPP-00-000650 [revised]: The application must reveal error messages only to the information
+      # system security officer (ISSO), information system security manager (ISSM), if assigned,
+      # and/or security personnel as appropriate.
+      - id: SV-288199
+        default: true
+
+  # APSC-DV-002610: The application must remove organization-defined software components after
+  # updated versions have been installed.
+  SV-222613:
+    gapp_ids:
+      # GAPP-00-001550 [same_normalized_title]: The application must remove organization-defined
+      # software components after updated versions have been installed.
+      - id: SV-288289
+        default: true
+
+  # APSC-DV-002630: Security-relevant software updates and patches must be kept up to date.
+  SV-222614:
+    gapp_ids:
+      # GAPP-00-001560 [revised]: The application must install security-relevant software updates
+      # within 30 days unless the time period is directed by an authoritative source (e.g., IAVM,
+      # CTOs, DTMs, STIGs).
+      - id: SV-288290
+        default: true
+
+  # APSC-DV-002870: Unsigned Category 1A mobile code must not be used in the application in
+  # accordance with DoD policy.
+  SV-222618:
+    gapp_ids:
+      # GAPP-00-001420 [revised]: The application must prevent the execution of prohibited mobile
+      # code.
+      - id: SV-288276
+        default: true
+      # GAPP-00-001400 [related_only]: The application must identify prohibited mobile code.
+      - id: SV-288274
+        default: false
+
+  # APSC-DV-002880: The ISSO must ensure an account management process is implemented, verifying
+  # only authorized users can gain access to the application, and individual accounts designated as
+  # inactive, suspended, or terminated are promptly removed.
+  SV-222619:
+    gapp_ids:
+      # GAPP-00-000410 [related_only]: The application must disable accounts when the accounts have
+      # expired.
+      - id: SV-288175
+        default: true
+      # GAPP-00-000430 [related_only]: The application must disable accounts when the accounts are
+      # in violation of organizational policy.
+      - id: SV-288177
+        default: false
+      # GAPP-00-000420 [related_only]: The application must disable accounts when the accounts are
+      # no longer associated to a user.
+      - id: SV-288176
+        default: false
+
+  # APSC-DV-002970: The ISSO must ensure if a DoD STIG or NSA guide is not available, a third-party
+  # product will be configured by following available guidance.
+  SV-222627:
+    gapp_ids:
+      # GAPP-00-001630 [related_only]: The application must be configured in accordance with the
+      # security configuration settings based on DoW security configuration or implementation
+      # guidance, including STIGs, NSA configuration guides, CTOs, and DTMs.
+      - id: SV-288297
+        default: true
+
+  # APSC-DV-003100: The application must use encryption to implement key exchange and authenticate
+  # endpoints prior to establishing a communication channel for key exchange.
+  SV-222641:
+    gapp_ids:
+      # GAPP-00-000120 [related_only]: The application must generate, manage, and protect from
+      # disclosure and misuse the cryptographic keys that protect access tokens.
+      - id: SV-288146
+        default: true
+
+  # APSC-DV-003240: All products must be supported by the vendor or the development team.
+  SV-222658:
+    gapp_ids:
+      # GAPP-00-001610 [revised]: The application must be a version supported by the vendor.
+      - id: SV-288295
+        default: true
+
+  # APSC-DV-003250: The application must be decommissioned when maintenance or support is no longer
+  # available.
+  SV-222659:
+    gapp_ids:
+      # GAPP-00-001610 [revised]: The application must be a version supported by the vendor.
+      - id: SV-288295
+        default: true
+
+  # APSC-DV-003270: Unnecessary built-in application accounts must be disabled.
+  SV-222661:
+    gapp_ids:
+      # GAPP-00-000030 [related_only]: Local accounts must be removed after multifactor
+      # authentication (MFA) is configured. It is permissible for an emergency ("break glass") or
+      # service account to remain if absolutely required by the application. In this case, the
+      # associated complexity requirements apply.
+      - id: SV-288137
+        default: true
+
+  # APSC-DV-003300: The designer must ensure uncategorized or emerging mobile code is not used in
+  # applications.
+  SV-222665:
+    gapp_ids:
+      # GAPP-00-001420 [revised]: The application must prevent the execution of prohibited mobile
+      # code.
+      - id: SV-288276
+        default: true
+      # GAPP-00-001400 [related_only]: The application must identify prohibited mobile code.
+      - id: SV-288274
+        default: false
+
+  # APSC-DV-003360: The application must generate audit records when concurrent logons from
+  # different workstations occur.
+  SV-222672:
+    gapp_ids:
+      # GAPP-00-000970 [same_normalized_title]: The application must generate audit records when
+      # concurrent logons from different workstations occur.
+      - id: SV-288231
+        default: true
+
+  # APSC-DV-002010: The application must implement NSA-approved cryptography to protect classified
+  # information in accordance with applicable federal laws, Executive Orders, directives, policies,
+  # regulations, and standards.
+  SV-265634:
+    gapp_ids:
+      # GAPP-00-001120 [revised]: The application must use Commercial National Security Algorithm
+      # Suite 2.0 (CNSA 2.0) cryptographic algorithms.
+      - id: SV-288246
+        default: true
+
+# ASD RULES WITHOUT IDENTIFIED GAPP CONNECTIONS (145)
+# No active mapping entries are created for these ASD rules. Preserve and assess them independently;
+# their absence from GAPP is not permission to omit them.
+# SV-222388 | APSC-DV-000060 | The application must clear temporary storage and cookies when the
+# session is terminated.
+# SV-222398 | APSC-DV-000180 | Applications with SOAP messages requiring integrity must include the
+# following message elements:-Message ID-Service Request-Timestamp-SAML Assertion (optionally
+# included in messages) and all elements of the message must be digitally signed.
+# SV-222399 | APSC-DV-000190 | Messages protected with WS_Security must use time stamps with
+# creation and expiration times.
+# SV-222406 | APSC-DV-000260 | The application must ensure messages are encrypted when the
+# SessionIndex is tied to privacy data.
+# SV-222422 | APSC-DV-000430 | The application must notify system administrators (SAs) and
+# information system security officers (ISSOs) of account enabling actions.
+# SV-222423 | APSC-DV-000440 | Application data protection requirements must be identified and
+# documented.
+# SV-222424 | APSC-DV-000450 | The application must utilize organization-defined data mining
+# detection techniques for organization-defined data storage objects to adequately detect data
+# mining attempts.
+# SV-222429 | APSC-DV-000500 | The application must prevent non-privileged users from executing
+# privileged functions to include disabling, circumventing, or altering implemented security
+# safeguards/countermeasures.
+# SV-222430 | APSC-DV-000510 | The application must execute without excessive account permissions.
+# SV-222431 | APSC-DV-000520 | The application must audit the execution of privileged functions.
+# SV-222434 | APSC-DV-000550 | The application must display the Standard Mandatory DoD Notice and
+# Consent Banner before granting access to the application.
+# SV-222437 | APSC-DV-000580 | The application must display the time and date of the users last
+# successful logon.
+# SV-222438 | APSC-DV-000590 | The application must protect against an individual (or process acting
+# on behalf of an individual) falsely denying having performed organization-defined actions to be
+# covered by non-repudiation.
+# SV-222439 | APSC-DV-000600 | For applications providing audit record aggregation, the application
+# must compile audit records from organization-defined information system components into a
+# system-wide audit trail that is time-correlated with an organization-defined level of tolerance
+# for the relationship between time stamps of individual records in the audit trail.
+# SV-222441 | APSC-DV-000620 | The application must provide audit record generation capability for
+# the creation of session IDs.
+# SV-222442 | APSC-DV-000630 | The application must provide audit record generation capability for
+# the destruction of session IDs.
+# SV-222443 | APSC-DV-000640 | The application must provide audit record generation capability for
+# the renewal of session IDs.
+# SV-222444 | APSC-DV-000650 | The application must not write sensitive data into the application
+# logs.
+# SV-222445 | APSC-DV-000660 | The application must provide audit record generation capability for
+# session timeouts.
+# SV-222446 | APSC-DV-000670 | The application must record a time stamp indicating when the event
+# occurred.
+# SV-222447 | APSC-DV-000680 | The application must provide audit record generation capability for
+# HTTP headers including User-Agent, Referer, GET, and POST.
+# SV-222449 | APSC-DV-000700 | The application must record the username or user ID of the user
+# associated with the event.
+# SV-222450 | APSC-DV-000710 | The application must generate audit records when
+# successful/unsuccessful attempts to grant privileges occur.
+# SV-222471 | APSC-DV-000960 | The application must log user actions involving access to data.
+# SV-222472 | APSC-DV-000970 | The application must log user actions involving changes to data.
+# SV-222475 | APSC-DV-001000 | When using centralized logging; the application must include a unique
+# identifier in order to distinguish itself from other application logs.
+# SV-222478 | APSC-DV-001030 | The application must generate audit records containing the full-text
+# recording of privileged commands or the individual identities of group account users.
+# SV-222479 | APSC-DV-001040 | The application must implement transaction recovery logs when
+# transaction based.
+# SV-222483 | APSC-DV-001090 | The application must provide an immediate warning to the SA and ISSO
+# (at a minimum) when allocated audit record storage volume reaches 75% of repository maximum audit
+# record storage capacity.
+# SV-222484 | APSC-DV-001100 | Applications categorized as having a moderate or high impact must
+# provide an immediate real-time alert to the SA and ISSO (at a minimum) for all audit failure
+# events.
+# SV-222486 | APSC-DV-001120 | The application must shut down by default upon audit failure (unless
+# availability is an overriding concern).
+# SV-222487 | APSC-DV-001130 | The application must provide the capability to centrally review and
+# analyze audit records from multiple components within the system.
+# SV-222488 | APSC-DV-001140 | The application must provide the capability to filter audit records
+# for events of interest based upon organization-defined criteria.
+# SV-222489 | APSC-DV-001150 | The application must provide an audit reduction capability that
+# supports on-demand reporting requirements.
+# SV-222490 | APSC-DV-001160 | The application must provide an audit reduction capability that
+# supports on-demand audit review and analysis.
+# SV-222491 | APSC-DV-001170 | The application must provide an audit reduction capability that
+# supports after-the-fact investigations of security incidents.
+# SV-222492 | APSC-DV-001180 | The application must provide a report generation capability that
+# supports on-demand audit review and analysis.
+# SV-222493 | APSC-DV-001190 | The application must provide a report generation capability that
+# supports on-demand reporting requirements.
+# SV-222494 | APSC-DV-001200 | The application must provide a report generation capability that
+# supports after-the-fact investigations of security incidents.
+# SV-222495 | APSC-DV-001210 | The application must provide an audit reduction capability that does
+# not alter original content or time ordering of audit records.
+# SV-222496 | APSC-DV-001220 | The application must provide a report generation capability that does
+# not alter original content or time ordering of audit records.
+# SV-222498 | APSC-DV-001260 | The application must record time stamps for audit records that can be
+# mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).
+# SV-222504 | APSC-DV-001320 | The application must protect audit tools from unauthorized
+# modification.
+# SV-222505 | APSC-DV-001330 | The application must protect audit tools from unauthorized deletion.
+# SV-222507 | APSC-DV-001350 | The application must use cryptographic mechanisms to protect the
+# integrity of audit information.
+# SV-222508 | APSC-DV-001360 | Application audit tools must be cryptographically hashed.
+# SV-222509 | APSC-DV-001370 | The integrity of the audit tools must be validated by checking the
+# files for changes in the cryptographic hash value.
+# SV-222510 | APSC-DV-001390 | The application must prohibit user installation of software without
+# explicit privileged status.
+# SV-222514 | APSC-DV-001440 | The applications must limit privileges to change the software
+# resident within software libraries.
+# SV-222515 | APSC-DV-001460 | An application vulnerability assessment must be conducted.
+# SV-222516 | APSC-DV-001480 | The application must prevent program execution in accordance with
+# organization-defined policies regarding software program usage and restrictions, and/or rules
+# authorizing the terms and conditions of software program usage.
+# SV-222517 | APSC-DV-001490 | The application must employ a deny-all, permit-by-exception
+# (whitelist) policy to allow the execution of authorized software programs.
+# SV-222521 | APSC-DV-001530 | The application must require devices to reauthenticate when
+# organization-defined circumstances or situations requiring reauthentication.
+# SV-222524 | APSC-DV-001560 | The application must accept Personal Identity Verification (PIV)
+# credentials.
+# SV-222525 | APSC-DV-001570 | The application must electronically verify Personal Identity
+# Verification (PIV) credentials.
+# SV-222529 | APSC-DV-001610 | The application must ensure users are authenticated with an
+# individual authenticator prior to using a group authenticator.
+# SV-222532 | APSC-DV-001640 | The application must utilize mutual authentication when endpoint
+# device non-repudiation protections are required by DoD policy or by the data owner.
+# SV-222546 | APSC-DV-001780 | The application must prohibit password reuse for a minimum of five
+# generations.
+# SV-222548 | APSC-DV-001795 | The application password must not be changeable by users other than
+# the administrator or the user with which the password is associated.
+# SV-222549 | APSC-DV-001800 | The application must terminate existing user sessions upon account
+# deletion.
+# SV-222556 | APSC-DV-001870 | The application must uniquely identify and authenticate
+# non-organizational users (or processes acting on behalf of non-organizational users).
+# SV-222557 | APSC-DV-001880 | The application must accept Personal Identity Verification (PIV)
+# credentials from other federal agencies.
+# SV-222558 | APSC-DV-001890 | The application must electronically verify Personal Identity
+# Verification (PIV) credentials from other federal agencies.
+# SV-222566 | APSC-DV-001980 | The application must terminate all sessions and network connections
+# when nonlocal maintenance is completed.
+# SV-222567 | APSC-DV-001995 | The application must not be vulnerable to race conditions.
+# SV-222573 | APSC-DV-002050 | Applications making SAML assertions must use FIPS-approved random
+# numbers in the generation of SessionIndex in the SAML element AuthnStatement.
+# SV-222575 | APSC-DV-002210 | The application must set the HTTPOnly flag on session cookies.
+# SV-222576 | APSC-DV-002220 | The application must set the secure flag on session cookies.
+# SV-222577 | APSC-DV-002230 | The application must not expose session IDs.
+# SV-222580 | APSC-DV-002260 | Applications must validate session identifiers.
+# SV-222581 | APSC-DV-002270 | Applications must not use URL embedded session IDs.
+# SV-222582 | APSC-DV-002280 | The application must not re-use or recycle session IDs.
+# SV-222585 | APSC-DV-002310 | The application must fail to a secure state if system initialization
+# fails, shutdown fails, or aborts fail.
+# SV-222586 | APSC-DV-002320 | In the event of a system failure, applications must preserve any
+# information necessary to determine cause of failure and any information necessary to return to
+# operations with least disruption to mission processes.
+# SV-222587 | APSC-DV-002330 | The application must protect the confidentiality and integrity of
+# stored information when required by DOD policy or the information owner.
+# SV-222589 | APSC-DV-002350 | The application must use appropriate cryptography in order to protect
+# stored DOD information when required by the information owner or DOD policy.
+# SV-222590 | APSC-DV-002360 | The application must isolate security functions from non-security
+# functions.
+# SV-222591 | APSC-DV-002370 | The application must maintain a separate execution domain for each
+# executing process.
+# SV-222592 | APSC-DV-002380 | Applications must prevent unauthorized and unintended information
+# transfer via shared system resources.
+# SV-222593 | APSC-DV-002390 | XML-based applications must mitigate DoS attacks by using XML
+# filters, parser options, or gateways.
+# SV-222594 | APSC-DV-002400 | The application must restrict the ability to launch Denial of Service
+# (DoS) attacks against itself or other information systems.
+# SV-222595 | APSC-DV-002410 | The web service design must include redundancy mechanisms when used
+# with high-availability systems.
+# SV-222598 | APSC-DV-002460 | The application must maintain the confidentiality and integrity of
+# information during preparation for transmission.
+# SV-222599 | APSC-DV-002470 | The application must maintain the confidentiality and integrity of
+# information during reception.
+# SV-222600 | APSC-DV-002480 | The application must not disclose unnecessary information to users.
+# SV-222601 | APSC-DV-002485 | The application must not store sensitive information in hidden
+# fields.
+# SV-222602 | APSC-DV-002490 | The application must protect from Cross-Site Scripting (XSS)
+# vulnerabilities.
+# SV-222603 | APSC-DV-002500 | The application must protect from Cross-Site Request Forgery (CSRF)
+# vulnerabilities.
+# SV-222604 | APSC-DV-002510 | The application must protect from command injection.
+# SV-222605 | APSC-DV-002520 | The application must protect from canonical representation
+# vulnerabilities.
+# SV-222606 | APSC-DV-002530 | The application must validate all input.
+# SV-222607 | APSC-DV-002540 | The application must not be vulnerable to SQL Injection.
+# SV-222608 | APSC-DV-002550 | The application must not be vulnerable to XML-oriented attacks.
+# SV-222609 | APSC-DV-002560 | The application must not be subject to input handling
+# vulnerabilities.
+# SV-222612 | APSC-DV-002590 | The application must not be vulnerable to overflow attacks.
+# SV-222615 | APSC-DV-002760 | The application performing organization-defined security functions
+# must verify correct operation of security functions.
+# SV-222616 | APSC-DV-002770 | The application must perform verification of the correct operation of
+# security functions: upon system startup and/or restart; upon command by a user with privileged
+# access; and/or every 30 days.
+# SV-222617 | APSC-DV-002780 | The application must notify the ISSO and ISSM of failed security
+# verification tests.
+# SV-222620 | APSC-DV-002890 | Application web servers must be on a separate network segment from
+# the application and database servers if it is a tiered application operating in the DoD DMZ.
+# SV-222621 | APSC-DV-002900 | The ISSO must ensure application audit trails are retained for at
+# least 30 months (12 months active + 18 months cold storage) for applications without SAMI data and
+# five years for applications including SAMI data.
+# SV-222622 | APSC-DV-002910 | The ISSO must review audit trails periodically based on system
+# documentation recommendations or immediately upon system security events.
+# SV-222623 | APSC-DV-002920 | The ISSO must report all suspected violations of IA policies in
+# accordance with DoD information system IA procedures.
+# SV-222624 | APSC-DV-002930 | The ISSO must ensure active vulnerability testing is performed.
+# SV-222625 | APSC-DV-002950 | Execution flow diagrams and design documents must be created to show
+# how deadlock and recursion issues in web services are being mitigated.
+# SV-222626 | APSC-DV-002960 | The designer must ensure the application does not store configuration
+# and control files in the same directory as user data.
+# SV-222628 | APSC-DV-002980 | New IP addresses, data services, and associated ports used by the
+# application must be submitted to the appropriate approving authority for the organization, which
+# in turn will be submitted through the DoD Ports, Protocols, and Services Management (DoD PPSM)
+# SV-222629 | APSC-DV-002990 | The application must be registered with the DoD Ports and Protocols
+# Database.
+# SV-222630 | APSC-DV-002995 | The Configuration Management (CM) repository must be properly patched
+# and STIG compliant.
+# SV-222631 | APSC-DV-003000 | Access privileges to the Configuration Management (CM) repository
+# must be reviewed every three months.
+# SV-222632 | APSC-DV-003010 | A Software Configuration Management (SCM) plan describing the
+# configuration control and change management process of application objects developed by the
+# organization and the roles and responsibilities of the organization must be created and
+# maintained.
+# SV-222633 | APSC-DV-003020 | A Configuration Control Board (CCB) that meets at least every release
+# cycle, for managing the Configuration Management (CM) process must be established.
+# SV-222634 | APSC-DV-003030 | The application services and interfaces must be compatible with and
+# ready for IPv6 networks.
+# SV-222635 | APSC-DV-003040 | The application must not be hosted on a general purpose machine if
+# the application is designated as critical or high availability by the ISSO.
+# SV-222636 | APSC-DV-003050 | A contingency plan must exist in accordance with DOD policy based on
+# the application's availability requirements.
+# SV-222637 | APSC-DV-003060 | Recovery procedures and technical system features must exist so
+# recovery is performed in a secure and verifiable manner. The ISSO will document circumstances
+# inhibiting a trusted recovery.
+# SV-222638 | APSC-DV-003070 | Data backup must be performed at required intervals in accordance
+# with DoD policy.
+# SV-222639 | APSC-DV-003080 | Back-up copies of the application software or source code must be
+# stored in a fire-rated container or stored separately (offsite).
+# SV-222640 | APSC-DV-003090 | Procedures must be in place to assure the appropriate physical and
+# technical protection of the backup and restoration of the application.
+# SV-222642 | APSC-DV-003110 | The application must not contain embedded authentication data.
+# SV-222643 | APSC-DV-003120 | The application must have the capability to mark sensitive/classified
+# output when required.
+# SV-222644 | APSC-DV-003130 | Prior to each release of the application, updates to system, or
+# applying patches; tests plans and procedures must be created and executed.
+# SV-222645 | APSC-DV-003140 | Application files must be cryptographically hashed prior to deploying
+# to DoD operational networks.
+# SV-222646 | APSC-DV-003150 | At least one tester must be designated to test for security flaws in
+# addition to functional testing.
+# SV-222647 | APSC-DV-003160 | Test procedures must be created and at least annually executed to
+# ensure system initialization, shutdown, and aborts are configured to verify the system remains in
+# a secure state.
+# SV-222648 | APSC-DV-003170 | An application code review must be performed on the application.
+# SV-222649 | APSC-DV-003180 | Code coverage statistics must be maintained for each release of the
+# application.
+# SV-222650 | APSC-DV-003190 | Flaws found during a code review must be tracked in a defect tracking
+# system.
+# SV-222651 | APSC-DV-003200 | The changes to the application must be assessed for IA and
+# accreditation impact prior to implementation.
+# SV-222652 | APSC-DV-003210 | Security flaws must be fixed or addressed in the project plan.
+# SV-222653 | APSC-DV-003215 | The application development team must follow a set of coding
+# standards.
+# SV-222654 | APSC-DV-003220 | The designer must create and update the Design Document for each
+# release of the application.
+# SV-222655 | APSC-DV-003230 | Threat models must be documented and reviewed for each application
+# release and updated as required by design and functionality changes or when new threats are
+# discovered.
+# SV-222656 | APSC-DV-003235 | The application must not be subject to error handling
+# vulnerabilities.
+# SV-222657 | APSC-DV-003236 | The application development team must provide an application incident
+# response plan.
+# SV-222660 | APSC-DV-003260 | Procedures must be in place to notify users when an application is
+# decommissioned.
+# SV-222662 | APSC-DV-003280 | Default passwords must be changed.
+# SV-222663 | APSC-DV-003285 | An Application Configuration Guide must be created and included with
+# the application.
+# SV-222664 | APSC-DV-003290 | If the application contains classified data, a Security
+# Classification Guide must exist containing data elements and their classification.
+# SV-222666 | APSC-DV-003310 | Production database exports must have database administration
+# credentials and sensitive data removed before releasing the export.
+# SV-222667 | APSC-DV-003320 | Protections against DoS attacks must be implemented.
+# SV-222668 | APSC-DV-003330 | The system must alert an administrator when low resource conditions
+# are encountered.
+# SV-222669 | APSC-DV-003340 | At least one application administrator must be registered to receive
+# update notifications, or security alerts, when automated alerts are available.
+# SV-222670 | APSC-DV-003345 | The application must provide notifications or alerts when product
+# update and security related patches are available.
+# SV-222671 | APSC-DV-003350 | Connections between the DoD enclave and the Internet or other public
+# or commercial wide area networks must require a DMZ.
+# SV-222673 | APSC-DV-003400 | The Program Manager must verify all levels of program management,
+# designers, developers, and testers receive annual security training pertaining to their job
+# function.
+
+gapp_to_asd:
+  # GAPP-00-000010: The application must use an approved DoW Enterprise Identity, Credential, and
+  # Access Management (E-ICAM) solution to uniquely identify and authenticate organizational users
+  # (or processes acting on behalf of organizational users).
+  # Comparison: Adds approved enterprise E-ICAM; check permits CAT III with existing enterprise AAA
+  # and documented migration plans.
+  # Conservative application: implement approved E-ICAM; a migration plan or reduced severity does
+  # not mean the E-ICAM requirement is implemented.
+  SV-288135:
+    asd_ids:
+      # APSC-DV-001540 [revised]: The application must uniquely identify and authenticate
+      # organizational users (or processes acting on behalf of organizational users).
+      - id: SV-222522
+        default: true
+
+  # GAPP-00-000020: The application must use multifactor authentication (MFA).
+  # Comparison: Consolidates local/network and privileged/nonprivileged MFA requirements; CAT II to
+  # CAT I.
+  SV-288136:
+    asd_ids:
+      # APSC-DV-001590 [revised]: The application must use multifactor (Alt. Token) authentication
+      # for local access to privileged accounts.
+      - id: SV-222527
+        default: true
+      # APSC-DV-001550 [revised]: The application must use multifactor (Alt. Token) authentication
+      # for network access to privileged accounts.
+      - id: SV-222523
+        default: false
+      # APSC-DV-001600 [revised]: The application must use multifactor (e.g., CAC, Alt. Token)
+      # authentication for local access to nonprivileged accounts.
+      - id: SV-222528
+        default: false
+      # APSC-DV-001580 [revised]: The application must use multifactor (e.g., CAC, Alt. Token)
+      # authentication for network access to non-privileged accounts.
+      - id: SV-222526
+        default: false
+
+  # GAPP-00-000030: Local accounts must be removed after multifactor authentication (MFA) is
+  # configured. It is permissible for an emergency ("break glass") or service account to remain if
+  # absolutely required by the application. In this case, the associated complexity requirements
+  # apply.
+  # Comparison: New removal of local accounts after MFA, with AO-approved break-glass/service
+  # exceptions; unnecessary-account removal is only a partial antecedent.
+  # Conservative application: remove ordinary local accounts after MFA. Retain only absolutely
+  # required, documented, AO-approved break-glass/service access. Distinguish infrequently used
+  # recovery accounts from crisis-created emergency accounts; see GAPP-00-000380.
+  SV-288137:
+    asd_ids:
+      # APSC-DV-000310 [related_only]: The application must have a process, feature or function that
+      # prevents removal or disabling of emergency accounts.
+      - id: SV-222410
+        default: true
+      # APSC-DV-003270 [related_only]: Unnecessary built-in application accounts must be disabled.
+      - id: SV-222661
+        default: false
+      # APSC-DV-000330 [related_only]: Unnecessary application accounts must be disabled, or
+      # deleted.
+      - id: SV-222412
+        default: false
+
+  # GAPP-00-000040: The application must use a SHA 2-384 or higher hash function to provide
+  # replay-resistant authentication mechanisms for network access to all accounts.
+  # Comparison: Consolidates replay resistance for all accounts and specifies SHA 2-384 or higher;
+  # check tests hash configuration.
+  # Conservative application: meet the explicit SHA 2-384-or-higher check and verify replay
+  # resistance. Do not infer compliance from generic TLS/PKI use alone.
+  SV-288138:
+    asd_ids:
+      # APSC-DV-001620 [revised]: The application must implement replay-resistant authentication
+      # mechanisms for network access to privileged accounts.
+      - id: SV-222530
+        default: true
+      # APSC-DV-001630 [revised]: The application must implement replay-resistant authentication
+      # mechanisms for network access to nonprivileged accounts.
+      - id: SV-222531
+        default: false
+
+  # GAPP-00-000050: The application must disable identifiers (individuals, groups, roles, and
+  # devices) after 35 days of inactivity.
+  # Comparison: Expands device identifiers to individuals/groups/roles/devices; title no longer has
+  # certificate exception. Account inactivity also remains separately at GAPP-000270.
+  # Conservative application: disable inactive identifiers within 35 days and apply the draft
+  # AO-approval condition for retained break-glass/service accounts; do not automatically carry
+  # forward broader ASD exceptions.
+  SV-288139:
+    asd_ids:
+      # APSC-DV-001670 [revised]: The application must disable device identifiers after 35 days of
+      # inactivity unless a cryptographic certificate is used for authentication.
+      - id: SV-222535
+        default: true
+
+  # GAPP-00-000060: When using Public Key Infrastructure (PKI)-based authentication for user access,
+  # the application must validate certificates by constructing a certification path (which includes
+  # status information) to an accepted trust anchor.
+  # Comparison: Same PKI path-validation objective; CAT I to CAT II; check/fix rewritten.
+  SV-288140:
+    asd_ids:
+      # APSC-DV-001810 [revised]: The application, when utilizing PKI-based authentication, must
+      # validate certificates by constructing a certification path (which includes status
+      # information) to an accepted trust anchor.
+      - id: SV-222550
+        default: true
+
+  # GAPP-00-000070: The application, when using PKI-based authentication, must enforce authorized
+  # access to the corresponding private key.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288141:
+    asd_ids:
+      # APSC-DV-001820 [same_normalized_title]: The application, when using PKI-based
+      # authentication, must enforce authorized access to the corresponding private key.
+      - id: SV-222551
+        default: true
+
+  # GAPP-00-000080: The application must map the authenticated identity to the individual user or
+  # group account for Public Key Infrastructure (PKI)-based authentication.
+  # Comparison: Same PKI identity-to-account mapping objective; check/fix rewritten.
+  SV-288142:
+    asd_ids:
+      # APSC-DV-001830 [revised]: The application must map the authenticated identity to the
+      # individual user or group account for PKI-based authentication.
+      - id: SV-222552
+        default: true
+
+  # GAPP-00-000100: The application must only allow the use of DoW-approved (or other authorizing
+  # official [AO]-approved) Public Key Infrastructure (PKI)-established certificate authorities
+  # (CAs) for verification of the establishment of protected sessions.
+  # Comparison: Adds other AO-approved CAs alongside DoW-approved PKI CAs.
+  # Conservative application: use a CA accepted by both requirements; do not rely only on the
+  # broader GAPP allowance for another AO-approved CA.
+  SV-288144:
+    asd_ids:
+      # APSC-DV-002300 [revised]: The application must only allow the use of DoD-approved
+      # certificate authorities for verification of the establishment of protected sessions.
+      - id: SV-222584
+        default: true
+
+  # GAPP-00-000110: The application must employ identity providers and authorization servers to
+  # manage user, device, and nonperson entity (NPE) identities, attributes, and access rights
+  # supporting authentication and authorization decisions in accordance with organization-defined
+  # identification and authentication policy using organization-defined mechanisms.
+  # Comparison: Explicit identity-provider/authorization-server management of users/devices/NPEs;
+  # general account management and FICAM are partial context only.
+  SV-288145:
+    asd_ids:
+      # APSC-DV-001540 [related_only]: The application must uniquely identify and authenticate
+      # organizational users (or processes acting on behalf of organizational users).
+      - id: SV-222522
+        default: true
+      # APSC-DV-000280 [related_only]: The application must provide automated mechanisms for
+      # supporting account management functions.
+      - id: SV-222407
+        default: false
+      # APSC-DV-001910 [related_only]: The application must conform to Federal Identity, Credential,
+      # and Access Management (FICAM)-issued profiles.
+      - id: SV-222560
+        default: false
+      # APSC-DV-001900 [related_only]: The application must accept Federal Identity, Credential, and
+      # Access Management (FICAM)-approved third-party credentials.
+      - id: SV-222559
+        default: false
+
+  # GAPP-00-000120: The application must generate, manage, and protect from disclosure and misuse
+  # the cryptographic keys that protect access tokens.
+  # Comparison: New explicit access-token key lifecycle/protection requirement; PKI private-key
+  # access and key exchange are partial context only.
+  SV-288146:
+    asd_ids:
+      # APSC-DV-001820 [related_only]: The application, when using PKI-based authentication, must
+      # enforce authorized access to the corresponding private key.
+      - id: SV-222551
+        default: true
+      # APSC-DV-003100 [related_only]: The application must use encryption to implement key exchange
+      # and authenticate endpoints prior to establishing a communication channel for key exchange.
+      - id: SV-222641
+        default: false
+
+  # GAPP-00-000130: The application must protect the private keys used to sign assertions and tokens
+  # commensurate with the impact of the system and information resources that can be accessed.
+  # Comparison: New explicit assertion/token signing-key protection based on system impact; PKI
+  # private-key access is only related.
+  SV-288147:
+    asd_ids:
+      # APSC-DV-001820 [related_only]: The application, when using PKI-based authentication, must
+      # enforce authorized access to the corresponding private key.
+      - id: SV-222551
+        default: true
+
+  # GAPP-00-000140: The application must generate assertions in accordance with organization-defined
+  # identification and authentication policy.
+  # Comparison: Generic assertion generation under organization policy; ASD has narrower SAML
+  # construction requirements.
+  SV-288148:
+    asd_ids:
+      # APSC-DV-000250 [related_only]: The application must ensure if a OneTimeUse element is used
+      # in an assertion, there is only one of the same used in the Conditions element portion of an
+      # assertion.
+      - id: SV-222405
+        default: true
+      # APSC-DV-000210 [related_only]: The application must ensure each unique asserting party
+      # provides unique assertion ID references for each SAML assertion.
+      - id: SV-222401
+        default: false
+
+  # GAPP-00-000150: The application must issue assertions in accordance with organization-defined
+  # identification and authentication policy.
+  # Comparison: Generic assertion issuance under organization policy; ASD SAML requirements are
+  # partial context, not equivalent.
+  SV-288149:
+    asd_ids:
+      # APSC-DV-000210 [related_only]: The application must ensure each unique asserting party
+      # provides unique assertion ID references for each SAML assertion.
+      - id: SV-222401
+        default: true
+      # APSC-DV-000220 [related_only]: The application must ensure encrypted assertions, or
+      # equivalent confidentiality protections are used when assertion data is passed through an
+      # intermediary, and confidentiality of the assertion data is required when passing through the
+      # intermediary.
+      - id: SV-222402
+        default: false
+
+  # GAPP-00-000180: The application must time-restrict assertions in accordance with
+  # organization-defined identification and authentication policy.
+  # Comparison: Generalizes assertion time restriction from explicit WS-Security/SAML validity
+  # elements to organization policy; does not preserve exact element tests.
+  # Conservative application: retain applicable ASD SAML/WS-Security element and validity checks in
+  # addition to GAPP assertion-lifetime policy.
+  SV-288152:
+    asd_ids:
+      # APSC-DV-000230 [revised]: The application must use the NotOnOrAfter condition when using the
+      # SubjectConfirmation element in a SAML assertion.
+      - id: SV-222403
+        default: true
+      # APSC-DV-000240 [revised]: The application must use both the NotBefore and NotOnOrAfter
+      # elements or OneTimeUse element when using the Conditions element in a SAML assertion.
+      - id: SV-222404
+        default: false
+      # APSC-DV-000200 [revised]: Validity periods must be verified on all application messages
+      # using WS-Security or SAML assertions.
+      - id: SV-222400
+        default: false
+
+  # GAPP-00-000260: The application must automatically remove or disable temporary user accounts
+  # after 72 hours.
+  # Comparison: Retains 72-hour temporary-account removal/disable objective; overlaps GAPP-000380.
+  SV-288160:
+    asd_ids:
+      # APSC-DV-000300 [revised]: The application must automatically remove or disable temporary
+      # user accounts 72 hours after account creation.
+      - id: SV-222409
+        default: true
+
+  # GAPP-00-000270: The application must automatically disable accounts after a 35-day period of
+  # account inactivity.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288161:
+    asd_ids:
+      # APSC-DV-000320 [same_normalized_title]: The application must automatically disable accounts
+      # after a 35 day period of account inactivity.
+      - id: SV-222411
+        default: true
+
+  # GAPP-00-000280: The application must enforce the limit of three consecutive invalid logon
+  # attempts by a user during a 15-minute time period.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288162:
+    asd_ids:
+      # APSC-DV-000530 [same_normalized_title]: The application must enforce the limit of three
+      # consecutive invalid logon attempts by a user during a 15 minute time period.
+      - id: SV-222432
+        default: true
+
+  # GAPP-00-000290: The application must enforce a minimum 15-character password length.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288163:
+    asd_ids:
+      # APSC-DV-001680 [same_normalized_title]: The application must enforce a minimum 15-character
+      # password length.
+      - id: SV-222536
+        default: true
+
+  # GAPP-00-000300: The application must enforce password complexity by requiring that at least one
+  # uppercase character be used.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288164:
+    asd_ids:
+      # APSC-DV-001690 [same_normalized_title]: The application must enforce password complexity by
+      # requiring that at least one uppercase character be used.
+      - id: SV-222537
+        default: true
+
+  # GAPP-00-000310: The application must enforce password complexity by requiring that at least one
+  # lowercase character be used.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288165:
+    asd_ids:
+      # APSC-DV-001700 [same_normalized_title]: The application must enforce password complexity by
+      # requiring that at least one lowercase character be used.
+      - id: SV-222538
+        default: true
+
+  # GAPP-00-000320: The application must enforce password complexity by requiring that at least one
+  # numeric character be used.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288166:
+    asd_ids:
+      # APSC-DV-001710 [same_normalized_title]: The application must enforce password complexity by
+      # requiring that at least one numeric character be used.
+      - id: SV-222539
+        default: true
+
+  # GAPP-00-000330: The application must enforce password complexity by requiring that at least one
+  # special character be used.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288167:
+    asd_ids:
+      # APSC-DV-001720 [same_normalized_title]: The application must enforce password complexity by
+      # requiring that at least one special character be used.
+      - id: SV-222540
+        default: true
+
+  # GAPP-00-000340: The application must require the change of at least 50 percent of the characters
+  # when passwords are changed.
+  # Comparison: Changes password-change minimum from eight characters to 50 percent; not equivalent
+  # for all password lengths.
+  # Conservative application: require at least max(8, ceiling(current password length / 2)) changed
+  # character positions. Both minima apply.
+  SV-288168:
+    asd_ids:
+      # APSC-DV-001730 [revised]: The application must require the change of at least eight of the
+      # total number of characters when passwords are changed.
+      - id: SV-222541
+        default: true
+
+  # GAPP-00-000350: The application must enforce 24 hours/one day as the minimum password lifetime.
+  # Comparison: Retains 24-hour/one-day minimum password lifetime; check/fix rewritten.
+  SV-288169:
+    asd_ids:
+      # APSC-DV-001760 [revised]: The application must enforce 24 hours/1 day as the minimum
+      # password lifetime.
+      - id: SV-222544
+        default: true
+
+  # GAPP-00-000360: The application must enforce a 60-day maximum password lifetime restriction.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288170:
+    asd_ids:
+      # APSC-DV-001770 [same_normalized_title]: The application must enforce a 60-day maximum
+      # password lifetime restriction.
+      - id: SV-222545
+        default: true
+
+  # GAPP-00-000370: The application must obscure feedback of authentication information during the
+  # authentication process to protect the information from possible exploitation/use by unauthorized
+  # individuals.
+  # Comparison: Broadens password/PIN display prohibition to authentication feedback; CAT I to CAT
+  # II.
+  SV-288171:
+    asd_ids:
+      # APSC-DV-001850 [revised]: The application must not display passwords/PINs as clear text.
+      - id: SV-222554
+        default: true
+
+  # GAPP-00-000380: The application must automatically disable temporary and emergency accounts
+  # after 72 hours.
+  # Comparison: Extends 72-hour disabling to emergency accounts; conflicts with ASD protection from
+  # disabling during a crisis. Do not transfer ASD emergency-account meaning unchanged.
+  # CONFLICT: prioritize GAPP automatic disabling of crisis-created emergency accounts after 72
+  # hours to limit lingering privilege. Preserve recovery capability through a separately
+  # controlled, documented, AO-approved mechanism; this does not satisfy the literal ASD rule for
+  # keeping the same emergency account enabled during a crisis lasting more than 72 hours. This is
+  # the project precedence assumption, not a DISA-approved reconciliation. GAPP discussion
+  # distinguishes emergency accounts from infrequently used recovery accounts.
+  SV-288172:
+    asd_ids:
+      # APSC-DV-000300 [revised]: The application must automatically remove or disable temporary
+      # user accounts 72 hours after account creation.
+      - id: SV-222409
+        default: true
+      # APSC-DV-000310 [conflicting]: The application must have a process, feature or function that
+      # prevents removal or disabling of emergency accounts.
+      - id: SV-222410
+        default: false
+
+  # GAPP-00-000390: The application must terminate shared/group account credentials when members
+  # leave the group.
+  # Comparison: Retains shared/group credential termination when membership changes.
+  SV-288173:
+    asd_ids:
+      # APSC-DV-000290 [revised]: Shared/group account credentials must be terminated when members
+      # leave the group.
+      - id: SV-222408
+        default: true
+
+  # GAPP-00-000400: The application must automatically lock the account until the locked account is
+  # released by an administrator when three unsuccessful login attempts in 15 minutes are exceeded.
+  # Comparison: Explicit administrator-release lockout after three failures in 15 minutes; combines
+  # threshold and unlock workflow.
+  SV-288174:
+    asd_ids:
+      # APSC-DV-000530 [revised]: The application must enforce the limit of three consecutive
+      # invalid logon attempts by a user during a 15 minute time period.
+      - id: SV-222432
+        default: true
+      # APSC-DV-000540 [revised]: The application administrator must follow an approved process to
+      # unlock locked user accounts.
+      - id: SV-222433
+        default: false
+
+  # GAPP-00-000410: The application must disable accounts when the accounts have expired.
+  # Comparison: Explicit expired-account disabling; ASD unnecessary-account removal/account
+  # management only partially covers this trigger.
+  SV-288175:
+    asd_ids:
+      # APSC-DV-000330 [related_only]: Unnecessary application accounts must be disabled, or
+      # deleted.
+      - id: SV-222412
+        default: true
+      # APSC-DV-002880 [related_only]: The ISSO must ensure an account management process is
+      # implemented, verifying only authorized users can gain access to the application, and
+      # individual accounts designated as inactive, suspended, or terminated are promptly removed.
+      - id: SV-222619
+        default: false
+
+  # GAPP-00-000420: The application must disable accounts when the accounts are no longer associated
+  # to a user.
+  # Comparison: Explicit orphaned-account disabling; ASD account management is broader process
+  # context.
+  SV-288176:
+    asd_ids:
+      # APSC-DV-000330 [related_only]: Unnecessary application accounts must be disabled, or
+      # deleted.
+      - id: SV-222412
+        default: true
+      # APSC-DV-002880 [related_only]: The ISSO must ensure an account management process is
+      # implemented, verifying only authorized users can gain access to the application, and
+      # individual accounts designated as inactive, suspended, or terminated are promptly removed.
+      - id: SV-222619
+        default: false
+
+  # GAPP-00-000430: The application must disable accounts when the accounts are in violation of
+  # organizational policy.
+  # Comparison: Explicit disabling for organizational-policy violations; ASD account management is
+  # broader process context.
+  SV-288177:
+    asd_ids:
+      # APSC-DV-000330 [related_only]: Unnecessary application accounts must be disabled, or
+      # deleted.
+      - id: SV-222412
+        default: true
+      # APSC-DV-002880 [related_only]: The ISSO must ensure an account management process is
+      # implemented, verifying only authorized users can gain access to the application, and
+      # individual accounts designated as inactive, suspended, or terminated are promptly removed.
+      - id: SV-222619
+        default: false
+
+  # GAPP-00-000440: For accounts using password authentication, the application must use
+  # FIPS-validated cryptographic algorithms defined in CNSSP 15 Annex B to protect the integrity and
+  # confidentiality of the password authentication process.
+  # Comparison: Password authentication protection now names FIPS/CNSSP 15 Annex B and
+  # integrity/confidentiality; CAT I to CAT II.
+  SV-288178:
+    asd_ids:
+      # APSC-DV-001750 [revised]: The application must transmit only cryptographically-protected
+      # passwords.
+      - id: SV-222543
+        default: true
+
+  # GAPP-00-000450: For accounts using password authentication, the application must store only
+  # cryptographic representations of passwords.
+  # Comparison: Retains cryptographic password storage objective with changed CCI and CAT I to CAT
+  # II; salted KDF separately at GAPP-000500.
+  SV-288179:
+    asd_ids:
+      # APSC-DV-001740 [revised]: The application must only store cryptographic representations of
+      # passwords.
+      - id: SV-222542
+        default: true
+
+  # GAPP-00-000500: The application must, for password-based authentication, store passwords using
+  # an approved salted key derivation function, preferably using a keyed hash.
+  # Comparison: Refines password storage into an approved salted KDF, preferably keyed hash;
+  # overlaps GAPP-000450; changed CCI and CAT I to CAT II.
+  # Conservative application: require an approved salted KDF for password storage, in addition to
+  # the ASD prohibition on plaintext password storage.
+  SV-288184:
+    asd_ids:
+      # APSC-DV-001740 [revised]: The application must only store cryptographic representations of
+      # passwords.
+      - id: SV-222542
+        default: true
+
+  # GAPP-00-000510: The application must, for password-based authentication, require immediate
+  # selection of a new password upon account recovery.
+  # Comparison: New password selection upon account recovery; ASD temporary-password change is a
+  # related but different trigger.
+  SV-288185:
+    asd_ids:
+      # APSC-DV-001790 [related_only]: The application must allow the use of a temporary password
+      # for system logons with an immediate change to a permanent password.
+      - id: SV-222547
+        default: true
+
+  # GAPP-00-000540: The application must, for password-based authentication, enforce
+  # organization-defined composition and complexity rules.
+  # Comparison: Organization-defined complexity rule supplements separately retained fixed rules;
+  # not a substitute for those rules.
+  # Conservative application: enforce the applicable fixed length, composition, and lifetime
+  # requirements as well as organization-defined rules. Retain ASD password-history requirements
+  # even though they have no direct mapping here.
+  SV-288188:
+    asd_ids:
+      # APSC-DV-001710 [related_only]: The application must enforce password complexity by requiring
+      # that at least one numeric character be used.
+      - id: SV-222539
+        default: true
+      # APSC-DV-001720 [related_only]: The application must enforce password complexity by requiring
+      # that at least one special character be used.
+      - id: SV-222540
+        default: false
+      # APSC-DV-001690 [related_only]: The application must enforce password complexity by requiring
+      # that at least one uppercase character be used.
+      - id: SV-222537
+        default: false
+      # APSC-DV-001700 [related_only]: The application must enforce password complexity by requiring
+      # that at least one lowercase character be used.
+      - id: SV-222538
+        default: false
+      # APSC-DV-001680 [related_only]: The application must enforce a minimum 15-character password
+      # length.
+      - id: SV-222536
+        default: false
+
+  # GAPP-00-000550: The application must limit the number of concurrent sessions to a maximum number
+  # of three for all accounts and/or account types.
+  # Comparison: Replaces organization-defined concurrency limit with maximum three for all
+  # accounts/account types.
+  # Conservative application: cap concurrent sessions at three, or a lower organization-defined
+  # limit where required.
+  SV-288189:
+    asd_ids:
+      # APSC-DV-000010 [revised]: The application must provide a capability to limit the number of
+      # logon sessions per user.
+      - id: SV-222387
+        default: true
+
+  # GAPP-00-000560: The application must terminate all network connections associated with a
+  # communications session at the end of the session, or no more than 15 minutes of inactivity.
+  # Comparison: Combines connection termination with at most 15 minutes inactivity; ASD separately
+  # requires 15-minute nonprivileged and 10-minute administrator logout, so effects differ.
+  # Conservative application: retain 10-minute administrator and 15-minute nonprivileged idle
+  # logout, and terminate associated network connections at session end or within the GAPP
+  # inactivity limit. Connection termination and application logout must both be assessed.
+  SV-288190:
+    asd_ids:
+      # APSC-DV-002000 [revised]: The application must terminate all network connections associated
+      # with a communications session at the end of the session.
+      - id: SV-222568
+        default: true
+      # APSC-DV-000070 [revised]: The application must automatically terminate the non-privileged
+      # user session and log off non-privileged users after a 15 minute idle time period has
+      # elapsed.
+      - id: SV-222389
+        default: false
+      # APSC-DV-000080 [revised]: The application must automatically terminate the admin user
+      # session and log off admin users after a 10 minute idle time period is exceeded.
+      - id: SV-222390
+        default: false
+
+  # GAPP-00-000570: The application must invalidate session identifiers upon user logout or other
+  # session termination.
+  # Comparison: Session-ID invalidation at logout/other termination; ASD explicitly includes browser
+  # close; CAT I to CAT II.
+  # Conservative application: retain applicable ASD logout/browser-close session-ID destruction
+  # alongside GAPP invalidation on session termination.
+  SV-288191:
+    asd_ids:
+      # APSC-DV-002240 [revised]: The application must destroy the session ID value and/or cookie on
+      # logoff or browser close.
+      - id: SV-222578
+        default: true
+
+  # GAPP-00-000580: Applications must recognize only system-generated session identifiers (IDs).
+  # Comparison: System-generated session IDs retained; title focuses on recognition rather than
+  # generation against fixation.
+  SV-288192:
+    asd_ids:
+      # APSC-DV-002250 [revised]: Applications must use system-generated session identifiers that
+      # protect against session fixation.
+      - id: SV-222579
+        default: true
+
+  # GAPP-00-000590: The application must generate unique session identifiers using a FIPS-validated
+  # Random Number Generator (RNG) based on the Deterministic Random Bit Generators (DRBG) algorithm.
+  # Comparison: Specifies FIPS-validated DRBG-based RNG for unique session IDs.
+  SV-288193:
+    asd_ids:
+      # APSC-DV-002290 [revised]: The application must generate a unique session identifier using a
+      # FIPS 140-2/140-3 approved random number generator.
+      - id: SV-222583
+        default: true
+
+  # GAPP-00-000600: Applications requiring user access authentication must provide a logout function
+  # for user-initiated communication sessions.
+  # Comparison: Retains user-initiated logout capability; terminology/check/fix changed.
+  SV-288194:
+    asd_ids:
+      # APSC-DV-000090 [revised]: Applications requiring user access authentication must provide a
+      # logoff capability for user initiated communication session.
+      - id: SV-222391
+        default: true
+
+  # GAPP-00-000610: The application must display an explicit logout message to users indicating the
+  # reliable termination of authenticated communications sessions.
+  # Comparison: Retains explicit logout confirmation; CAT III to CAT II.
+  SV-288195:
+    asd_ids:
+      # APSC-DV-000100 [revised]: The application must display an explicit logoff message to users
+      # indicating the reliable termination of authenticated communications sessions.
+      - id: SV-222392
+        default: true
+
+  # GAPP-00-000620: The application must require users to reauthenticate when organization-defined
+  # circumstances or situations require reauthentication.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288196:
+    asd_ids:
+      # APSC-DV-001520 [same_normalized_title]: The application must require users to reauthenticate
+      # when organization-defined circumstances or situations require reauthentication.
+      - id: SV-222520
+        default: true
+
+  # GAPP-00-000630: The application must automatically audit account creation.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288197:
+    asd_ids:
+      # APSC-DV-000340 [same_normalized_title]: The application must automatically audit account
+      # creation.
+      - id: SV-222413
+        default: true
+
+  # GAPP-00-000640: The application must automatically audit account modifications to include
+  # disabling/removal actions and attempts to access privileges.
+  # Comparison: Consolidates modification/disabling/removal auditing and adds attempts to access
+  # privileges; CCI set changes.
+  # Conservative application: audit every applicable event in the union of the linked ASD rules and
+  # the GAPP rule; consolidation does not remove source events.
+  SV-288198:
+    asd_ids:
+      # APSC-DV-000360 [revised]: The application must automatically audit account disabling
+      # actions.
+      - id: SV-222415
+        default: true
+      # APSC-DV-000370 [revised]: The application must automatically audit account removal actions.
+      - id: SV-222416
+        default: false
+      # APSC-DV-000350 [revised]: The application must automatically audit account modification.
+      - id: SV-222414
+        default: false
+
+  # GAPP-00-000650: The application must reveal error messages only to the information system
+  # security officer (ISSO), information system security manager (ISSM), if assigned, and/or
+  # security personnel as appropriate.
+  # Comparison: Changes authorized error recipients to ISSO/ISSM if assigned and/or appropriate
+  # security personnel.
+  SV-288199:
+    asd_ids:
+      # APSC-DV-002580 [revised]: The application must reveal error messages only to the ISSO, ISSM,
+      # or SA.
+      - id: SV-222611
+        default: true
+
+  # GAPP-00-000660: In the event of an audit processing failure, the application must alert the
+  # information system security officer (ISSO), information system security manager (ISSM) at a
+  # minimum (if assigned) and/or security personnel as appropriate.
+  # Comparison: Changes audit-failure alert recipients to ISSO/ISSM if assigned and/or appropriate
+  # security personnel.
+  SV-288200:
+    asd_ids:
+      # APSC-DV-001110 [revised]: The application must alert the ISSO and SA (at a minimum) in the
+      # event of an audit processing failure.
+      - id: SV-222485
+        default: true
+
+  # GAPP-00-000670: The application must generate error messages that only provide the information
+  # necessary for corrective actions without revealing information that could be exploited.
+  # Comparison: Retains corrective-action error messages without exploitable information disclosure.
+  SV-288201:
+    asd_ids:
+      # APSC-DV-002570 [revised]: The application must generate error messages that provide
+      # information necessary for corrective actions without revealing information that could be
+      # exploited by adversaries.
+      - id: SV-222610
+        default: true
+
+  # GAPP-00-000680: The application must notify system administrators (SAs) and the information
+  # system security officer (ISSO) when accounts are created.
+  # Comparison: Retains account-creation notification; CAT III to CAT II.
+  SV-288202:
+    asd_ids:
+      # APSC-DV-000380 [revised]: The application must notify system administrators (SAs) and
+      # information system security officers (ISSOs) when accounts are created.
+      - id: SV-222417
+        default: true
+
+  # GAPP-00-000690: The application must notify system administrators (SAs) and the information
+  # system security officer (ISSO) when accounts are modified to include disabling and removal
+  # actions.
+  # Comparison: Consolidates modification/disabling/removal notifications; CAT III to CAT II.
+  # Conservative application: preserve notifications for modification, disabling, and removal; one
+  # linked ASD result is not evidence for all three.
+  SV-288203:
+    asd_ids:
+      # APSC-DV-000390 [revised]: The application must notify system administrators (SAs) and
+      # information system security officers (ISSOs) when accounts are modified.
+      - id: SV-222418
+        default: true
+      # APSC-DV-000400 [revised]: The application must notify system administrators (SAs) and
+      # information system security officers (ISSOs) of account disabling actions.
+      - id: SV-222419
+        default: false
+      # APSC-DV-000410 [revised]: The application must notify system administrators (SAs) and
+      # information system security officers (ISSOs) of account removal actions.
+      - id: SV-222420
+        default: false
+
+  # GAPP-00-000700: The application must allow only the information system security manager (ISSM),
+  # or individuals or roles appointed by the ISSM, to select which auditable events are to be
+  # audited.
+  # Comparison: Explicit ISSM-appointed authority over event selection; centralized audit-content
+  # management is related but not equivalent.
+  SV-288204:
+    asd_ids:
+      # APSC-DV-001050 [related_only]: The application must provide centralized management and
+      # configuration of the content to be captured in audit records generated by all application
+      # components.
+      - id: SV-222480
+        default: true
+
+  # GAPP-00-000710: The application must initiate session auditing upon startup.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288205:
+    asd_ids:
+      # APSC-DV-000910 [same_normalized_title]: The application must initiate session auditing upon
+      # startup.
+      - id: SV-222468
+        default: true
+
+  # GAPP-00-000720: The application must produce audit records containing descriptions of the audit
+  # events.
+  # Comparison: Audit-event descriptions overlap component/feature identification but do not
+  # expressly retain the same field.
+  SV-288206:
+    asd_ids:
+      # APSC-DV-000990 [related_only]: The application must produce audit records containing enough
+      # information to establish which component, feature or function of the application triggered
+      # the audit event.
+      - id: SV-222474
+        default: true
+
+  # GAPP-00-000730: The application must produce audit records containing information to establish
+  # when (date and time) the events occurred.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288207:
+    asd_ids:
+      # APSC-DV-000980 [same_normalized_title]: The application must produce audit records
+      # containing information to establish when (date and time) the events occurred.
+      - id: SV-222473
+        default: true
+
+  # GAPP-00-000740: The application must produce audit records containing information to establish
+  # source and destination addresses.
+  # Comparison: Consolidates source/connecting and destination address audit fields.
+  SV-288208:
+    asd_ids:
+      # APSC-DV-000690 [revised]: The application must provide audit record generation capability
+      # for connecting system IP addresses.
+      - id: SV-222448
+        default: true
+      # APSC-DV-000950 [revised]: The application must log destination IP addresses.
+      - id: SV-222470
+        default: false
+
+  # GAPP-00-000750: The application must produce audit records that contain information to establish
+  # success indicators, fail indicators, and enforcement actions.
+  # Comparison: Makes success/failure/enforcement actions explicit in audit outcomes; adds CCI.
+  SV-288209:
+    asd_ids:
+      # APSC-DV-001010 [revised]: The application must produce audit records that contain
+      # information to establish the outcome of the events.
+      - id: SV-222476
+        default: true
+
+  # GAPP-00-000760: The application must generate audit records containing information that
+  # establishes the identity of any individual or process associated with the event.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288210:
+    asd_ids:
+      # APSC-DV-001020 [same_normalized_title]: The application must generate audit records
+      # containing information that establishes the identity of any individual or process associated
+      # with the event.
+      - id: SV-222477
+        default: true
+
+  # GAPP-00-000770: The application must protect audit information from any type of unauthorized
+  # read access.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288211:
+    asd_ids:
+      # APSC-DV-001280 [same_normalized_title]: The application must protect audit information from
+      # any type of unauthorized read access.
+      - id: SV-222500
+        default: true
+
+  # GAPP-00-000780: The application must protect audit information from unauthorized modification.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288212:
+    asd_ids:
+      # APSC-DV-001290 [same_normalized_title]: The application must protect audit information from
+      # unauthorized modification.
+      - id: SV-222501
+        default: true
+
+  # GAPP-00-000790: The application must protect audit information from unauthorized deletion.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288213:
+    asd_ids:
+      # APSC-DV-001300 [same_normalized_title]: The application must protect audit information from
+      # unauthorized deletion.
+      - id: SV-222502
+        default: true
+
+  # GAPP-00-000800: The application must protect audit tools from unauthorized access.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288214:
+    asd_ids:
+      # APSC-DV-001310 [same_normalized_title]: The application must protect audit tools from
+      # unauthorized access.
+      - id: SV-222503
+        default: true
+
+  # GAPP-00-000810: The application must automatically audit account enabling actions.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288215:
+    asd_ids:
+      # APSC-DV-000420 [same_normalized_title]: The application must automatically audit account
+      # enabling actions.
+      - id: SV-222421
+        default: true
+
+  # GAPP-00-000820: The application must record time stamps for audit records that meet a
+  # granularity of one second for a minimum degree of precision.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288216:
+    asd_ids:
+      # APSC-DV-001270 [same_normalized_title]: The application must record time stamps for audit
+      # records that meet a granularity of one second for a minimum degree of precision.
+      - id: SV-222499
+        default: true
+
+  # GAPP-00-000830: The application must generate audit records when successful/unsuccessful
+  # attempts to access security objects occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288217:
+    asd_ids:
+      # APSC-DV-000720 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to access security objects occur.
+      - id: SV-222451
+        default: true
+
+  # GAPP-00-000840: The application must generate audit records when successful/unsuccessful
+  # attempts to access security levels occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288218:
+    asd_ids:
+      # APSC-DV-000730 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to access security levels occur.
+      - id: SV-222452
+        default: true
+
+  # GAPP-00-000850: The application must generate audit records when successful/unsuccessful
+  # attempts to access categories of information (e.g., classification levels) occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288219:
+    asd_ids:
+      # APSC-DV-000740 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to access categories of information (e.g., classification
+      # levels) occur.
+      - id: SV-222453
+        default: true
+
+  # GAPP-00-000860: The application must generate audit records when successful/unsuccessful
+  # attempts to modify privileges occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288220:
+    asd_ids:
+      # APSC-DV-000750 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to modify privileges occur.
+      - id: SV-222454
+        default: true
+
+  # GAPP-00-000870: The application must generate audit records when successful/unsuccessful
+  # attempts to modify security objects occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288221:
+    asd_ids:
+      # APSC-DV-000760 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to modify security objects occur.
+      - id: SV-222455
+        default: true
+
+  # GAPP-00-000880: The application must generate audit records when successful/unsuccessful
+  # attempts to modify security levels occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288222:
+    asd_ids:
+      # APSC-DV-000770 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to modify security levels occur.
+      - id: SV-222456
+        default: true
+
+  # GAPP-00-000890: The application must generate audit records when successful/unsuccessful
+  # attempts to modify categories of information (e.g., classification levels) occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288223:
+    asd_ids:
+      # APSC-DV-000780 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to modify categories of information (e.g., classification
+      # levels) occur.
+      - id: SV-222457
+        default: true
+
+  # GAPP-00-000900: The application must generate audit records when successful/unsuccessful
+  # attempts to delete privileges occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288224:
+    asd_ids:
+      # APSC-DV-000790 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to delete privileges occur.
+      - id: SV-222458
+        default: true
+
+  # GAPP-00-000910: The application must generate audit records when successful/unsuccessful
+  # attempts to delete security levels occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288225:
+    asd_ids:
+      # APSC-DV-000800 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to delete security levels occur.
+      - id: SV-222459
+        default: true
+
+  # GAPP-00-000920: The application must generate audit records when successful/unsuccessful
+  # attempts to delete security objects occur.
+  # Comparison: Broadens deletion auditing from application database security objects to security
+  # objects.
+  SV-288226:
+    asd_ids:
+      # APSC-DV-000810 [revised]: The application must generate audit records when
+      # successful/unsuccessful attempts to delete application database security objects occur.
+      - id: SV-222460
+        default: true
+
+  # GAPP-00-000930: The application must generate audit records when successful/unsuccessful
+  # attempts to delete categories of information (e.g., classification levels) occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288227:
+    asd_ids:
+      # APSC-DV-000820 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful attempts to delete categories of information (e.g., classification
+      # levels) occur.
+      - id: SV-222461
+        default: true
+
+  # GAPP-00-000940: The application must generate audit records when successful/unsuccessful logon
+  # attempts occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288228:
+    asd_ids:
+      # APSC-DV-000830 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful logon attempts occur.
+      - id: SV-222462
+        default: true
+
+  # GAPP-00-000950: The application must generate audit records for privileged activities or other
+  # system-level access.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288229:
+    asd_ids:
+      # APSC-DV-000840 [same_normalized_title]: The application must generate audit records for
+      # privileged activities or other system-level access.
+      - id: SV-222463
+        default: true
+
+  # GAPP-00-000960: The application must generate audit records showing starting and ending time for
+  # user access to the system.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288230:
+    asd_ids:
+      # APSC-DV-000850 [same_normalized_title]: The application must generate audit records showing
+      # starting and ending time for user access to the system.
+      - id: SV-222464
+        default: true
+
+  # GAPP-00-000970: The application must generate audit records when concurrent logons from
+  # different workstations occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288231:
+    asd_ids:
+      # APSC-DV-003360 [same_normalized_title]: The application must generate audit records when
+      # concurrent logons from different workstations occur.
+      - id: SV-222672
+        default: true
+
+  # GAPP-00-000980: The application must generate audit records when successful/unsuccessful
+  # accesses to objects occur.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288232:
+    asd_ids:
+      # APSC-DV-000860 [same_normalized_title]: The application must generate audit records when
+      # successful/unsuccessful accesses to objects occur.
+      - id: SV-222465
+        default: true
+
+  # GAPP-00-000990: The application must generate audit records for all direct access to the
+  # information system.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288233:
+    asd_ids:
+      # APSC-DV-000870 [same_normalized_title]: The application must generate audit records for all
+      # direct access to the information system.
+      - id: SV-222466
+        default: true
+
+  # GAPP-00-001000: The application must generate audit records for all account creations,
+  # modifications, disabling, and termination events.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288234:
+    asd_ids:
+      # APSC-DV-000880 [same_normalized_title]: The application must generate audit records for all
+      # account creations, modifications, disabling, and termination events.
+      - id: SV-222467
+        default: true
+
+  # GAPP-00-001010: The application must generate audit records for all load, unload, and restart
+  # events, and also for all program initiations.
+  # Comparison: Load/unload/restart/program initiation auditing overlaps shutdown auditing; not
+  # identical event coverage.
+  SV-288235:
+    asd_ids:
+      # APSC-DV-000940 [related_only]: The application must log application shutdown events.
+      - id: SV-222469
+        default: true
+
+  # GAPP-00-001020: When baseline configurations are changed in an unauthorized manner the
+  # application must alert the information system security officer (ISSO)/information system
+  # security manager (ISSM), and rollback the unauthorized change.
+  # Comparison: New explicit unauthorized baseline-change alert and rollback; ASD restricts/audits
+  # configuration changes without this rollback requirement.
+  SV-288236:
+    asd_ids:
+      # APSC-DV-001420 [related_only]: The application must audit who makes configuration changes to
+      # the application.
+      - id: SV-222512
+        default: true
+      # APSC-DV-001410 [related_only]: The application must enforce access restrictions associated
+      # with changes to application configuration.
+      - id: SV-222511
+        default: false
+
+  # GAPP-00-001030: Applications performing maintenance functions must restrict use of these
+  # functions to authorized personnel only.
+  # Comparison: Explicit maintenance-personnel authorization; general access control/strong
+  # maintenance authentication is partial context.
+  SV-288237:
+    asd_ids:
+      # APSC-DV-001970 [related_only]: The application must employ strong authenticators in the
+      # establishment of non-local maintenance and diagnostic sessions.
+      - id: SV-222565
+        default: true
+      # APSC-DV-000460 [related_only]: The application must enforce approved authorizations for
+      # logical access to information and system resources in accordance with applicable access
+      # control policies.
+      - id: SV-222425
+        default: false
+
+  # GAPP-00-001040: Applications used for nonlocal maintenance sessions must audit
+  # organization-defined audit events for nonlocal maintenance and diagnostic sessions.
+  # Comparison: Retains organization-defined nonlocal maintenance/diagnostic auditing.
+  SV-288238:
+    asd_ids:
+      # APSC-DV-001930 [revised]: Applications used for non-local maintenance sessions must audit
+      # non-local maintenance and diagnostic sessions for organization-defined auditable events.
+      - id: SV-222561
+        default: true
+
+  # GAPP-00-001060: Applications used for nonlocal maintenance sessions must use FIPS-validated
+  # keyed-hash message authentication code (HMAC) to protect the integrity of nonlocal maintenance
+  # and diagnostic communications.
+  # Comparison: Specifies FIPS-validated HMAC for nonlocal maintenance integrity.
+  SV-288240:
+    asd_ids:
+      # APSC-DV-001940 [revised]: Applications used for non-local maintenance sessions must
+      # implement cryptographic mechanisms to protect the integrity of non-local maintenance and
+      # diagnostic communications.
+      - id: SV-222562
+        default: true
+
+  # GAPP-00-001070: Applications used for nonlocal maintenance sessions must verify remote
+  # disconnection at the termination of nonlocal maintenance and diagnostic sessions.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288241:
+    asd_ids:
+      # APSC-DV-001960 [same_normalized_title]: Applications used for non-local maintenance sessions
+      # must verify remote disconnection at the termination of non-local maintenance and diagnostic
+      # sessions.
+      - id: SV-222564
+        default: true
+
+  # GAPP-00-001080: The application must retain the Standard Mandatory DoW Notice and Consent Banner
+  # on the screen until users acknowledge the usage conditions and take explicit actions to log on
+  # for further access.
+  # Comparison: Retains banner acknowledgment; DoD to DoW terminology and CAT III to CAT II.
+  SV-288242:
+    asd_ids:
+      # APSC-DV-000560 [revised]: The application must retain the Standard Mandatory DoD Notice and
+      # Consent Banner on the screen until users acknowledge the usage conditions and take explicit
+      # actions to log on for further access.
+      - id: SV-222435
+        default: true
+
+  # GAPP-00-001090: The publicly accessible application must display the Standard Mandatory DoW
+  # Notice and Consent Banner before granting access to the application.
+  # Comparison: Retains publicly accessible application banner; DoD to DoW terminology and CAT III
+  # to CAT II. Does not automatically absorb separate ASD general banner rule.
+  SV-288243:
+    asd_ids:
+      # APSC-DV-000570 [revised]: The publicly accessible application must display the Standard
+      # Mandatory DoD Notice and Consent Banner before granting access to the application.
+      - id: SV-222436
+        default: true
+
+  # GAPP-00-001100: The application must off-load audit records onto a central logging system at
+  # least every seven days.
+  # Comparison: Combines off-loading, centralized logging, and at-least-seven-day cadence;
+  # off-loading is not a complete substitute for backup semantics; CAT II to CAT I.
+  # Conservative application: off-load to central logging at least every seven days and retain ASD
+  # backup requirements; log forwarding alone is not backup evidence.
+  SV-288244:
+    asd_ids:
+      # APSC-DV-001070 [revised]: The application must off-load audit records onto a different
+      # system or media than the system being audited.
+      - id: SV-222481
+        default: true
+      # APSC-DV-001080 [revised]: The application must be configured to write application logs to a
+      # centralized log repository.
+      - id: SV-222482
+        default: false
+      # APSC-DV-001340 [revised]: The application must back up audit records at least every seven
+      # days onto a different system or system component than the system or component being audited.
+      - id: SV-222506
+        default: false
+
+  # GAPP-00-001110: The application must use FIPS-validated cryptographic algorithms defined in
+  # CNSSP 15 Annex B to generate cryptographic hashes.
+  # Comparison: Names FIPS/CNSSP 15 Annex B hash algorithms instead of module wording; CAT II to CAT
+  # I.
+  SV-288245:
+    asd_ids:
+      # APSC-DV-002030 [revised]: The application must utilize FIPS-validated cryptographic modules
+      # when generating cryptographic hashes.
+      - id: SV-222571
+        default: true
+
+  # GAPP-00-001120: The application must use Commercial National Security Algorithm Suite 2.0 (CNSA
+  # 2.0) cryptographic algorithms.
+  # Comparison: Explicit CNSA 2.0 algorithm suite; ASD classified/unclassified protection
+  # requirements have different scope; CAT II to CAT I.
+  SV-288246:
+    asd_ids:
+      # APSC-DV-002040 [revised]: The application must utilize FIPS-validated cryptographic modules
+      # when protecting unclassified information that requires cryptographic protection.
+      - id: SV-222572
+        default: true
+      # APSC-DV-002010 [revised]: The application must implement NSA-approved cryptography to
+      # protect classified information in accordance with applicable federal laws, Executive Orders,
+      # directives, policies, regulations, and standards.
+      - id: SV-265634
+        default: false
+
+  # GAPP-00-001130: The application must use FIPS-validated SHA-2 or higher hash function for
+  # digital signature generation and verification.
+  # Comparison: New explicit SHA-2-or-higher signature generation/verification requirement;
+  # component signing is a partial antecedent.
+  # Conservative application: follow the SHA-2-or-higher signature check; do not use the legacy
+  # SHA-1 verification allowance in the discussion as an exception.
+  SV-288247:
+    asd_ids:
+      # APSC-DV-002020 [related_only]: The application must utilize FIPS-validated cryptographic
+      # modules when signing application components.
+      - id: SV-222570
+        default: true
+
+  # GAPP-00-001140: The application must use a FIPS-validated cryptographic module to provision
+  # digital signatures.
+  # Comparison: FIPS module digital signatures generalized from signing application components; CAT
+  # II to CAT I.
+  SV-288248:
+    asd_ids:
+      # APSC-DV-002020 [revised]: The application must utilize FIPS-validated cryptographic modules
+      # when signing application components.
+      - id: SV-222570
+        default: true
+
+  # GAPP-00-001150: The application must implement cryptographic mechanisms to prevent unauthorized
+  # modification of information at rest.
+  # Comparison: Retains at-rest integrity objective while removing organization-defined scope
+  # qualifiers from title; not a standalone at-rest confidentiality rule.
+  SV-288249:
+    asd_ids:
+      # APSC-DV-002340 [revised]: The application must implement approved cryptographic mechanisms
+      # to prevent unauthorized modification of organization-defined information at rest on
+      # organization-defined information system components.
+      - id: SV-222588
+        default: true
+
+  # GAPP-00-001160: The application must use FIPS-validated cryptographic algorithms defined in
+  # CNSSP 15 Annex B to protect the integrity and confidentiality of remote access sessions.
+  # Comparison: Combines remote-session confidentiality/integrity with FIPS/CNSSP 15 Annex B
+  # algorithms.
+  SV-288250:
+    asd_ids:
+      # APSC-DV-000170 [revised]: The application must implement cryptographic mechanisms to protect
+      # the integrity of remote access sessions.
+      - id: SV-222397
+        default: true
+      # APSC-DV-000160 [revised]: The application must implement DoD-approved encryption to protect
+      # the confidentiality of remote access sessions.
+      - id: SV-222396
+        default: false
+
+  # GAPP-00-001180: The application must control remote access methods.
+  # Comparison: Explicit control of remote-access methods; general access authorizations are only
+  # related.
+  SV-288252:
+    asd_ids:
+      # APSC-DV-000460 [related_only]: The application must enforce approved authorizations for
+      # logical access to information and system resources in accordance with applicable access
+      # control policies.
+      - id: SV-222425
+        default: true
+
+  # GAPP-00-001190: The application must use TLS 1.2 or greater to protect the confidentiality and
+  # integrity of all remote access sessions.
+  # Comparison: Explicit TLS 1.2+ floor for remote access; CAT II to CAT I.
+  # Conservative application: require TLS 1.2 or greater and all applicable stronger algorithm
+  # requirements; protect both integrity and confidentiality.
+  SV-288253:
+    asd_ids:
+      # APSC-DV-000160 [revised]: The application must implement DoD-approved encryption to protect
+      # the confidentiality of remote access sessions.
+      - id: SV-222396
+        default: true
+      # APSC-DV-000170 [revised]: The application must implement cryptographic mechanisms to protect
+      # the integrity of remote access sessions.
+      - id: SV-222397
+        default: false
+
+  # GAPP-00-001200: The application must use FIPS-validated cryptographic algorithms defined in
+  # Commercial National Security Algorithm Suite 2.0 (CNSA 2.0) to protect the confidentiality and
+  # integrity of transmitted information.
+  # Comparison: Specifies FIPS/CNSA 2.0 for transmitted confidentiality/integrity; ASD
+  # physical-safeguard exception is not retained in title.
+  # Conservative application: encrypt sensitive application traffic, including internal traffic, and
+  # meet the applicable explicit cryptographic checks. Do not substitute physical protection for
+  # encryption under this project assumption.
+  SV-288254:
+    asd_ids:
+      # APSC-DV-002440 [revised]: The application must protect the confidentiality and integrity of
+      # transmitted information.
+      - id: SV-222596
+        default: true
+      # APSC-DV-002450 [revised]: The application must implement cryptographic mechanisms to prevent
+      # unauthorized disclosure of information and/or detect changes to information during
+      # transmission unless otherwise protected by alternative physical safeguards, such as, at a
+      # minimum, a Protected Distribution System (PDS).
+      - id: SV-222597
+        default: false
+
+  # GAPP-00-001210: The application must use FIPS-validated cryptographic algorithms defined in CNSA
+  # 2.0 to protect the integrity and confidentiality of nonlocal maintenance and diagnostic
+  # communications.
+  # Comparison: Combines maintenance integrity/confidentiality with FIPS/CNSA 2.0 algorithms; CAT II
+  # to CAT I.
+  # Conservative application: protect nonlocal maintenance confidentiality and integrity using the
+  # applicable explicit cryptographic checks. Do not substitute physical protection for encryption
+  # under this project assumption.
+  SV-288255:
+    asd_ids:
+      # APSC-DV-001950 [revised]: Applications used for non-local maintenance sessions must
+      # implement cryptographic mechanisms to protect the confidentiality of non-local maintenance
+      # and diagnostic communications.
+      - id: SV-222563
+        default: true
+      # APSC-DV-001940 [revised]: Applications used for non-local maintenance sessions must
+      # implement cryptographic mechanisms to protect the integrity of non-local maintenance and
+      # diagnostic communications.
+      - id: SV-222562
+        default: false
+
+  # GAPP-00-001220: The application must prohibit client negotiation to TLS 1.1, TLS 1.0, SSL 2.0,
+  # or SSL 3.0.
+  # Comparison: Explicit prohibition of negotiation to listed older SSL/TLS versions; broad
+  # cryptographic protection is a partial antecedent.
+  # Conservative application: explicitly disable negotiation to the listed legacy SSL/TLS versions;
+  # general ASD encryption evidence alone is insufficient.
+  SV-288256:
+    asd_ids:
+      # APSC-DV-000160 [related_only]: The application must implement DoD-approved encryption to
+      # protect the confidentiality of remote access sessions.
+      - id: SV-222396
+        default: true
+      # APSC-DV-000170 [related_only]: The application must implement cryptographic mechanisms to
+      # protect the integrity of remote access sessions.
+      - id: SV-222397
+        default: false
+
+  # GAPP-00-001230: The application must use FIPS-validated cryptographic algorithms defined in
+  # CNSSP 15 Annex B for authentication to a cryptographic module.
+  # Comparison: Names FIPS/CNSSP 15 Annex B for cryptographic-module authentication; CAT I to CAT
+  # II.
+  SV-288257:
+    asd_ids:
+      # APSC-DV-001860 [revised]: The application must use mechanisms meeting the requirements of
+      # applicable federal laws, Executive Orders, directives, policies, regulations, standards, and
+      # guidance for authentication to a cryptographic module.
+      - id: SV-222555
+        default: true
+
+  # GAPP-00-001240: The application must validate certificates used for Transport Layer Security
+  # (TLS) functions by performing RFC 5280-compliant certification path validation.
+  # Comparison: RFC 5280 TLS certificate validation; ASD counterpart addresses PKI user
+  # authentication rather than the identical TLS scope.
+  SV-288258:
+    asd_ids:
+      # APSC-DV-001810 [related_only]: The application, when utilizing PKI-based authentication,
+      # must validate certificates by constructing a certification path (which includes status
+      # information) to an accepted trust anchor.
+      - id: SV-222550
+        default: true
+
+  # GAPP-00-001250: The application, for PKI-based authentication, must implement a local cache of
+  # revocation data to support path discovery and validation in case of the inability to access
+  # revocation information via the network.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288259:
+    asd_ids:
+      # APSC-DV-001840 [same_normalized_title]: The application, for PKI-based authentication, must
+      # implement a local cache of revocation data to support path discovery and validation in case
+      # of the inability to access revocation information via the network.
+      - id: SV-222553
+        default: true
+
+  # GAPP-00-001260: The application must, for public key-based authentication, implement a local
+  # cache of revocation data to support path discovery and validation.
+  # Comparison: Second revocation-cache requirement with public-key wording and no
+  # network-unavailability qualifier; overlaps GAPP-001250.
+  SV-288260:
+    asd_ids:
+      # APSC-DV-001840 [revised]: The application, for PKI-based authentication, must implement a
+      # local cache of revocation data to support path discovery and validation in case of the
+      # inability to access revocation information via the network.
+      - id: SV-222553
+        default: true
+
+  # GAPP-00-001270: The application must include only approved trust anchors in trust stores or
+  # certificate stores managed by the organization.
+  # Comparison: New explicit approved trust-store contents; approved CAs/path validation are only
+  # partial antecedents.
+  SV-288261:
+    asd_ids:
+      # APSC-DV-002300 [related_only]: The application must only allow the use of DoD-approved
+      # certificate authorities for verification of the establishment of protected sessions.
+      - id: SV-222584
+        default: true
+      # APSC-DV-001810 [related_only]: The application, when utilizing PKI-based authentication,
+      # must validate certificates by constructing a certification path (which includes status
+      # information) to an accepted trust anchor.
+      - id: SV-222550
+        default: false
+
+  # GAPP-00-001280: The application must enforce a role-based access control (RBAC) policy over
+  # defined subjects and objects.
+  # Comparison: Explicit RBAC with check for at least two roles and one user per role; ASD
+  # discretionary/general access control is not equivalent.
+  SV-288262:
+    asd_ids:
+      # APSC-DV-000470 [related_only]: The application must enforce organization-defined
+      # discretionary access control policies over defined subjects and objects.
+      - id: SV-222426
+        default: true
+      # APSC-DV-000460 [related_only]: The application must enforce approved authorizations for
+      # logical access to information and system resources in accordance with applicable access
+      # control policies.
+      - id: SV-222425
+        default: false
+
+  # GAPP-00-001290: The application must separate user functionality (including user interface
+  # services) from information system management functionality.
+  # Comparison: Separates user and management functionality; ASD also explicitly mentions
+  # data-storage interfaces.
+  SV-288263:
+    asd_ids:
+      # APSC-DV-002150 [revised]: The application user interface must be either physically or
+      # logically separated from data storage and management interfaces.
+      - id: SV-222574
+        default: true
+
+  # GAPP-00-001300: The application must dynamically associate security attributes with
+  # organization-defined subjects in accordance with organization-defined security policies as
+  # information is created and combined.
+  # Comparison: New explicit dynamic subject security-attribute association; ASD information
+  # storage/process labels are partial context.
+  SV-288264:
+    asd_ids:
+      # APSC-DV-000110 [related_only]: The application must associate organization-defined types of
+      # security attributes having organization-defined security attribute values with information
+      # in storage.
+      - id: SV-222393
+        default: true
+      # APSC-DV-000120 [related_only]: The application must associate organization-defined types of
+      # security attributes having organization-defined security attribute values with information
+      # in process.
+      - id: SV-222394
+        default: false
+
+  # GAPP-00-001310: The application must enforce approved authorizations for controlling the flow of
+  # information within the system based on organization-defined information flow control policies.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288265:
+    asd_ids:
+      # APSC-DV-000480 [same_normalized_title]: The application must enforce approved authorizations
+      # for controlling the flow of information within the system based on organization-defined
+      # information flow control policies.
+      - id: SV-222427
+        default: true
+
+  # GAPP-00-001320: The application must enforce approved authorizations for controlling the flow of
+  # information between interconnected systems based on organization-defined information flow
+  # control policies.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288266:
+    asd_ids:
+      # APSC-DV-000490 [same_normalized_title]: The application must enforce approved authorizations
+      # for controlling the flow of information between interconnected systems based on
+      # organization-defined information flow control policies.
+      - id: SV-222428
+        default: true
+
+  # GAPP-00-001330: The application must associate organization-defined security attributes with
+  # information exchanged between information systems.
+  # Comparison: Security attributes on inter-system exchanges; narrows/clarifies transmission
+  # context.
+  SV-288267:
+    asd_ids:
+      # APSC-DV-000130 [revised]: The application must associate organization-defined types of
+      # security attributes having organization-defined security attribute values with information
+      # in transmission.
+      - id: SV-222395
+        default: true
+
+  # GAPP-00-001340: The application must dynamically associate security attributes with
+  # organization-defined objects in accordance with organization-defined security policies as
+  # information is created and combined.
+  # Comparison: New explicit dynamic object security-attribute association; ASD information
+  # storage/process labels are partial context.
+  SV-288268:
+    asd_ids:
+      # APSC-DV-000110 [related_only]: The application must associate organization-defined types of
+      # security attributes having organization-defined security attribute values with information
+      # in storage.
+      - id: SV-222393
+        default: true
+      # APSC-DV-000120 [related_only]: The application must associate organization-defined types of
+      # security attributes having organization-defined security attribute values with information
+      # in process.
+      - id: SV-222394
+        default: false
+
+  # GAPP-00-001350: The application must uniquely identify and authenticate source points by
+  # organization, system, application, and/or individual for information transfer.
+  # Comparison: Source-point authentication for information transfer; endpoint authentication is
+  # only a partial antecedent.
+  SV-288269:
+    asd_ids:
+      # APSC-DV-001650 [related_only]: The application must authenticate all network connected
+      # endpoint devices before establishing any connection.
+      - id: SV-222533
+        default: true
+      # APSC-DV-001660 [related_only]: Service-Oriented Applications handling non-releasable data
+      # must authenticate endpoint devices via mutual SSL/TLS.
+      - id: SV-222534
+        default: false
+
+  # GAPP-00-001360: The application must implement organization-defined mechanisms or techniques to
+  # bind security attributes to transmitted information.
+  # Comparison: Explicit mechanisms binding security attributes to transmitted information; related
+  # GAPP-001330 addresses association.
+  SV-288270:
+    asd_ids:
+      # APSC-DV-000130 [revised]: The application must associate organization-defined types of
+      # security attributes having organization-defined security attribute values with information
+      # in transmission.
+      - id: SV-222395
+        default: true
+
+  # GAPP-00-001390: The application must enforce attribute-based access control policy over defined
+  # subjects and objects based upon organization-defined attributes to assume access permissions.
+  # Comparison: Explicit ABAC; ASD discretionary/general access controls are not equivalent policy
+  # models.
+  SV-288273:
+    asd_ids:
+      # APSC-DV-000470 [related_only]: The application must enforce organization-defined
+      # discretionary access control policies over defined subjects and objects.
+      - id: SV-222426
+        default: true
+      # APSC-DV-000460 [related_only]: The application must enforce approved authorizations for
+      # logical access to information and system resources in accordance with applicable access
+      # control policies.
+      - id: SV-222425
+        default: false
+
+  # GAPP-00-001400: The application must identify prohibited mobile code.
+  # Comparison: Prohibited mobile-code identification extends ASD restrictions on unsigned Category
+  # 1A/emerging code; scope differs.
+  SV-288274:
+    asd_ids:
+      # APSC-DV-003300 [related_only]: The designer must ensure uncategorized or emerging mobile
+      # code is not used in applications.
+      - id: SV-222665
+        default: true
+      # APSC-DV-002870 [related_only]: Unsigned Category 1A mobile code must not be used in the
+      # application in accordance with DoD policy.
+      - id: SV-222618
+        default: false
+
+  # GAPP-00-001420: The application must prevent the execution of prohibited mobile code.
+  # Comparison: Generalizes prohibitions from unsigned Category 1A/emerging code to prohibited
+  # mobile code.
+  SV-288276:
+    asd_ids:
+      # APSC-DV-003300 [revised]: The designer must ensure uncategorized or emerging mobile code is
+      # not used in applications.
+      - id: SV-222665
+        default: true
+      # APSC-DV-002870 [revised]: Unsigned Category 1A mobile code must not be used in the
+      # application in accordance with DoD policy.
+      - id: SV-222618
+        default: false
+
+  # GAPP-00-001540: The application must prevent the installation of patches, service packs, or
+  # application components without verification the software component has been digitally signed
+  # using a certificate recognized and approved by the organization.
+  # Comparison: Changes capability to prevent unsigned installation to actual prevention; CCI
+  # changes.
+  SV-288288:
+    asd_ids:
+      # APSC-DV-001430 [revised]: The application must have the capability to prevent the
+      # installation of patches, service packs, or application components without verification the
+      # software component has been digitally signed using a certificate that is recognized and
+      # approved by the organization.
+      - id: SV-222513
+        default: true
+
+  # GAPP-00-001550: The application must remove organization-defined software components after
+  # updated versions have been installed.
+  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
+  # establish unchanged assessment or CWE equivalence.
+  SV-288289:
+    asd_ids:
+      # APSC-DV-002610 [same_normalized_title]: The application must remove organization-defined
+      # software components after updated versions have been installed.
+      - id: SV-222613
+        default: true
+
+  # GAPP-00-001560: The application must install security-relevant software updates within 30 days
+  # unless the time period is directed by an authoritative source (e.g., IAVM, CTOs, DTMs, STIGs).
+  # Comparison: Explicit 30-day patch installation unless authoritative deadline; ASD checks weekly
+  # for updates and requires immediate application or specified plans/directives; CAT II to CAT I.
+  # Conservative application: check for updates at least weekly; apply immediately unless an
+  # applicable authoritative schedule directs otherwise. Meet the GAPP 30-day maximum unless an
+  # authoritative source sets a different deadline. Do not treat a general POA&M as automatically
+  # satisfying GAPP.
+  SV-288290:
+    asd_ids:
+      # APSC-DV-002630 [revised]: Security-relevant software updates and patches must be kept up to
+      # date.
+      - id: SV-222614
+        default: true
+
+  # GAPP-00-001570: The application must implement cryptographic mechanisms to authenticate
+  # organization-defined software or firmware components prior to installation.
+  # Comparison: Cryptographic authentication of software/firmware before installation overlaps
+  # signed-patch requirement; generalized component scope and different CCI.
+  SV-288291:
+    asd_ids:
+      # APSC-DV-001430 [revised]: The application must have the capability to prevent the
+      # installation of patches, service packs, or application components without verification the
+      # software component has been digitally signed using a certificate that is recognized and
+      # approved by the organization.
+      - id: SV-222513
+        default: true
+
+  # GAPP-00-001580: The application must disable organization-defined functions, ports, protocols,
+  # and services (within the application) deemed unnecessary and/or nonsecure.
+  # Comparison: Organization-defined unnecessary/nonsecure functions/ports/protocols/services rather
+  # than explicit PPSM CAL wording.
+  SV-288292:
+    asd_ids:
+      # APSC-DV-001510 [revised]: The application must be configured to use only functions, ports,
+      # and protocols permitted to it in the PPSM CAL.
+      - id: SV-222519
+        default: true
+
+  # GAPP-00-001590: The application must prohibit or restrict the use of protocols that transmit
+  # unencrypted authentication information or use flawed cryptographic algorithms for transmission.
+  # Comparison: Explicit prohibition/restriction of cleartext-authentication or flawed-crypto
+  # protocols; PPSM/cryptographic password transport is partial context.
+  SV-288293:
+    asd_ids:
+      # APSC-DV-001750 [related_only]: The application must transmit only
+      # cryptographically-protected passwords.
+      - id: SV-222543
+        default: true
+      # APSC-DV-001510 [related_only]: The application must be configured to use only functions,
+      # ports, and protocols permitted to it in the PPSM CAL.
+      - id: SV-222519
+        default: false
+
+  # GAPP-00-001600: The application must use the system clock.
+  # Comparison: General system-clock use instead of audit-timestamp-specific requirement; CCI
+  # changes.
+  SV-288294:
+    asd_ids:
+      # APSC-DV-001250 [revised]: The applications must use internal system clocks to generate time
+      # stamps for audit records.
+      - id: SV-222497
+        default: true
+
+  # GAPP-00-001610: The application must be a version supported by the vendor.
+  # Comparison: Supported application version; does not carry forward ASD decommissioning process
+  # details.
+  # Conservative application: require vendor support for the deployed version and retain applicable
+  # ASD decommissioning obligations; a version-support check does not establish decommissioning
+  # compliance.
+  SV-288295:
+    asd_ids:
+      # APSC-DV-003250 [revised]: The application must be decommissioned when maintenance or support
+      # is no longer available.
+      - id: SV-222659
+        default: true
+      # APSC-DV-003240 [revised]: All products must be supported by the vendor or the development
+      # team.
+      - id: SV-222658
+        default: false
+
+  # GAPP-00-001620: The application must be configured to disable nonessential functions.
+  # Comparison: Retains disabling nonessential functionality; check/fix rewritten.
+  SV-288296:
+    asd_ids:
+      # APSC-DV-001500 [revised]: The application must be configured to disable non-essential
+      # capabilities.
+      - id: SV-222518
+        default: true
+
+  # GAPP-00-001630: The application must be configured in accordance with the security configuration
+  # settings based on DoW security configuration or implementation guidance, including STIGs, NSA
+  # configuration guides, CTOs, and DTMs.
+  # Comparison: Draft check is explicitly a best-practice STIG-authoring placeholder, N/A when not
+  # required; not equivalent to ASD fallback third-party hardening guidance.
+  # Conservative application: retain applicable ASD fallback-hardening guidance. This GAPP authoring
+  # placeholder is not a catch-all mapping for otherwise unmapped requirements.
+  SV-288297:
+    asd_ids:
+      # APSC-DV-002970 [related_only]: The ISSO must ensure if a DoD STIG or NSA guide is not
+      # available, a third-party product will be configured by following available guidance.
+      - id: SV-222627
+        default: true
+
+# GAPP RULES WITHOUT IDENTIFIED ASD CONNECTIONS (32)
+# No active mapping entries are created for these GAPP rules. Prior ASD compliance supplies no
+# identified counterpart here; assess each independently. Applicability still follows the full GAPP
+# rule.
+# SV-288143 | GAPP-00-000090 | The application must prohibit the use of cached authenticators after
+# 12 hours.
+# SV-288150 | GAPP-00-000160 | The application must refresh assertions in accordance with
+# organization-defined identification and authentication policy.
+# SV-288151 | GAPP-00-000170 | The application must revoke assertions in accordance with
+# organization-defined identification and authentication policy.
+# SV-288153 | GAPP-00-000190 | The application must audience-restrict assertions in accordance with
+# organization-defined identification and authentication policy.
+# SV-288154 | GAPP-00-000200 | The application must generate access tokens in accordance with
+# organization-defined identification and authentication policy.
+# SV-288155 | GAPP-00-000210 | The application must issue access tokens in accordance with
+# organization-defined identification and authentication policy.
+# SV-288156 | GAPP-00-000220 | The application must refresh access tokens in accordance with
+# organization-defined identification and authentication policy.
+# SV-288157 | GAPP-00-000230 | The application must revoke access tokens in accordance with
+# organization-defined identification and authentication policy.
+# SV-288158 | GAPP-00-000240 | The application must time-restrict access tokens in accordance with
+# organization-defined identification and authentication policy.
+# SV-288159 | GAPP-00-000250 | The application must audience-restrict access tokens in accordance
+# with organization-defined identification and authentication policy.
+# SV-288180 | GAPP-00-000460 | The application must, for password-based authentication, maintain a
+# list of commonly used, expected, or compromised passwords on an organization-defined frequency.
+# SV-288181 | GAPP-00-000470 | The application must, for password-based authentication, update the
+# list of known passwords on an organization-defined frequency.
+# SV-288182 | GAPP-00-000480 | The application must, for password-based authentication, update the
+# list of passwords when organizational passwords are suspected to have been compromised directly or
+# indirectly.
+# SV-288183 | GAPP-00-000490 | The application must, for password-based authentication, verify when
+# users create or update passwords, that the passwords are not found on the list of commonly-used,
+# expected, or compromised passwords in IA-5 (1) (a).
+# SV-288186 | GAPP-00-000520 | The application must, for password-based authentication, allow user
+# selection of long passwords and passphrases, including spaces and all printable characters.
+# SV-288187 | GAPP-00-000530 | The application must, for password-based authentication, employ
+# automated tools to assist the user in selecting strong password authenticators.
+# SV-288239 | GAPP-00-001050 | Applications used for nonlocal maintenance sessions must protect
+# nonlocal maintenance sessions by separating the maintenance session from other network sessions by
+# either physically separated communications paths or logically separated communications paths based
+# upon encryption.
+# SV-288251 | GAPP-00-001170 | The application must monitor remote access methods.
+# SV-288271 | GAPP-00-001370 | The application must attach data tags containing organization-defined
+# authorized processing to organization-defined elements of personally identifiable information
+# (PII).
+# SV-288272 | GAPP-00-001380 | The application must attach data tags containing organization-defined
+# processing purposes to organization-defined elements of personally identifiable information (PII).
+# SV-288275 | GAPP-00-001410 | The application must prompt the user for action prior to executing
+# mobile code.
+# SV-288277 | GAPP-00-001430 | The application must block, quarantine, and/or alert administrators
+# when prohibited mobile code is identified.
+# SV-288278 | GAPP-00-001440 | The application must prevent the download of prohibited mobile code.
+# SV-288279 | GAPP-00-001450 | The application must prevent the automatic execution of mobile code
+# in, at a minimum, office applications, browsers, email clients, mobile code runtime environments,
+# and mobile agent systems.
+# SV-288280 | GAPP-00-001460 | Applications scanning for malicious code must scan all media used for
+# system maintenance prior to use.
+# SV-288281 | GAPP-00-001470 | The application must automatically update malicious code protection
+# mechanisms whenever new releases are available in accordance with organizational configuration
+# management policy.
+# SV-288282 | GAPP-00-001480 | The application must configure malicious code protection mechanisms
+# to perform periodic scans of the information system every seven days.
+# SV-288283 | GAPP-00-001490 | The application must be configured to perform real-time malicious
+# code protection scans of files from external sources at endpoints as the files are downloaded,
+# opened, or executed in accordance with organizational security policy.
+# SV-288284 | GAPP-00-001500 | The application must be configured to block and quarantine malicious
+# code upon detection.
+# SV-288285 | GAPP-00-001510 | The application must implement nonsignature-based malicious code
+# detection mechanisms.
+# SV-288286 | GAPP-00-001520 | The application must configure malicious code protection mechanisms
+# to send alerts to organization-defined personnel in response to malicious code detection.
+# SV-288287 | GAPP-00-001530 | The application that implements spam protection mechanisms must be
+# updated automatically.
