@@ -1,4 +1,6 @@
 # STIG to CWE and CWE to STIG mappings
+# ASD mappings updated for V6R5 (benchmark 2026-09-30). V6R5 retains the stable SV IDs; the new
+# 180-day password maximum makes CWE-263 a secondary relationship for SV-222545.
 ---
 
 stig_to_cwe:
@@ -662,6 +664,8 @@ stig_to_cwe:
     cwe_ids:
       - id: CWE-262
         default: true
+      - id: CWE-263
+        default: false
   SV-222546:
     cwe_ids:
       - id: CWE-521
@@ -2177,9 +2181,9 @@ cwe_to_stig:
         default: true
   CWE-263:
     stig_ids:
-      - id: SV-222661
-        default: true
       - id: SV-222545
+        default: true
+      - id: SV-222661
         default: false
   CWE-264:
     stig_ids:

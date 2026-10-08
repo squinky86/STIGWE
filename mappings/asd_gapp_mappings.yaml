@@ -1,8 +1,12 @@
 # ASD STIG to GAPP SRG and GAPP SRG to ASD STIG mappings
-# ASD V6R4 (benchmark 2025-10-01) <-> GAPP V1R0.1 FIRST DRAFT (benchmark 2026-08-05).
+# ASD V6R5 (benchmark 2026-09-30) <-> GAPP V1R0.1 FIRST DRAFT (benchmark 2026-08-05).
 # Analyst-proposed crosswalk, including weak connections, prepared for STIGWE. This is not an
 # official DISA crosswalk or a declaration that the draft supersedes ASD.
-# Sources: U_ASD_V6R4_STIG.zip and U_GAPP_V1R0-1_IDraftSRG.zip.
+# Sources: U_ASD_V6R5_STIG.zip and U_GAPP_V1R0-1_IDraftSRG.zip.
+# ASD archive SHA-256: b73e8a74d591982d49cdc9e0c5c0023b37ab87d91f3f3f150d6dab8baa23c435.
+# V6R5 retains all 286 stable ASD SV IDs, severities, and CCI sets. SV-222545 changes the maximum
+# password lifetime from 60 to 180 days, and SV-222643 adds an explicit classification-marking N/A.
+# Other V6R5 content edits are terminology or editorial changes.
 
 asd_to_gapp:
   # APSC-DV-000010: The application must provide a capability to limit the number of logon sessions
@@ -95,7 +99,7 @@ asd_to_gapp:
       - id: SV-288270
         default: false
 
-  # APSC-DV-000160: The application must implement DoD-approved encryption to protect the
+  # APSC-DV-000160: The application must implement DoW-approved encryption to protect the
   # confidentiality of remote access sessions.
   SV-222396:
     gapp_ids:
@@ -431,23 +435,23 @@ asd_to_gapp:
       - id: SV-288174
         default: true
 
-  # APSC-DV-000560: The application must retain the Standard Mandatory DoD Notice and Consent Banner
+  # APSC-DV-000560: The application must retain the Standard Mandatory DoW Notice and Consent Banner
   # on the screen until users acknowledge the usage conditions and take explicit actions to log on
   # for further access.
   SV-222435:
     gapp_ids:
-      # GAPP-00-001080 [revised]: The application must retain the Standard Mandatory DoW Notice and
-      # Consent Banner on the screen until users acknowledge the usage conditions and take explicit
-      # actions to log on for further access.
+      # GAPP-00-001080 [same_normalized_title]: The application must retain the Standard Mandatory
+      # DoW Notice and Consent Banner on the screen until users acknowledge the usage conditions and
+      # take explicit actions to log on for further access.
       - id: SV-288242
         default: true
 
-  # APSC-DV-000570: The publicly accessible application must display the Standard Mandatory DoD
+  # APSC-DV-000570: The publicly accessible application must display the Standard Mandatory DoW
   # Notice and Consent Banner before granting access to the application.
   SV-222436:
     gapp_ids:
-      # GAPP-00-001090 [revised]: The publicly accessible application must display the Standard
-      # Mandatory DoW Notice and Consent Banner before granting access to the application.
+      # GAPP-00-001090 [same_normalized_title]: The publicly accessible application must display the
+      # Standard Mandatory DoW Notice and Consent Banner before granting access to the application.
       - id: SV-288243
         default: true
 
@@ -1042,10 +1046,10 @@ asd_to_gapp:
       - id: SV-288169
         default: true
 
-  # APSC-DV-001770: The application must enforce a 60-day maximum password lifetime restriction.
+  # APSC-DV-001770: The application must enforce a 180-day maximum password lifetime restriction.
   SV-222545:
     gapp_ids:
-      # GAPP-00-000360 [same_normalized_title]: The application must enforce a 60-day maximum
+      # GAPP-00-000360 [revised]: The application must enforce a 60-day maximum
       # password lifetime restriction.
       - id: SV-288170
         default: true
@@ -1297,7 +1301,7 @@ asd_to_gapp:
       - id: SV-288193
         default: true
 
-  # APSC-DV-002300: The application must only allow the use of DoD-approved certificate authorities
+  # APSC-DV-002300: The application must only allow the use of DoW-approved certificate authorities
   # for verification of the establishment of protected sessions.
   SV-222584:
     gapp_ids:
@@ -1381,7 +1385,7 @@ asd_to_gapp:
         default: true
 
   # APSC-DV-002870: Unsigned Category 1A mobile code must not be used in the application in
-  # accordance with DoD policy.
+  # accordance with DoW policy.
   SV-222618:
     gapp_ids:
       # GAPP-00-001420 [revised]: The application must prevent the execution of prohibited mobile
@@ -1410,7 +1414,7 @@ asd_to_gapp:
       - id: SV-288176
         default: false
 
-  # APSC-DV-002970: The ISSO must ensure if a DoD STIG or NSA guide is not available, a third-party
+  # APSC-DV-002970: The ISSO must ensure if a DoW STIG or NSA guide is not available, a third-party
   # product will be configured by following available guidance.
   SV-222627:
     gapp_ids:
@@ -1509,7 +1513,7 @@ asd_to_gapp:
 # safeguards/countermeasures.
 # SV-222430 | APSC-DV-000510 | The application must execute without excessive account permissions.
 # SV-222431 | APSC-DV-000520 | The application must audit the execution of privileged functions.
-# SV-222434 | APSC-DV-000550 | The application must display the Standard Mandatory DoD Notice and
+# SV-222434 | APSC-DV-000550 | The application must display the Standard Mandatory DoW Notice and
 # Consent Banner before granting access to the application.
 # SV-222437 | APSC-DV-000580 | The application must display the time and date of the users last
 # successful logon.
@@ -1603,7 +1607,7 @@ asd_to_gapp:
 # SV-222529 | APSC-DV-001610 | The application must ensure users are authenticated with an
 # individual authenticator prior to using a group authenticator.
 # SV-222532 | APSC-DV-001640 | The application must utilize mutual authentication when endpoint
-# device non-repudiation protections are required by DoD policy or by the data owner.
+# device non-repudiation protections are required by DoW policy or by the data owner.
 # SV-222546 | APSC-DV-001780 | The application must prohibit password reuse for a minimum of five
 # generations.
 # SV-222548 | APSC-DV-001795 | The application password must not be changeable by users other than
@@ -1633,9 +1637,9 @@ asd_to_gapp:
 # information necessary to determine cause of failure and any information necessary to return to
 # operations with least disruption to mission processes.
 # SV-222587 | APSC-DV-002330 | The application must protect the confidentiality and integrity of
-# stored information when required by DOD policy or the information owner.
+# stored information when required by DoW policy or the information owner.
 # SV-222589 | APSC-DV-002350 | The application must use appropriate cryptography in order to protect
-# stored DOD information when required by the information owner or DOD policy.
+# stored DoW information when required by the information owner or DoW policy.
 # SV-222590 | APSC-DV-002360 | The application must isolate security functions from non-security
 # functions.
 # SV-222591 | APSC-DV-002370 | The application must maintain a separate execution domain for each
@@ -1676,14 +1680,14 @@ asd_to_gapp:
 # SV-222617 | APSC-DV-002780 | The application must notify the ISSO and ISSM of failed security
 # verification tests.
 # SV-222620 | APSC-DV-002890 | Application web servers must be on a separate network segment from
-# the application and database servers if it is a tiered application operating in the DoD DMZ.
+# the application and database servers if it is a tiered application operating in the DoW DMZ.
 # SV-222621 | APSC-DV-002900 | The ISSO must ensure application audit trails are retained for at
 # least 30 months (12 months active + 18 months cold storage) for applications without SAMI data and
 # five years for applications including SAMI data.
 # SV-222622 | APSC-DV-002910 | The ISSO must review audit trails periodically based on system
 # documentation recommendations or immediately upon system security events.
 # SV-222623 | APSC-DV-002920 | The ISSO must report all suspected violations of IA policies in
-# accordance with DoD information system IA procedures.
+# accordance with DoW information system IA procedures.
 # SV-222624 | APSC-DV-002930 | The ISSO must ensure active vulnerability testing is performed.
 # SV-222625 | APSC-DV-002950 | Execution flow diagrams and design documents must be created to show
 # how deadlock and recursion issues in web services are being mitigated.
@@ -1691,8 +1695,8 @@ asd_to_gapp:
 # and control files in the same directory as user data.
 # SV-222628 | APSC-DV-002980 | New IP addresses, data services, and associated ports used by the
 # application must be submitted to the appropriate approving authority for the organization, which
-# in turn will be submitted through the DoD Ports, Protocols, and Services Management (DoD PPSM)
-# SV-222629 | APSC-DV-002990 | The application must be registered with the DoD Ports and Protocols
+# in turn will be submitted through the DoW Ports, Protocols, and Services Management (DoW PPSM)
+# SV-222629 | APSC-DV-002990 | The application must be registered with the DoW Ports and Protocols
 # Database.
 # SV-222630 | APSC-DV-002995 | The Configuration Management (CM) repository must be properly patched
 # and STIG compliant.
@@ -1708,13 +1712,13 @@ asd_to_gapp:
 # ready for IPv6 networks.
 # SV-222635 | APSC-DV-003040 | The application must not be hosted on a general purpose machine if
 # the application is designated as critical or high availability by the ISSO.
-# SV-222636 | APSC-DV-003050 | A contingency plan must exist in accordance with DOD policy based on
+# SV-222636 | APSC-DV-003050 | A contingency plan must exist in accordance with DoW policy based on
 # the application's availability requirements.
 # SV-222637 | APSC-DV-003060 | Recovery procedures and technical system features must exist so
 # recovery is performed in a secure and verifiable manner. The ISSO will document circumstances
 # inhibiting a trusted recovery.
 # SV-222638 | APSC-DV-003070 | Data backup must be performed at required intervals in accordance
-# with DoD policy.
+# with DoW policy.
 # SV-222639 | APSC-DV-003080 | Back-up copies of the application software or source code must be
 # stored in a fire-rated container or stored separately (offsite).
 # SV-222640 | APSC-DV-003090 | Procedures must be in place to assure the appropriate physical and
@@ -1722,10 +1726,12 @@ asd_to_gapp:
 # SV-222642 | APSC-DV-003110 | The application must not contain embedded authentication data.
 # SV-222643 | APSC-DV-003120 | The application must have the capability to mark sensitive/classified
 # output when required.
+# V6R5 makes this requirement N/A when the system does not process sensitive/classified/CUI
+# information and does not require classification markings; no GAPP counterpart was identified.
 # SV-222644 | APSC-DV-003130 | Prior to each release of the application, updates to system, or
 # applying patches; tests plans and procedures must be created and executed.
 # SV-222645 | APSC-DV-003140 | Application files must be cryptographically hashed prior to deploying
-# to DoD operational networks.
+# to DoW operational networks.
 # SV-222646 | APSC-DV-003150 | At least one tester must be designated to test for security flaws in
 # addition to functional testing.
 # SV-222647 | APSC-DV-003160 | Test procedures must be created and at least annually executed to
@@ -1766,7 +1772,7 @@ asd_to_gapp:
 # update notifications, or security alerts, when automated alerts are available.
 # SV-222670 | APSC-DV-003345 | The application must provide notifications or alerts when product
 # update and security related patches are available.
-# SV-222671 | APSC-DV-003350 | Connections between the DoD enclave and the Internet or other public
+# SV-222671 | APSC-DV-003350 | Connections between the DoW enclave and the Internet or other public
 # or commercial wide area networks must require a DMZ.
 # SV-222673 | APSC-DV-003400 | The Program Manager must verify all levels of program management,
 # designers, developers, and testers receive annual security training pertaining to their job
@@ -1904,7 +1910,7 @@ gapp_to_asd:
   # broader GAPP allowance for another AO-approved CA.
   SV-288144:
     asd_ids:
-      # APSC-DV-002300 [revised]: The application must only allow the use of DoD-approved
+      # APSC-DV-002300 [revised]: The application must only allow the use of DoW-approved
       # certificate authorities for verification of the establishment of protected sessions.
       - id: SV-222584
         default: true
@@ -2123,11 +2129,11 @@ gapp_to_asd:
         default: true
 
   # GAPP-00-000360: The application must enforce a 60-day maximum password lifetime restriction.
-  # Comparison: Title matches after case/punctuation/spacing normalization only; this does not
-  # establish unchanged assessment or CWE equivalence.
+  # Comparison: GAPP sets a 60-day maximum, while ASD V6R5 sets a 180-day maximum; the thresholds
+  # are not interchangeable.
   SV-288170:
     asd_ids:
-      # APSC-DV-001770 [same_normalized_title]: The application must enforce a 60-day maximum
+      # APSC-DV-001770 [revised]: The application must enforce a 180-day maximum
       # password lifetime restriction.
       - id: SV-222545
         default: true
@@ -2931,23 +2937,25 @@ gapp_to_asd:
   # GAPP-00-001080: The application must retain the Standard Mandatory DoW Notice and Consent Banner
   # on the screen until users acknowledge the usage conditions and take explicit actions to log on
   # for further access.
-  # Comparison: Retains banner acknowledgment; DoD to DoW terminology and CAT III to CAT II.
+  # Comparison: The title now matches ASD V6R5 after normalization; assessment text differs and the
+  # severity changes from CAT III to CAT II.
   SV-288242:
     asd_ids:
-      # APSC-DV-000560 [revised]: The application must retain the Standard Mandatory DoD Notice and
-      # Consent Banner on the screen until users acknowledge the usage conditions and take explicit
-      # actions to log on for further access.
+      # APSC-DV-000560 [same_normalized_title]: The application must retain the Standard Mandatory
+      # DoW Notice and Consent Banner on the screen until users acknowledge the usage conditions and
+      # take explicit actions to log on for further access.
       - id: SV-222435
         default: true
 
   # GAPP-00-001090: The publicly accessible application must display the Standard Mandatory DoW
   # Notice and Consent Banner before granting access to the application.
-  # Comparison: Retains publicly accessible application banner; DoD to DoW terminology and CAT III
-  # to CAT II. Does not automatically absorb separate ASD general banner rule.
+  # Comparison: The title now matches ASD V6R5 after normalization; assessment text differs and the
+  # severity changes from CAT III to CAT II. This does not automatically absorb the separate ASD
+  # general banner rule.
   SV-288243:
     asd_ids:
-      # APSC-DV-000570 [revised]: The publicly accessible application must display the Standard
-      # Mandatory DoD Notice and Consent Banner before granting access to the application.
+      # APSC-DV-000570 [same_normalized_title]: The publicly accessible application must display the
+      # Standard Mandatory DoW Notice and Consent Banner before granting access to the application.
       - id: SV-222436
         default: true
 
@@ -3045,7 +3053,7 @@ gapp_to_asd:
       # the integrity of remote access sessions.
       - id: SV-222397
         default: true
-      # APSC-DV-000160 [revised]: The application must implement DoD-approved encryption to protect
+      # APSC-DV-000160 [revised]: The application must implement DoW-approved encryption to protect
       # the confidentiality of remote access sessions.
       - id: SV-222396
         default: false
@@ -3068,7 +3076,7 @@ gapp_to_asd:
   # requirements; protect both integrity and confidentiality.
   SV-288253:
     asd_ids:
-      # APSC-DV-000160 [revised]: The application must implement DoD-approved encryption to protect
+      # APSC-DV-000160 [revised]: The application must implement DoW-approved encryption to protect
       # the confidentiality of remote access sessions.
       - id: SV-222396
         default: true
@@ -3127,7 +3135,7 @@ gapp_to_asd:
   # general ASD encryption evidence alone is insufficient.
   SV-288256:
     asd_ids:
-      # APSC-DV-000160 [related_only]: The application must implement DoD-approved encryption to
+      # APSC-DV-000160 [related_only]: The application must implement DoW-approved encryption to
       # protect the confidentiality of remote access sessions.
       - id: SV-222396
         default: true
@@ -3191,7 +3199,7 @@ gapp_to_asd:
   # partial antecedents.
   SV-288261:
     asd_ids:
-      # APSC-DV-002300 [related_only]: The application must only allow the use of DoD-approved
+      # APSC-DV-002300 [related_only]: The application must only allow the use of DoW-approved
       # certificate authorities for verification of the establishment of protected sessions.
       - id: SV-222584
         default: true
@@ -3354,7 +3362,7 @@ gapp_to_asd:
       - id: SV-222665
         default: true
       # APSC-DV-002870 [related_only]: Unsigned Category 1A mobile code must not be used in the
-      # application in accordance with DoD policy.
+      # application in accordance with DoW policy.
       - id: SV-222618
         default: false
 
@@ -3368,7 +3376,7 @@ gapp_to_asd:
       - id: SV-222665
         default: true
       # APSC-DV-002870 [revised]: Unsigned Category 1A mobile code must not be used in the
-      # application in accordance with DoD policy.
+      # application in accordance with DoW policy.
       - id: SV-222618
         default: false
 
@@ -3496,7 +3504,7 @@ gapp_to_asd:
   # placeholder is not a catch-all mapping for otherwise unmapped requirements.
   SV-288297:
     asd_ids:
-      # APSC-DV-002970 [related_only]: The ISSO must ensure if a DoD STIG or NSA guide is not
+      # APSC-DV-002970 [related_only]: The ISSO must ensure if a DoW STIG or NSA guide is not
       # available, a third-party product will be configured by following available guidance.
       - id: SV-222627
         default: true
