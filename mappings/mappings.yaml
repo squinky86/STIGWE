@@ -1,6 +1,7 @@
 # STIG to CWE and CWE to STIG mappings
 # ASD mappings updated for V6R5 (benchmark 2026-09-30). V6R5 retains the stable SV IDs; the new
 # 180-day password maximum makes CWE-263 a secondary relationship for SV-222545.
+# CWE mappings include version 5.0 (2026-10-28).
 ---
 
 stig_to_cwe:
@@ -18,19 +19,31 @@ stig_to_cwe:
         default: false
   SV-222389:
     cwe_ids:
-      - id: CWE-613
+      - id: CWE-1463
         default: true
+      - id: CWE-1462
+        default: false
+      - id: CWE-1464
+        default: false
   SV-222390:
     cwe_ids:
-      - id: CWE-613
+      - id: CWE-1463
         default: true
+      - id: CWE-1462
+        default: false
+      - id: CWE-1464
+        default: false
   SV-222391:
     cwe_ids:
-      - id: CWE-613
+      - id: CWE-1464
         default: true
+      - id: CWE-1462
+        default: false
+      - id: CWE-1465
+        default: false
   SV-222392:
     cwe_ids:
-      - id: CWE-613
+      - id: CWE-223
         default: true
   SV-222393:
     cwe_ids:
@@ -51,6 +64,8 @@ stig_to_cwe:
       - id: CWE-648
         default: false
       - id: CWE-319
+        default: false
+      - id: CWE-1475
         default: false
   SV-222396:
     cwe_ids:
@@ -76,8 +91,10 @@ stig_to_cwe:
         default: true
   SV-222400:
     cwe_ids:
-      - id: CWE-294
+      - id: CWE-1469
         default: true
+      - id: CWE-294
+        default: false
   SV-222401:
     cwe_ids:
       - id: CWE-287
@@ -88,12 +105,16 @@ stig_to_cwe:
         default: true
   SV-222403:
     cwe_ids:
-      - id: CWE-287
+      - id: CWE-1472
         default: true
+      - id: CWE-287
+        default: false
   SV-222404:
     cwe_ids:
-      - id: CWE-287
+      - id: CWE-1472
         default: true
+      - id: CWE-287
+        default: false
   SV-222405:
     cwe_ids:
       - id: CWE-287
@@ -564,6 +585,8 @@ stig_to_cwe:
     cwe_ids:
       - id: CWE-284
         default: true
+      - id: CWE-1466
+        default: false
   SV-222521:
     cwe_ids:
       - id: CWE-284
@@ -666,6 +689,8 @@ stig_to_cwe:
         default: true
       - id: CWE-263
         default: false
+      - id: CWE-1472
+        default: false
   SV-222546:
     cwe_ids:
       - id: CWE-521
@@ -680,8 +705,12 @@ stig_to_cwe:
         default: true
   SV-222549:
     cwe_ids:
-      - id: CWE-613
+      - id: CWE-1464
         default: true
+      - id: CWE-1462
+        default: false
+      - id: CWE-1466
+        default: false
   SV-222550:
     cwe_ids:
       - id: CWE-296
@@ -702,6 +731,8 @@ stig_to_cwe:
     cwe_ids:
       - id: CWE-308
         default: true
+      - id: CWE-1473
+        default: false
   SV-222554:
     cwe_ids:
       - id: CWE-522
@@ -714,6 +745,8 @@ stig_to_cwe:
     cwe_ids:
       - id: CWE-287
         default: true
+      - id: CWE-1470
+        default: false
   SV-222557:
     cwe_ids:
       - id: CWE-308
@@ -744,7 +777,7 @@ stig_to_cwe:
         default: true
   SV-222564:
     cwe_ids:
-      - id: CWE-613
+      - id: CWE-1464
         default: true
   SV-222565:
     cwe_ids:
@@ -752,16 +785,20 @@ stig_to_cwe:
         default: true
   SV-222566:
     cwe_ids:
-      - id: CWE-613
+      - id: CWE-1463
         default: true
+      - id: CWE-1464
+        default: false
   SV-222567:
     cwe_ids:
       - id: CWE-294
         default: true
   SV-222568:
     cwe_ids:
-      - id: CWE-613
+      - id: CWE-404
         default: true
+      - id: CWE-1464
+        default: false
   SV-222570:
     cwe_ids:
       - id: CWE-327
@@ -798,8 +835,12 @@ stig_to_cwe:
         default: true
   SV-222578:
     cwe_ids:
-      - id: CWE-613
+      - id: CWE-1465
         default: true
+      - id: CWE-1462
+        default: false
+      - id: CWE-1464
+        default: false
   SV-222579:
     cwe_ids:
       - id: CWE-384
@@ -808,18 +849,28 @@ stig_to_cwe:
     cwe_ids:
       - id: CWE-384
         default: true
+      - id: CWE-1462
+        default: false
   SV-222581:
     cwe_ids:
       - id: CWE-384
         default: true
   SV-222582:
     cwe_ids:
-      - id: CWE-384
+      - id: CWE-1467
         default: true
+      - id: CWE-384
+        default: false
+      - id: CWE-1462
+        default: false
   SV-222583:
     cwe_ids:
       - id: CWE-330
         default: true
+      - id: CWE-1462
+        default: false
+      - id: CWE-1467
+        default: false
   SV-222584:
     cwe_ids:
       - id: CWE-295
@@ -910,10 +961,16 @@ stig_to_cwe:
     cwe_ids:
       - id: CWE-116
         default: true
+      - id: CWE-1471
+        default: false
+      - id: CWE-1474
+        default: false
   SV-222606:
     cwe_ids:
       - id: CWE-20
         default: true
+      - id: CWE-1471
+        default: false
   SV-222607:
     cwe_ids:
       - id: CWE-89
@@ -1092,6 +1149,8 @@ stig_to_cwe:
     cwe_ids:
       - id: CWE-710
         default: true
+      - id: CWE-1461
+        default: false
   SV-222649:
     cwe_ids:
       - id: CWE-710
@@ -1168,6 +1227,8 @@ stig_to_cwe:
     cwe_ids:
       - id: CWE-400
         default: true
+      - id: CWE-1476
+        default: false
   SV-222668:
     cwe_ids:
       - id: CWE-400
@@ -2039,6 +2100,8 @@ cwe_to_stig:
         default: true
       - id: SV-222478
         default: false
+      - id: SV-222392
+        default: false
   CWE-224:
     stig_ids:
       - id: SV-222478
@@ -2751,6 +2814,8 @@ cwe_to_stig:
     stig_ids:
       - id: SV-222426
         default: true
+      - id: SV-222568
+        default: false
   CWE-405:
     stig_ids:
       - id: SV-222594
@@ -6183,3 +6248,107 @@ cwe_to_stig:
         default: true
       - id: SV-222415
         default: false
+  CWE-1461:
+    stig_ids:
+      - id: SV-222648
+        default: true
+  CWE-1462:
+    stig_ids:
+      - id: SV-222580
+        default: true
+      - id: SV-222389
+        default: false
+      - id: SV-222390
+        default: false
+      - id: SV-222391
+        default: false
+      - id: SV-222549
+        default: false
+      - id: SV-222578
+        default: false
+      - id: SV-222582
+        default: false
+      - id: SV-222583
+        default: false
+  CWE-1463:
+    stig_ids:
+      - id: SV-222389
+        default: true
+      - id: SV-222390
+        default: false
+      - id: SV-222566
+        default: false
+  CWE-1464:
+    stig_ids:
+      - id: SV-222549
+        default: true
+      - id: SV-222389
+        default: false
+      - id: SV-222390
+        default: false
+      - id: SV-222391
+        default: false
+      - id: SV-222564
+        default: false
+      - id: SV-222566
+        default: false
+      - id: SV-222568
+        default: false
+      - id: SV-222578
+        default: false
+  CWE-1465:
+    stig_ids:
+      - id: SV-222578
+        default: true
+      - id: SV-222391
+        default: false
+  CWE-1466:
+    stig_ids:
+      - id: SV-222520
+        default: true
+      - id: SV-222549
+        default: false
+  CWE-1467:
+    stig_ids:
+      - id: SV-222582
+        default: true
+      - id: SV-222583
+        default: false
+  CWE-1469:
+    stig_ids:
+      - id: SV-222400
+        default: true
+  CWE-1470:
+    stig_ids:
+      - id: SV-222556
+        default: true
+  CWE-1471:
+    stig_ids:
+      - id: SV-222605
+        default: true
+      - id: SV-222606
+        default: false
+  CWE-1472:
+    stig_ids:
+      - id: SV-222545
+        default: true
+      - id: SV-222403
+        default: false
+      - id: SV-222404
+        default: false
+  CWE-1473:
+    stig_ids:
+      - id: SV-222553
+        default: true
+  CWE-1474:
+    stig_ids:
+      - id: SV-222605
+        default: true
+  CWE-1475:
+    stig_ids:
+      - id: SV-222395
+        default: true
+  CWE-1476:
+    stig_ids:
+      - id: SV-222667
+        default: true
